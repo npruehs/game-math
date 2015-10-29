@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 
 [assembly: AssemblyTitle("GameMath")]
-[assembly: AssemblyDescription("Free open-source math libraries for games.")]
+[assembly: AssemblyDescription("Free open-source math library for games.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Open Source Developers")]
 [assembly: AssemblyProduct("GameMath")]
