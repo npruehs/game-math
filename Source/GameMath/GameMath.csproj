@@ -37,6 +37,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Geometry\Vector2F.cs" />
+    <Compile Include="Geometry\Vector2I.cs" />
     <Compile Include="Geometry\Vector3F.cs" />
     <Compile Include="MathF.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
