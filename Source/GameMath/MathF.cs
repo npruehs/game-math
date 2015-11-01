@@ -31,6 +31,36 @@ namespace GameMath
         }
 
         /// <summary>
+        ///   Linearly interpolates between the two passed values.
+        /// </summary>
+        /// <param name="f">
+        ///   First value to interpolate.
+        /// </param>
+        /// <param name="g">
+        ///   Second value to interpolate.
+        /// </param>
+        /// <param name="l">
+        ///   Interpolation parameter. 0 returns <paramref name="f" />, 1 returns <paramref name="g" />.
+        /// </param>
+        /// <returns>
+        ///   Linear interpolation between the two passed values.
+        /// </returns>
+        public static float Lerp(float f, float g, float l)
+        {
+            if (l <= 0.0f)
+            {
+                return f;
+            }
+
+            if (l >= 1.0f)
+            {
+                return g;
+            }
+
+            return f + (l * (g - f));
+        }
+
+        /// <summary>
         ///   Returns the square root of the specified number.
         /// </summary>
         /// <param name="f">

@@ -337,17 +337,9 @@ namespace GameMath
         /// </returns>
         public static Vector2F Lerp(Vector2F v1, Vector2F v2, float l)
         {
-            if (l <= 0.0f)
-            {
-                return v1;
-            }
-
-            if (l >= 1.0f)
-            {
-                return v2;
-            }
-
-            return v1 + (l * (v2 - v1));
+            var lerpX = MathF.Lerp(v1.x, v2.x, l);
+            var lerpY = MathF.Lerp(v1.y, v2.y, l);
+            return new Vector2F(lerpX, lerpY);
         }
 
         /// <summary>
