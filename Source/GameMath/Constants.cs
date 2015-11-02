@@ -11,6 +11,11 @@
         #region Constants
 
         /// <summary>
+        ///   Base of the natural logarithm.
+        /// </summary>
+        public const float E = 2.7182818284590452354f;
+
+        /// <summary>
         ///   Math constant Pi.
         /// </summary>
         public const float Pi = 3.1415926535897932384626433832795f;
@@ -18,12 +23,12 @@
         /// <summary>
         ///   Math constant Pi divided by four.
         /// </summary>
-        public const float PiOverFour = Pi * 0.25f;
+        public const float PiOverFour = Pi / 4;
 
         /// <summary>
         ///   Math constant Pi divided by two.
         /// </summary>
-        public const float PiOverTwo = Pi * 0.5f;
+        public const float PiOverTwo = Pi / 2;
 
         /// <summary>
         ///   Sine of 45 degrees.
