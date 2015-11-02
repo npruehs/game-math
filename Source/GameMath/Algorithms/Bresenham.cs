@@ -7,6 +7,7 @@
     ///   Optimized version of the Bresenham line algorithm that finds an
     ///   approximation to a straight line between two given points.
     /// </summary>
+    [CLSCompliant(true)]
     public static class Bresenham
     {
         #region Public Methods and Operators
