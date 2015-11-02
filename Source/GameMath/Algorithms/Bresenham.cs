@@ -1,10 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="Bresenham.cs" company="Slash Games">
-//   Copyright (c) Slash Games. All rights reserved.
-// </copyright>
-// --------------------------------------------------------------------------------------------------------------------
-
-namespace GameMath
+﻿namespace GameMath
 {
     using System;
     using System.Collections.Generic;
@@ -31,7 +25,7 @@ namespace GameMath
         /// </returns>
         public static List<Vector2I> Plot(Vector2I v0, Vector2I v1)
         {
-            List<Vector2I> line = new List<Vector2I>();
+            var line = new List<Vector2I>();
 
             int x0;
             int x1;
