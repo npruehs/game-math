@@ -1,95 +1,106 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="RectangleI.cs" company="Slash Games">
+// <copyright file="BoxI.cs" company="Slash Games">
 //   Copyright (c) Slash Games. All rights reserved.
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
-
 namespace GameMath
 {
     using System;
 
     /// <summary>
-    ///   Rectangle with integer position and extent.
-    ///   Origin is top-left.
+    ///   Box with integer position and extents.
+    ///   Origin is front-top-left.
     /// </summary>
     [CLSCompliant(true)]
-    public class RectangleI : IEquatable<RectangleI>
+    public class BoxI : IEquatable<BoxI>
     {
         #region Fields
 
         /// <summary>
-        ///   Size of this rectangle, its width and height.
+        ///   Size of this box, its width, height and depth.
         /// </summary>
-        private Vector2I size;
+        private Vector3I size;
 
         #endregion
 
         #region Constructors and Destructors
 
         /// <summary>
-        ///   Constructs a new rectangle with the specified position and size.
+        ///   Constructs a new box with the specified position and size.
         /// </summary>
         /// <param name="x">
-        ///   X-component of the rectangle position.
+        ///   X-component of the box position.
         /// </param>
         /// <param name="y">
-        ///   Y-component of the rectangle position.
+        ///   Y-component of the box position.
+        /// </param>
+        /// <param name="z">
+        ///   Z-component of the box position.
         /// </param>
         /// <param name="width">
-        ///   Rectangle width.
+        ///   Box width.
         /// </param>
         /// <param name="height">
-        ///   Rectangle height.
+        ///   Box height.
         /// </param>
-        public RectangleI(int x, int y, int width, int height)
-            : this(new Vector2I(x, y), new Vector2I(width, height))
+        /// <param name="depth">
+        ///   Box depth.
+        /// </param>
+        public BoxI(int x, int y, int z, int width, int height, int depth)
+            : this(new Vector3I(x, y, z), new Vector3I(width, height, depth))
         {
         }
 
         /// <summary>
-        ///   Constructs a new rectangle with the specified position and size.
+        ///   Constructs a new box with the specified position and size.
         /// </summary>
         /// <param name="x">
-        ///   X-component of the rectangle position.
+        ///   X-component of the box position.
         /// </param>
         /// <param name="y">
-        ///   Y-component of the rectangle position.
+        ///   Y-component of the box position.
+        /// </param>
+        /// <param name="z">
+        ///   Z-component of the box position.
         /// </param>
         /// <param name="size">
-        ///   Rectangle size.
+        ///   Box extents.
         /// </param>
-        public RectangleI(int x, int y, Vector2I size)
-            : this(new Vector2I(x, y), size)
+        public BoxI(int x, int y, int z, Vector3I size)
+            : this(new Vector3I(x, y, z), size)
         {
         }
 
         /// <summary>
-        ///   Constructs a new rectangle with the specified position and size.
+        ///   Constructs a new box with the specified position and size.
         /// </summary>
         /// <param name="position">
-        ///   Rectangle position.
+        ///   Box position.
         /// </param>
         /// <param name="width">
-        ///   Rectangle width.
+        ///   Box width.
         /// </param>
         /// <param name="height">
-        ///   Rectangle height.
+        ///   Box height.
         /// </param>
-        public RectangleI(Vector2I position, int width, int height)
-            : this(position, new Vector2I(width, height))
+        /// <param name="depth">
+        ///   Box depth.
+        /// </param>
+        public BoxI(Vector3I position, int width, int height, int depth)
+            : this(position, new Vector3I(width, height, depth))
         {
         }
 
         /// <summary>
-        ///   Constructs a new rectangle with the specified position and size.
+        ///   Constructs a new box with the specified position and size.
         /// </summary>
         /// <param name="position">
-        ///   Rectangle position.
+        ///   Box position.
         /// </param>
         /// <param name="size">
-        ///   Rectangle size.
+        ///   Box size.
         /// </param>
-        public RectangleI(Vector2I position, Vector2I size)
+        public BoxI(Vector3I position, Vector3I size)
         {
             this.Position = position;
             this.Size = size;
@@ -100,18 +111,18 @@ namespace GameMath
         #region Properties
 
         /// <summary>
-        ///   Gets the area of this rectangle, the product of its width and height.
+        ///   Gets the z-component of the back face of this box.
         /// </summary>
-        public int Area
+        public int Back
         {
             get
             {
-                return this.Size.X * this.Size.Y;
+                return this.Position.Z + this.Size.Z;
             }
         }
 
         /// <summary>
-        ///   Gets the y-component of the bottom side of this rectangle.
+        ///   Gets the y-component of the bottom face of this box.
         /// </summary>
         public int Bottom
         {
@@ -122,31 +133,9 @@ namespace GameMath
         }
 
         /// <summary>
-        ///   Gets the position of the bottom left corner of this rectangle.
+        ///   Gets the position of the center of this box.
         /// </summary>
-        public Vector2I BottomLeft
-        {
-            get
-            {
-                return this.Position + new Vector2I(0, this.Size.Y);
-            }
-        }
-
-        /// <summary>
-        ///   Gets the position of the bottom right corner of this rectangle.
-        /// </summary>
-        public Vector2I BottomRight
-        {
-            get
-            {
-                return this.Position + this.Size;
-            }
-        }
-
-        /// <summary>
-        ///   Gets the position of the center of this rectangle.
-        /// </summary>
-        public Vector2I Center
+        public Vector3I Center
         {
             get
             {
@@ -155,7 +144,34 @@ namespace GameMath
         }
 
         /// <summary>
-        ///   Gets or sets the height of this rectangle.
+        ///   Gets or sets the depth of this box.
+        /// </summary>
+        public int Depth
+        {
+            get
+            {
+                return this.Size.Z;
+            }
+
+            set
+            {
+                this.Size = new Vector3I(this.Size.X, this.Size.Y, value);
+            }
+        }
+
+        /// <summary>
+        ///   Gets the z-component of the front face of this box.
+        /// </summary>
+        public int Front
+        {
+            get
+            {
+                return this.Position.Z;
+            }
+        }
+
+        /// <summary>
+        ///   Gets or sets the height of this box.
         /// </summary>
         public int Height
         {
@@ -166,12 +182,12 @@ namespace GameMath
 
             set
             {
-                this.Size = new Vector2I(this.Size.X, value);
+                this.Size = new Vector3I(this.Size.X, value, this.Size.Z);
             }
         }
 
         /// <summary>
-        ///   Gets the x-component of the left side of this rectangle.
+        ///   Gets the x-component of the left face of this box.
         /// </summary>
         public int Left
         {
@@ -182,12 +198,12 @@ namespace GameMath
         }
 
         /// <summary>
-        ///   Gets or sets the position of this rectangle.
+        ///   Gets or sets the position of this box.
         /// </summary>
-        public Vector2I Position { get; set; }
+        public Vector3I Position { get; set; }
 
         /// <summary>
-        ///   Gets the x-component of the right side of this rectangle.
+        ///   Gets the x-component of the right face of this box.
         /// </summary>
         public int Right
         {
@@ -198,9 +214,9 @@ namespace GameMath
         }
 
         /// <summary>
-        ///   Gets or sets the size of this rectangle, its width and height.
+        ///   Gets or sets the size of this box, its width, height and depth.
         /// </summary>
-        public Vector2I Size
+        public Vector3I Size
         {
             get
             {
@@ -219,12 +235,17 @@ namespace GameMath
                     throw new ArgumentOutOfRangeException("value", "Height must be non-negative.");
                 }
 
+                if (value.Z < 0)
+                {
+                    throw new ArgumentOutOfRangeException("value", "Depth must be non-negative.");
+                }
+
                 this.size = value;
             }
         }
 
         /// <summary>
-        ///   Gets the y-component of the top side of this rectangle.
+        ///   Gets the y-component of the top face of this box.
         /// </summary>
         public int Top
         {
@@ -235,29 +256,18 @@ namespace GameMath
         }
 
         /// <summary>
-        ///   Gets the position of the top left corner of this rectangle.
+        ///   Gets the volume of this box, the product of its width, height and depth.
         /// </summary>
-        public Vector2I TopLeft
+        public int Volume
         {
             get
             {
-                return this.Position;
+                return this.Size.X * this.Size.Y * this.Size.Z;
             }
         }
 
         /// <summary>
-        ///   Gets the position of the top right corner of this rectangle.
-        /// </summary>
-        public Vector2I TopRight
-        {
-            get
-            {
-                return this.Position + new Vector2I(this.Size.X, 0);
-            }
-        }
-
-        /// <summary>
-        ///   Gets or sets the width of this rectangle.
+        ///   Gets or sets the width of this box.
         /// </summary>
         public int Width
         {
@@ -268,12 +278,12 @@ namespace GameMath
 
             set
             {
-                this.Size = new Vector2I(value, this.Size.Y);
+                this.Size = new Vector3I(value, this.Size.Y, this.Size.Z);
             }
         }
 
         /// <summary>
-        ///   Gets or sets the x-component of the position of this rectangle.
+        ///   Gets or sets the x-component of the position of this box.
         /// </summary>
         public int X
         {
@@ -284,12 +294,12 @@ namespace GameMath
 
             set
             {
-                this.Position = new Vector2I(value, this.Position.Y);
+                this.Position = new Vector3I(value, this.Position.Y, this.Position.Z);
             }
         }
 
         /// <summary>
-        ///   Gets or sets the y-component of the position of this rectangle.
+        ///   Gets or sets the y-component of the position of this box.
         /// </summary>
         public int Y
         {
@@ -300,7 +310,23 @@ namespace GameMath
 
             set
             {
-                this.Position = new Vector2I(this.Position.X, value);
+                this.Position = new Vector3I(this.Position.X, value, this.Position.Z);
+            }
+        }
+
+        /// <summary>
+        ///   Gets or sets the z-component of the position of this box.
+        /// </summary>
+        public int Z
+        {
+            get
+            {
+                return this.Position.Z;
+            }
+
+            set
+            {
+                this.Position = new Vector3I(this.Position.X, this.Position.Y, value);
             }
         }
 
@@ -309,44 +335,46 @@ namespace GameMath
         #region Public Methods and Operators
 
         /// <summary>
-        ///   Checks whether this rectangle entirely encompasses the passed other one.
+        ///   Checks whether this box entirely encompasses the passed other one.
         /// </summary>
         /// <param name="other">
-        ///   Rectangle to check.
+        ///   Box to check.
         /// </param>
         /// <returns>
-        ///   <c>true</c>, if this rectangle contains <paramref name="other" />, and <c>false</c> otherwise.
+        ///   <c>true</c>, if this box contains <paramref name="other" />, and <c>false</c> otherwise.
         /// </returns>
-        public bool Contains(RectangleI other)
+        public bool Contains(BoxI other)
         {
             return (this.Left <= other.Left && this.Right >= other.Right)
-                   && (this.Top <= other.Top && this.Bottom >= other.Bottom);
+                   && (this.Top <= other.Top && this.Bottom >= other.Bottom)
+                   && (this.Front <= other.Front && this.Back >= other.Front);
         }
 
         /// <summary>
-        ///   Checks whether this rectangle contains the point denoted by the specified vector.
+        ///   Checks whether this box contains the point denoted by the specified vector.
         /// </summary>
         /// <param name="point">
         ///   Point to check.
         /// </param>
         /// <returns>
-        ///   <c>true</c>, if this rectangle contains <paramref name="point" />, and <c>false</c> otherwise.
+        ///   <c>true</c>, if this box contains <paramref name="point" />, and <c>false</c> otherwise.
         /// </returns>
-        public bool Contains(Vector2I point)
+        public bool Contains(Vector3I point)
         {
-            return point.X >= this.Left && point.X < this.Right && point.Y >= this.Top && point.Y < this.Bottom;
+            return point.X >= this.Left && point.X < this.Right && point.Y >= this.Top && point.Y < this.Bottom
+                   && point.Z >= this.Front && point.Z < this.Back;
         }
 
         /// <summary>
-        ///   Compares the passed rectangle to this one for equality.
+        ///   Compares the passed box to this one for equality.
         /// </summary>
         /// <param name="other">
-        ///   Rectangle to compare.
+        ///   Box to compare.
         /// </param>
         /// <returns>
-        ///   <c>true</c>, if both rectangles are equal, and <c>false</c> otherwise.
+        ///   <c>true</c>, if both boxes are equal, and <c>false</c> otherwise.
         /// </returns>
-        public bool Equals(RectangleI other)
+        public bool Equals(BoxI other)
         {
             if (ReferenceEquals(null, other))
             {
@@ -362,13 +390,13 @@ namespace GameMath
         }
 
         /// <summary>
-        ///   Compares the passed rectangle to this one for equality.
+        ///   Compares the passed box to this one for equality.
         /// </summary>
         /// <param name="obj">
-        ///   Rectangle to compare.
+        ///   Box to compare.
         /// </param>
         /// <returns>
-        ///   <c>true</c>, if both rectangles are equal, and <c>false</c> otherwise.
+        ///   <c>true</c>, if both boxes are equal, and <c>false</c> otherwise.
         /// </returns>
         public override bool Equals(object obj)
         {
@@ -382,14 +410,14 @@ namespace GameMath
                 return true;
             }
 
-            return obj.GetType() == this.GetType() && this.Equals((RectangleI)obj);
+            return obj.GetType() == this.GetType() && this.Equals((BoxI)obj);
         }
 
         /// <summary>
-        ///   Gets the hash code of this rectangle.
+        ///   Gets the hash code of this box.
         /// </summary>
         /// <returns>
-        ///   Hash code of this rectangle.
+        ///   Hash code of this box.
         /// </returns>
         public override int GetHashCode()
         {
@@ -400,25 +428,26 @@ namespace GameMath
         }
 
         /// <summary>
-        ///   Checks whether this rectangle at least partially intersects the passed other one.
+        ///   Checks whether this box at least partially intersects the passed other one.
         /// </summary>
         /// <param name="other">
-        ///   Rectangle to check.
+        ///   Box to check.
         /// </param>
         /// <returns>
-        ///   <c>true</c>, if this rectangle intersects <paramref name="other" />, and <c>false</c> otherwise.
+        ///   <c>true</c>, if this box intersects <paramref name="other" />, and <c>false</c> otherwise.
         /// </returns>
-        public bool Intersects(RectangleI other)
+        public bool Intersects(BoxI other)
         {
             return (this.Right > other.Left && this.Left < other.Right)
-                   && (this.Bottom > other.Top && this.Top < other.Bottom);
+                   && (this.Bottom > other.Top && this.Top < other.Bottom)
+                   && (this.Back > other.Front && this.Front < other.Back);
         }
 
         /// <summary>
-        ///   Returns a <see cref="string" /> representation of this rectangle.
+        ///   Returns a <see cref="string" /> representation of this box.
         /// </summary>
         /// <returns>
-        ///   This rectangle as <see cref="string" />.
+        ///   This box as <see cref="string" />.
         /// </returns>
         public override string ToString()
         {
