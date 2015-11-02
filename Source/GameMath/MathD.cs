@@ -3,10 +3,10 @@
     using System;
 
     /// <summary>
-    ///   Common math operations on single-precision floating point numbers.
+    ///   Common math operations on double-precision floating point numbers.
     /// </summary>
     [CLSCompliant(true)]
-    public static class MathF
+    public static class MathD
     {
         #region Public Methods and Operators
 
@@ -14,18 +14,18 @@
         ///   Checks whether the two passed numbers are equal, with respect
         ///   to possible loss of precision caused by rounding values.
         /// </summary>
-        /// <param name="f">
+        /// <param name="d">
         ///   First number to compare.
         /// </param>
-        /// <param name="g">
+        /// <param name="e">
         ///   Second number to compare.
         /// </param>
         /// <returns>
         ///   <c>true</c>, if both numbers are equal, and <c>false</c> otherwise.
         /// </returns>
-        public static bool Equals(float f, float g)
+        public static bool Equals(double d, double e)
         {
-            return Math.Abs(f - g) < float.Epsilon;
+            return Math.Abs(d - e) < double.Epsilon;
         }
 
         /// <summary>
@@ -43,7 +43,7 @@
         /// <returns>
         ///   Linear interpolation between the two passed values.
         /// </returns>
-        public static float Lerp(float f, float g, float l)
+        public static double Lerp(double f, double g, double l)
         {
             if (l <= 0.0f)
             {
@@ -56,20 +56,6 @@
             }
 
             return f + (l * (g - f));
-        }
-
-        /// <summary>
-        ///   Returns the square root of the specified number.
-        /// </summary>
-        /// <param name="f">
-        ///   Number to get the square root of.
-        /// </param>
-        /// <returns>
-        ///   Square root of the specified number
-        /// </returns>
-        public static float Sqrt(float f)
-        {
-            return (float)Math.Sqrt(f);
         }
 
         #endregion

@@ -37,6 +37,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Algorithms\Bresenham.cs" />
+    <Compile Include="Angle.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="Geometry\BoxF.cs" />
     <Compile Include="Geometry\BoxI.cs" />
@@ -46,8 +47,12 @@
     <Compile Include="Geometry\Vector2I.cs" />
     <Compile Include="Geometry\Vector3F.cs" />
     <Compile Include="Geometry\Vector3I.cs" />
+    <Compile Include="MathD.cs" />
     <Compile Include="MathF.cs" />
+    <Compile Include="MathI.cs" />
+    <Compile Include="MathUtils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Round.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
