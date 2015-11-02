@@ -38,6 +38,30 @@
             return value.CompareTo(max) > 0 ? max : value;
         }
 
+        /// <summary>
+        ///   Returns the larger of two values.
+        /// </summary>
+        /// <typeparam name="T">Type of the values to compare.</typeparam>
+        /// <param name="a">First value to compare.</param>
+        /// <param name="b">Second value to compare.</param>
+        /// <returns>Larger of both values.</returns>
+        public static T Max<T>(T a, T b) where T : IComparable<T>
+        {
+            return a.CompareTo(b) >= 0 ? a : b;
+        }
+
+        /// <summary>
+        ///   Returns the smaller of two values.
+        /// </summary>
+        /// <typeparam name="T">Type of the values to compare.</typeparam>
+        /// <param name="a">First value to compare.</param>
+        /// <param name="b">Second value to compare.</param>
+        /// <returns>Smaller of both values.</returns>
+        public static T Min<T>(T a, T b) where T : IComparable<T>
+        {
+            return a.CompareTo(b) < 0 ? a : b;
+        }
+
         #endregion
     }
 }
