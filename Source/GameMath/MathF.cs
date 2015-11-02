@@ -29,6 +29,16 @@
         }
 
         /// <summary>
+        ///   Raises e to the specified power.
+        /// </summary>
+        /// <param name="x">Power to raise e to.</param>
+        /// <returns>e raised to the specified power.</returns>
+        public static float Exp(float x)
+        {
+            return (float)Math.Exp(x);
+        }
+
+        /// <summary>
         ///   Linearly interpolates between the two passed values.
         /// </summary>
         /// <param name="f">
@@ -56,6 +66,37 @@
             }
 
             return f + (l * (g - f));
+        }
+
+        /// <summary>
+        ///   Returns the natural (base e) logarithm of the specified number.
+        /// </summary>
+        /// <param name="x">Number of get the natural logarithm of.</param>
+        /// <returns>Natural logarithm of the specified number.</returns>
+        public static float Log(float x)
+        {
+            return (float)Math.Log(x);
+        }
+
+        /// <summary>
+        ///   Returns the base 10 logarithm of the specified number.
+        /// </summary>
+        /// <param name="x">Number to get the base 10 logarithm of.</param>
+        /// <returns>Base 10 logarithm of the specified number.</returns>
+        public static float Log10(float x)
+        {
+            return (float)Math.Log10(x);
+        }
+
+        /// <summary>
+        ///   Returns the passed number raised to the specified power.
+        /// </summary>
+        /// <param name="x">Number to compute the power of.</param>
+        /// <param name="y">Exponent.</param>
+        /// <returns>Passed number raised to the specified power.</returns>
+        public static float Pow(float x, float y)
+        {
+            return (float)Math.Pow(x, y);
         }
 
         /// <summary>
