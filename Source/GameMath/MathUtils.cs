@@ -1,4 +1,10 @@
-﻿namespace GameMath
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="MathUtils.cs" company="Slash Games">
+//   Copyright (c) Slash Games. All rights reserved.
+// </copyright>
+// --------------------------------------------------------------------------------------------------------------------
+
+namespace GameMath
 {
     using System;
 
@@ -36,6 +42,22 @@
             }
 
             return value.CompareTo(max) > 0 ? max : value;
+        }
+
+        /// <summary>
+        ///   Checks whether the passed value is within the specified bounds.
+        /// </summary>
+        /// <typeparam name="T">Type of the values to compare.</typeparam>
+        /// <param name="value">Value to check.</param>
+        /// <param name="min">Minimum allowed value.</param>
+        /// <param name="max">Maximum allowed value.</param>
+        /// <returns>
+        ///   <c>true</c>, if <paramref name="value" /> falls within the specified range, and
+        ///   <c>false</c>, otherwise.
+        /// </returns>
+        public static bool InRange<T>(T value, T min, T max) where T : IComparable<T>
+        {
+            return value.CompareTo(min) >= 0 && value.CompareTo(max) <= 0;
         }
 
         /// <summary>
