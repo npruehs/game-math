@@ -143,69 +143,69 @@
         }
 
         /// <summary>
-        ///   Computes the Euclidean distance between the points at <paramref name="v1" /> and <paramref name="v2" />.
+        ///   Computes the Euclidean distance between the points at <paramref name="p" /> and <paramref name="q" />.
         /// </summary>
-        /// <param name="v1">
+        /// <param name="p">
         ///   First point to compute the distance of.
         /// </param>
-        /// <param name="v2">
+        /// <param name="q">
         ///   Second point to compute the distance of.
         /// </param>
         /// <returns>
         ///   Euclidean distance between the two passed points.
         /// </returns>
-        public static float Distance(Vector2F v1, Vector2F v2)
+        public static float Distance(Vector2F p, Vector2F q)
         {
-            return MathF.Sqrt(DistanceSquared(v1, v2));
+            return MathF.Sqrt(DistanceSquared(p, q));
         }
 
         /// <summary>
-        ///   Computes the Euclidean distance between the points denoted by this vector and <paramref name="v" />.
+        ///   Computes the Euclidean distance between the points denoted by this vector and <paramref name="p" />.
         /// </summary>
-        /// <param name="v">
+        /// <param name="p">
         ///   Point to compute the distance to.
         /// </param>
         /// <returns>
         ///   Euclidean distance between the two points.
         /// </returns>
-        public float Distance(Vector2F v)
+        public float Distance(Vector2F p)
         {
-            return Distance(this, v);
+            return Distance(this, p);
         }
 
         /// <summary>
-        ///   Computes the squared Euclidean distance between the points at <paramref name="v1" /> and <paramref name="v2" />.
+        ///   Computes the squared Euclidean distance between the points at <paramref name="p" /> and <paramref name="q" />.
         ///   Faster than <see cref="Distance(Vector2F, Vector2F)" />.
         /// </summary>
-        /// <param name="v1">
+        /// <param name="p">
         ///   First point to compute the squared distance of.
         /// </param>
-        /// <param name="v2">
+        /// <param name="q">
         ///   Second point to compute the squared distance of.
         /// </param>
         /// <returns>
         ///   Squared Euclidean distance between the two passed points.
         /// </returns>
-        public static float DistanceSquared(Vector2F v1, Vector2F v2)
+        public static float DistanceSquared(Vector2F p, Vector2F q)
         {
-            var distX = v1.x - v2.x;
-            var distY = v1.y - v2.y;
+            var distX = p.x - q.x;
+            var distY = p.y - q.y;
             return (distX * distX) + (distY * distY);
         }
 
         /// <summary>
-        ///   Computes the squared Euclidean distance between the points denoted by this vector and <paramref name="v" />. Faster
+        ///   Computes the squared Euclidean distance between the points denoted by this vector and <paramref name="p" />. Faster
         ///   than <see cref="Distance(Vector2F)" />.
         /// </summary>
-        /// <param name="v">
+        /// <param name="p">
         ///   Point to compute the squared distance to.
         /// </param>
         /// <returns>
         ///   Squared Euclidean distance between the two points.
         /// </returns>
-        public float DistanceSquared(Vector2F v)
+        public float DistanceSquared(Vector2F p)
         {
-            return DistanceSquared(this, v);
+            return DistanceSquared(this, p);
         }
 
         /// <summary>
