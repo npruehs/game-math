@@ -11,9 +11,14 @@
         #region Constants
 
         /// <summary>
-        ///   Vector with all components set to one.
+        ///   Unit vector in direction of the x axis.
         /// </summary>
-        public static readonly Vector2I One = new Vector2I(1, 1);
+        public static readonly Vector2I UnitX = new Vector2I(1, 0);
+
+        /// <summary>
+        ///   Unit vector in direction of the y axis.
+        /// </summary>
+        public static readonly Vector2I UnitY = new Vector2I(0, 1);
 
         /// <summary>
         ///   Null vector.

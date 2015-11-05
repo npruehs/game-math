@@ -11,9 +11,19 @@
         #region Constants
 
         /// <summary>
-        ///   Vector with all components set to one.
+        ///   Unit vector in direction of the x axis.
         /// </summary>
-        public static readonly Vector3F One = new Vector3F(1.0f, 1.0f, 1.0f);
+        public static readonly Vector3F UnitX = new Vector3F(1.0f, 0.0f, 0.0f);
+
+        /// <summary>
+        ///   Unit vector in direction of the y axis.
+        /// </summary>
+        public static readonly Vector3F UnitY = new Vector3F(0.0f, 1.0f, 0.0f);
+
+        /// <summary>
+        ///   Unit vector in direction of the z axis.
+        /// </summary>
+        public static readonly Vector3F UnitZ = new Vector3F(0.0f, 0.0f, 1.0f);
 
         /// <summary>
         ///   Null vector.
