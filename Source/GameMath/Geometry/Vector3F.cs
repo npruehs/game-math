@@ -557,6 +557,36 @@
         }
 
         /// <summary>
+        ///   Implicitly converts the passed vector with integer components to
+        ///   a vector with floating point components.
+        /// </summary>
+        /// <param name="v">Vector to convert.</param>
+        public static implicit operator Vector3F(Vector3I v)
+        {
+            return new Vector3F(v.X, v.Y, v.Z);
+        }
+
+        /// <summary>
+        ///   Implicitly converts the passed two-dimensional vector to
+        ///   a three-dimensional vector by using zero as z component.
+        /// </summary>
+        /// <param name="v">Vector to convert.</param>
+        public static implicit operator Vector3F(Vector2F v)
+        {
+            return new Vector3F(v.X, v.Y, 0.0f);
+        }
+
+        /// <summary>
+        ///   Implicitly converts the passed two-dimensional vector with integer components to
+        ///   a three-dimensional vector with floating point components by using zero as z component.
+        /// </summary>
+        /// <param name="v">Vector to convert.</param>
+        public static implicit operator Vector3F(Vector2I v)
+        {
+            return new Vector3F(v.X, v.Y, 0.0f);
+        }
+
+        /// <summary>
         ///   Compares the passed vectors for inequality.
         /// </summary>
         /// <param name="v1">

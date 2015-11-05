@@ -493,6 +493,16 @@
         }
 
         /// <summary>
+        ///   Implicitly converts the passed vector with integer components to
+        ///   a vector with floating point components.
+        /// </summary>
+        /// <param name="v">Vector to convert.</param>
+        public static implicit operator Vector2F(Vector2I v)
+        {
+            return new Vector2F(v.X, v.Y);
+        }
+
+        /// <summary>
         ///   Compares the passed vectors for inequality.
         /// </summary>
         /// <param name="v1">

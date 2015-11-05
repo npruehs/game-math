@@ -514,6 +514,16 @@
         }
 
         /// <summary>
+        ///   Implicitly converts the passed two-dimensional vector to
+        ///   a three-dimensional vector by using zero as z component.
+        /// </summary>
+        /// <param name="v">Vector to convert.</param>
+        public static implicit operator Vector3I(Vector2I v)
+        {
+            return new Vector3I(v.X, v.Y, 0);
+        }
+
+        /// <summary>
         ///   Compares the passed vectors for inequality.
         /// </summary>
         /// <param name="v1">
