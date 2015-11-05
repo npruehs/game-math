@@ -320,6 +320,38 @@
         }
 
         /// <summary>
+        ///   Sum of the absolute differences of the Cartesian coordinates of this
+        ///   point to the specified one.
+        /// </summary>
+        /// <remarks>
+        ///   https://en.wikipedia.org/wiki/Taxicab_geometry
+        /// </remarks>
+        /// <param name="p">Point to compute the Manhattan distance to.</param>
+        /// <returns>
+        ///   Manhattan distance between both points.
+        /// </returns>
+        public int ManhattanDistance(Vector2I p)
+        {
+            return ManhattanDistance(this, p);
+        }
+
+        /// <summary>
+        ///   Sum of the absolute differences of the Cartesian coordinates of both points.
+        /// </summary>
+        /// <remarks>
+        ///   https://en.wikipedia.org/wiki/Taxicab_geometry
+        /// </remarks>
+        /// <param name="p">First point to compute the Manhattan distance of.</param>
+        /// <param name="q">Second point to compute the Manhattan distance of.</param>
+        /// <returns>
+        ///   Manhattan distance between both points.
+        /// </returns>
+        public static int ManhattanDistance(Vector2I p, Vector2I q)
+        {
+            return Math.Abs(p.X - q.X) + Math.Abs(p.Y - q.Y);
+        }
+
+        /// <summary>
         ///   Multiplies the passed vector with the specified scalar.
         /// </summary>
         /// <param name="v">
