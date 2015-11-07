@@ -15,6 +15,9 @@
         /// <summary>
         ///   Returns an approximation to a straight line between the given points.
         /// </summary>
+        /// <remarks>
+        ///   http://rosettacode.org/wiki/Bitmap/Bresenham's_line_algorithm
+        /// </remarks>
         /// <param name="v0">
         ///   First line endpoint.
         /// </param>
