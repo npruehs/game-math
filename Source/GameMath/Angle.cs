@@ -3,7 +3,7 @@
     using System;
 
     /// <summary>
-    ///   Common math operations on angles.
+    ///   Common math operations on angles in radians.
     /// </summary>
     [CLSCompliant(true)]
     public static class Angle
@@ -12,7 +12,7 @@
 
         /// <summary>
         ///   Inverse of the cos function.
-        ///   Returns the angle whose cosine is the specified number.
+        ///   Returns the angle whose cosine is the specified number, in radians.
         /// </summary>
         /// <param name="x">Number to get the acos of.</param>
         /// <returns>Angle whose cosine is the specified number.</returns>
@@ -23,7 +23,7 @@
 
         /// <summary>
         ///   Inverse of the sin function.
-        ///   Returns the angle whose sine is the specified number.
+        ///   Returns the angle whose sine is the specified number, in radians.
         /// </summary>
         /// <param name="x">Number to get the asin of.</param>
         /// <returns>Angle whose sine is the specified number.</returns>
@@ -34,7 +34,7 @@
 
         /// <summary>
         ///   Inverse of the tan function.
-        ///   Returns the angle whose tangent is the specified number.
+        ///   Returns the angle whose tangent is the specified number, in radians.
         /// </summary>
         /// <param name="x">Number to get the atan of.</param>
         /// <returns>Angle whose tangent is the specified number.</returns>
@@ -44,7 +44,7 @@
         }
 
         /// <summary>
-        ///   Returns the angle whose tangent is the quotient of two specified numbers.
+        ///   Returns the angle whose tangent is the quotient of two specified numbers, in radians.
         /// </summary>
         /// <param name="y">Dividend.</param>
         /// <param name="x">Divisor.</param>
@@ -55,7 +55,7 @@
         }
 
         /// <summary>
-        ///   Returns the cosine of the specified angle.
+        ///   Returns the cosine of the specified angle in radians.
         /// </summary>
         /// <param name="x">Angle to get the cosine of.</param>
         /// <returns>Cosine of the specified angle.</returns>
@@ -65,7 +65,7 @@
         }
 
         /// <summary>
-        ///   Returns the hyperbolic cosine of the specified angle.
+        ///   Returns the hyperbolic cosine of the specified angle in radians.
         /// </summary>
         /// <param name="x">Angle to get the hyperbolic cosine of.</param>
         /// <returns>Hyperbolic cosine of the specified angle.</returns>
@@ -103,7 +103,7 @@
         }
 
         /// <summary>
-        ///   Returns the sine of the specified angle.
+        ///   Returns the sine of the specified angle in radians.
         /// </summary>
         /// <param name="x">Angle to get the sine of.</param>
         /// <returns>Sine of the specified angle.</returns>
@@ -113,7 +113,7 @@
         }
 
         /// <summary>
-        ///   Returns the hyperbolic sine of the specified angle.
+        ///   Returns the hyperbolic sine of the specified angle in radians.
         /// </summary>
         /// <param name="x">Angle to get the hyperbolic sine of.</param>
         /// <returns>Hyperbolic sine of the specified angle.</returns>
@@ -123,7 +123,7 @@
         }
 
         /// <summary>
-        ///   Returns the tangent of the specified angle.
+        ///   Returns the tangent of the specified angle in radians.
         /// </summary>
         /// <param name="x">Angle to get the tangent of.</param>
         /// <returns>Tangent of the specified angle.</returns>
@@ -133,7 +133,7 @@
         }
 
         /// <summary>
-        ///   Returns the hyperbolic tangent of the specified angle.
+        ///   Returns the hyperbolic tangent of the specified angle in radians.
         /// </summary>
         /// <param name="x">Angle to get the hyperbolic tangent of.</param>
         /// <returns>Hyperbolic tangent of the specified angle.</returns>
