@@ -560,6 +560,26 @@
             return string.Format("({0}, {1})", this.x, this.y);
         }
 
+        /// <summary>
+        ///   Returns this vector with its x component changed to the specified value.
+        /// </summary>
+        /// <param name="newX">X component of the new vector.</param>
+        /// <returns>This vector with its x component changed to the specified value. </returns>
+        public Vector2I WithX(int newX)
+        {
+            return new Vector2I(newX, this.Y);
+        }
+
+        /// <summary>
+        ///   Returns this vector with its y component changed to the specified value.
+        /// </summary>
+        /// <param name="newY">Y component of the new vector.</param>
+        /// <returns>This vector with its y component changed to the specified value. </returns>
+        public Vector2I WithY(int newY)
+        {
+            return new Vector2I(this.X, newY);
+        }
+
         #endregion
     }
 }

@@ -696,6 +696,36 @@
             return string.Format("({0}, {1}, {2})", this.x, this.y, this.z);
         }
 
+        /// <summary>
+        ///   Returns this vector with its x component changed to the specified value.
+        /// </summary>
+        /// <param name="newX">X component of the new vector.</param>
+        /// <returns>This vector with its x component changed to the specified value. </returns>
+        public Vector3F WithX(float newX)
+        {
+            return new Vector3F(newX, this.Y, this.Z);
+        }
+
+        /// <summary>
+        ///   Returns this vector with its y component changed to the specified value.
+        /// </summary>
+        /// <param name="newY">Y component of the new vector.</param>
+        /// <returns>This vector with its y component changed to the specified value. </returns>
+        public Vector3F WithY(float newY)
+        {
+            return new Vector3F(this.X, newY, this.Z);
+        }
+
+        /// <summary>
+        ///   Returns this vector with its z component changed to the specified value.
+        /// </summary>
+        /// <param name="newZ">Z component of the new vector.</param>
+        /// <returns>This vector with its z component changed to the specified value. </returns>
+        public Vector3F WithZ(float newZ)
+        {
+            return new Vector3F(this.X, this.Y, newZ);
+        }
+
         #endregion
     }
 }
