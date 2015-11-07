@@ -111,6 +111,28 @@
         }
 
         /// <summary>
+        ///   Two-dimensional vector with the x and y component of this vector.
+        /// </summary>
+        public Vector2F XY
+        {
+            get
+            {
+                return new Vector2F(this.X, this.Y);
+            }
+        }
+
+        /// <summary>
+        ///   Two-dimensional vector with the x and z component of this vector.
+        /// </summary>
+        public Vector2F XZ
+        {
+            get
+            {
+                return new Vector2F(this.X, this.Z);
+            }
+        }
+
+        /// <summary>
         ///   Gets the y-component of this vector.
         /// </summary>
         public float Y
@@ -118,6 +140,17 @@
             get
             {
                 return this.y;
+            }
+        }
+
+        /// <summary>
+        ///   Two-dimensional vector with the y and z component of this vector.
+        /// </summary>
+        public Vector2F YZ
+        {
+            get
+            {
+                return new Vector2F(this.Y, this.Z);
             }
         }
 
