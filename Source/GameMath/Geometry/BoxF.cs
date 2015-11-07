@@ -356,8 +356,8 @@
         /// </returns>
         public bool Contains(Vector3F point)
         {
-            return point.X >= this.Left && point.X < this.Right && point.Y >= this.Top && point.Y < this.Bottom
-                   && point.Z >= this.Front && point.Z < this.Back;
+            return point.X.IsWithinBounds(this.Left, this.Right) && point.Y.IsWithinBounds(this.Top, this.Bottom)
+                   && point.Z.IsWithinBounds(this.Front, this.Back);
         }
 
         /// <summary>

@@ -21,7 +21,7 @@ namespace GameMath.Tests.Utils
             const int Max = 5;
 
             // ACT.
-            var inRange = MathUtils.InRange(X, Min, Max);
+            var inRange = MathUtils.IsWithinBounds(X, Min, Max);
 
             // ASSERT.
             Assert.True(inRange);
@@ -36,7 +36,7 @@ namespace GameMath.Tests.Utils
             const int Max = 5;
 
             // ACT.
-            var inRange = MathUtils.InRange(X, Min, Max);
+            var inRange = MathUtils.IsWithinBounds(X, Min, Max);
 
             // ASSERT.
             Assert.False(inRange);
@@ -51,7 +51,7 @@ namespace GameMath.Tests.Utils
             const int Max = 5;
 
             // ACT.
-            var inRange = MathUtils.InRange(X, Min, Max);
+            var inRange = MathUtils.IsWithinBounds(X, Min, Max);
 
             // ASSERT.
             Assert.False(inRange);

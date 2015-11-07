@@ -1,10 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="MathUtils.cs" company="Slash Games">
-//   Copyright (c) Slash Games. All rights reserved.
-// </copyright>
-// --------------------------------------------------------------------------------------------------------------------
-
-namespace GameMath
+﻿namespace GameMath
 {
     using System;
 
@@ -34,7 +28,7 @@ namespace GameMath
         /// <returns>
         ///   Clamped value.
         /// </returns>
-        public static T Clamp<T>(T value, T min, T max) where T : IComparable<T>
+        public static T Clamp<T>(this T value, T min, T max) where T : IComparable<T>
         {
             if (value.CompareTo(min) < 0)
             {
@@ -55,7 +49,7 @@ namespace GameMath
         ///   <c>true</c>, if <paramref name="value" /> falls within the specified range, and
         ///   <c>false</c>, otherwise.
         /// </returns>
-        public static bool InRange<T>(T value, T min, T max) where T : IComparable<T>
+        public static bool IsWithinBounds<T>(this T value, T min, T max) where T : IComparable<T>
         {
             return value.CompareTo(min) >= 0 && value.CompareTo(max) <= 0;
         }

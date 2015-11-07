@@ -328,7 +328,7 @@
         /// </returns>
         public bool Contains(Vector2F point)
         {
-            return point.X >= this.Left && point.X < this.Right && point.Y >= this.Top && point.Y < this.Bottom;
+            return point.X.IsWithinBounds(this.Left, this.Right) && point.Y.IsWithinBounds(this.Top, this.Bottom);
         }
 
         /// <summary>
