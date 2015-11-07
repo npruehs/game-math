@@ -54,6 +54,19 @@ namespace GameMath.Tests.Utils
             Assert.AreEqual(-Constants.PiOverTwo, delta);
         }
 
+        [Test]
+        public static void TestFromUnitVector()
+        {
+            // ARRANGE.
+            var v = new Vector2F(0.5f, 0.5f);
+
+            // ACT.
+            var angle = Angle.FromVector(v);
+
+            // ASSERT.
+            Assert.AreEqual(Angle.DegreesToRadians(45.0f), angle);
+        }
+
         #endregion
     }
 }
