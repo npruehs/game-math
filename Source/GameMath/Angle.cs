@@ -55,6 +55,18 @@
         }
 
         /// <summary>
+        ///   Returns the angle between the specified vectors in radians.
+        /// </summary>
+        /// <param name="v">First vector.</param>
+        /// <param name="w">Second vector.</param>
+        /// <returns>Angle between the specified vectors in radians.</returns>
+        public static float Between(Vector2F v, Vector2F w)
+        {
+            // http://www.euclideanspace.com/maths/algebra/vectors/angleBetween/index.htm
+            return Atan2(w.Y, w.X) - Atan2(v.Y, v.X);
+        }
+
+        /// <summary>
         ///   Returns the cosine of the specified angle in radians.
         /// </summary>
         /// <param name="x">Angle to get the cosine of.</param>

@@ -55,6 +55,16 @@ namespace GameMath.Tests.Utils
         }
 
         [Test]
+        public static void TestBetweenXAndY()
+        {
+            // ACT.
+            var angle = Angle.Between(Vector2F.UnitX, Vector2F.UnitY);
+
+            // ASSERT.
+            Assert.AreEqual(Angle.DegreesToRadians(90.0f), angle);
+        }
+
+        [Test]
         public static void TestFromUnitVector()
         {
             // ARRANGE.
