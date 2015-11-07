@@ -31,6 +31,11 @@
         public const float PiOverTwo = Pi / 2;
 
         /// <summary>
+        ///   Square of math constant Pi.
+        /// </summary>
+        public const float PiSquared = Pi * Pi;
+
+        /// <summary>
         ///   Sine of 45 degrees.
         /// </summary>
         public const float Sin45 = 0.70710678118654752440084436210485f;
