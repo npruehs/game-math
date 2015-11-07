@@ -5,16 +5,22 @@
     /// <summary>
     ///   Rectangle with integer position and extent.
     ///   Origin is top-left.
+    ///   Note that rectangles are immutable.
     /// </summary>
     [CLSCompliant(true)]
-    public class RectangleI : IEquatable<RectangleI>
+    public struct RectangleI : IEquatable<RectangleI>
     {
         #region Fields
 
         /// <summary>
         ///   Size of this rectangle, its width and height.
         /// </summary>
-        private Vector2I size;
+        private readonly Vector2I size;
+
+        /// <summary>
+        ///   Position of this rectangle.
+        /// </summary>
+        private readonly Vector2I position;
 
         #endregion
 
@@ -85,8 +91,18 @@
         /// </param>
         public RectangleI(Vector2I position, Vector2I size)
         {
-            this.Position = position;
-            this.Size = size;
+            if (size.X < 0)
+            {
+                throw new ArgumentOutOfRangeException("size", "Width must be non-negative.");
+            }
+
+            if (size.Y < 0)
+            {
+                throw new ArgumentOutOfRangeException("size", "Height must be non-negative.");
+            }
+
+            this.position = position;
+            this.size = size;
         }
 
         #endregion
@@ -157,11 +173,6 @@
             {
                 return this.Size.Y;
             }
-
-            set
-            {
-                this.Size = new Vector2I(this.Size.X, value);
-            }
         }
 
         /// <summary>
@@ -176,9 +187,15 @@
         }
 
         /// <summary>
-        ///   Gets or sets the position of this rectangle.
+        ///   Position of this rectangle.
         /// </summary>
-        public Vector2I Position { get; set; }
+        public Vector2I Position
+        {
+            get
+            {
+                return this.position;
+            }
+        }
 
         /// <summary>
         ///   Gets the x-component of the right side of this rectangle.
@@ -199,21 +216,6 @@
             get
             {
                 return this.size;
-            }
-
-            set
-            {
-                if (value.X < 0)
-                {
-                    throw new ArgumentOutOfRangeException("value", "Width must be non-negative.");
-                }
-
-                if (value.Y < 0)
-                {
-                    throw new ArgumentOutOfRangeException("value", "Height must be non-negative.");
-                }
-
-                this.size = value;
             }
         }
 
@@ -259,11 +261,6 @@
             {
                 return this.Size.X;
             }
-
-            set
-            {
-                this.Size = new Vector2I(value, this.Size.Y);
-            }
         }
 
         /// <summary>
@@ -275,11 +272,6 @@
             {
                 return this.Position.X;
             }
-
-            set
-            {
-                this.Position = new Vector2I(value, this.Position.Y);
-            }
         }
 
         /// <summary>
@@ -290,11 +282,6 @@
             get
             {
                 return this.Position.Y;
-            }
-
-            set
-            {
-                this.Position = new Vector2I(this.Position.X, value);
             }
         }
 
@@ -342,16 +329,6 @@
         /// </returns>
         public bool Equals(RectangleI other)
         {
-            if (ReferenceEquals(null, other))
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(this, other))
-            {
-                return true;
-            }
-
             return this.Position.Equals(other.Position) && this.Size.Equals(other.Size);
         }
 
@@ -366,16 +343,6 @@
         /// </returns>
         public override bool Equals(object obj)
         {
-            if (ReferenceEquals(null, obj))
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(this, obj))
-            {
-                return true;
-            }
-
             return obj.GetType() == this.GetType() && this.Equals((RectangleI)obj);
         }
 

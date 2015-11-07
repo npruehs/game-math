@@ -1,15 +1,9 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="LineSegment3I.cs" company="Slash Games">
-//   Copyright (c) Slash Games. All rights reserved.
-// </copyright>
-// --------------------------------------------------------------------------------------------------------------------
-
-namespace GameMath
+﻿namespace GameMath
 {
     using System;
 
     /// <summary>
-    ///   Part of a line that is bounded by two distinct end points.
+    ///   Part of a line that is bounded by two distinct end points. Note that line segments are immutable.
     /// </summary>
     [CLSCompliant(true)]
     public struct LineSegment3I : IEquatable<LineSegment3I>

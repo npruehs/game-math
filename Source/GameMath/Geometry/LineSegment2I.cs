@@ -3,7 +3,7 @@
     using System;
 
     /// <summary>
-    ///   Part of a line that is bounded by two distinct end points.
+    ///   Part of a line that is bounded by two distinct end points. Note that line segments are immutable.
     /// </summary>
     [CLSCompliant(true)]
     public struct LineSegment2I : IEquatable<LineSegment2I>

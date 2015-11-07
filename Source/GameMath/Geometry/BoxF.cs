@@ -5,16 +5,22 @@
     /// <summary>
     ///   Box with floating point position and extents.
     ///   Origin is front-top-left.
+    ///   Note that boxes are immutable.
     /// </summary>
     [CLSCompliant(true)]
-    public class BoxF : IEquatable<BoxF>
+    public struct BoxF : IEquatable<BoxF>
     {
         #region Fields
 
         /// <summary>
         ///   Size of this box, its width, height and depth.
         /// </summary>
-        private Vector3F size;
+        private readonly Vector3F size;
+
+        /// <summary>
+        ///   Position of this box.
+        /// </summary>
+        private readonly Vector3F position;
 
         #endregion
 
@@ -97,8 +103,23 @@
         /// </param>
         public BoxF(Vector3F position, Vector3F size)
         {
-            this.Position = position;
-            this.Size = size;
+            if (size.X < 0)
+            {
+                throw new ArgumentOutOfRangeException("size", "Width must be non-negative.");
+            }
+
+            if (size.Y < 0)
+            {
+                throw new ArgumentOutOfRangeException("size", "Height must be non-negative.");
+            }
+
+            if (size.Z < 0)
+            {
+                throw new ArgumentOutOfRangeException("size", "Depth must be non-negative.");
+            }
+
+            this.position = position;
+            this.size = size;
         }
 
         #endregion
@@ -147,11 +168,6 @@
             {
                 return this.Size.Z;
             }
-
-            set
-            {
-                this.Size = new Vector3F(this.Size.X, this.Size.Y, value);
-            }
         }
 
         /// <summary>
@@ -174,11 +190,6 @@
             {
                 return this.Size.Y;
             }
-
-            set
-            {
-                this.Size = new Vector3F(this.Size.X, value, this.Size.Z);
-            }
         }
 
         /// <summary>
@@ -193,9 +204,15 @@
         }
 
         /// <summary>
-        ///   Gets or sets the position of this box.
+        ///   Position of this box.
         /// </summary>
-        public Vector3F Position { get; set; }
+        public Vector3F Position
+        {
+            get
+            {
+                return this.position;
+            }
+        }
 
         /// <summary>
         ///   Gets the x-component of the right face of this box.
@@ -216,26 +233,6 @@
             get
             {
                 return this.size;
-            }
-
-            set
-            {
-                if (value.X < 0)
-                {
-                    throw new ArgumentOutOfRangeException("value", "Width must be non-negative.");
-                }
-
-                if (value.Y < 0)
-                {
-                    throw new ArgumentOutOfRangeException("value", "Height must be non-negative.");
-                }
-
-                if (value.Z < 0)
-                {
-                    throw new ArgumentOutOfRangeException("value", "Depth must be non-negative.");
-                }
-
-                this.size = value;
             }
         }
 
@@ -270,11 +267,6 @@
             {
                 return this.Size.X;
             }
-
-            set
-            {
-                this.Size = new Vector3F(value, this.Size.Y, this.Size.Z);
-            }
         }
 
         /// <summary>
@@ -285,11 +277,6 @@
             get
             {
                 return this.Position.X;
-            }
-
-            set
-            {
-                this.Position = new Vector3F(value, this.Position.Y, this.Position.Z);
             }
         }
 
@@ -302,11 +289,6 @@
             {
                 return this.Position.Y;
             }
-
-            set
-            {
-                this.Position = new Vector3F(this.Position.X, value, this.Position.Z);
-            }
         }
 
         /// <summary>
@@ -317,11 +299,6 @@
             get
             {
                 return this.Position.Z;
-            }
-
-            set
-            {
-                this.Position = new Vector3F(this.Position.X, this.Position.Y, value);
             }
         }
 
@@ -371,16 +348,6 @@
         /// </returns>
         public bool Equals(BoxF other)
         {
-            if (ReferenceEquals(null, other))
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(this, other))
-            {
-                return true;
-            }
-
             return this.Position.Equals(other.Position) && this.Size.Equals(other.Size);
         }
 
@@ -395,16 +362,6 @@
         /// </returns>
         public override bool Equals(object obj)
         {
-            if (ReferenceEquals(null, obj))
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(this, obj))
-            {
-                return true;
-            }
-
             return obj.GetType() == this.GetType() && this.Equals((BoxF)obj);
         }
 
