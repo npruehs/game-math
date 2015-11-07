@@ -13,14 +13,14 @@
         #region Fields
 
         /// <summary>
-        ///   Size of this box, its width, height and depth.
-        /// </summary>
-        private readonly Vector3I size;
-
-        /// <summary>
         ///   Position of this box.
         /// </summary>
         private readonly Vector3I position;
+
+        /// <summary>
+        ///   Size of this box, its width, height and depth.
+        /// </summary>
+        private readonly Vector3I size;
 
         #endregion
 
@@ -393,6 +393,40 @@
             return (this.Right > other.Left && this.Left < other.Right)
                    && (this.Bottom > other.Top && this.Top < other.Bottom)
                    && (this.Back > other.Front && this.Front < other.Back);
+        }
+
+        /// <summary>
+        ///   Compares the passed boxes for equality.
+        /// </summary>
+        /// <param name="first">
+        ///   First box to compare.
+        /// </param>
+        /// <param name="second">
+        ///   Second box to compare.
+        /// </param>
+        /// <returns>
+        ///   <c>true</c>, if both boxes are equal, and <c>false</c> otherwise.
+        /// </returns>
+        public static bool operator ==(BoxI first, BoxI second)
+        {
+            return first.Equals(second);
+        }
+
+        /// <summary>
+        ///   Compares the passed boxes for inequality.
+        /// </summary>
+        /// <param name="first">
+        ///   First box to compare.
+        /// </param>
+        /// <param name="second">
+        ///   Second box to compare.
+        /// </param>
+        /// <returns>
+        ///   <c>true</c>, if both boxes are not equal, and <c>false</c> otherwise.
+        /// </returns>
+        public static bool operator !=(BoxI first, BoxI second)
+        {
+            return !(first == second);
         }
 
         /// <summary>

@@ -13,14 +13,14 @@
         #region Fields
 
         /// <summary>
-        ///   Size of this rectangle, its width and height.
-        /// </summary>
-        private readonly Vector2F size;
-
-        /// <summary>
         ///   Position of this rectangle.
         /// </summary>
         private readonly Vector2F position;
+
+        /// <summary>
+        ///   Size of this rectangle, its width and height.
+        /// </summary>
+        private readonly Vector2F size;
 
         #endregion
 
@@ -373,6 +373,40 @@
         {
             return (this.Right > other.Left && this.Left < other.Right)
                    && (this.Bottom > other.Top && this.Top < other.Bottom);
+        }
+
+        /// <summary>
+        ///   Compares the passed rectangles for equality.
+        /// </summary>
+        /// <param name="first">
+        ///   First rectangle to compare.
+        /// </param>
+        /// <param name="second">
+        ///   Second rectangle to compare.
+        /// </param>
+        /// <returns>
+        ///   <c>true</c>, if both rectangles are equal, and <c>false</c> otherwise.
+        /// </returns>
+        public static bool operator ==(RectangleF first, RectangleF second)
+        {
+            return first.Equals(second);
+        }
+
+        /// <summary>
+        ///   Compares the passed rectangles for inequality.
+        /// </summary>
+        /// <param name="first">
+        ///   First rectangle to compare.
+        /// </param>
+        /// <param name="second">
+        ///   Second rectangle to compare.
+        /// </param>
+        /// <returns>
+        ///   <c>true</c>, if both rectangles are not equal, and <c>false</c> otherwise.
+        /// </returns>
+        public static bool operator !=(RectangleF first, RectangleF second)
+        {
+            return !(first == second);
         }
 
         /// <summary>

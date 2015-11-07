@@ -135,6 +135,40 @@
         }
 
         /// <summary>
+        ///   Compares the passed line segments for equality.
+        /// </summary>
+        /// <param name="first">
+        ///   First line segment to compare.
+        /// </param>
+        /// <param name="second">
+        ///   Second line segment to compare.
+        /// </param>
+        /// <returns>
+        ///   <c>true</c>, if both line segments are equal, and <c>false</c> otherwise.
+        /// </returns>
+        public static bool operator ==(LineSegment2I first, LineSegment2I second)
+        {
+            return first.Equals(second);
+        }
+
+        /// <summary>
+        ///   Compares the passed line segments for inequality.
+        /// </summary>
+        /// <param name="first">
+        ///   First line segment to compare.
+        /// </param>
+        /// <param name="second">
+        ///   Second line segment to compare.
+        /// </param>
+        /// <returns>
+        ///   <c>true</c>, if both line segments are not equal, and <c>false</c> otherwise.
+        /// </returns>
+        public static bool operator !=(LineSegment2I first, LineSegment2I second)
+        {
+            return !(first == second);
+        }
+
+        /// <summary>
         ///   Returns a <see cref="string" /> representation of this line segment.
         /// </summary>
         /// <returns>
