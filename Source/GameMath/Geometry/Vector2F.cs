@@ -571,6 +571,30 @@
         }
 
         /// <summary>
+        ///   Orthogonally projects <paramref name="v" /> onto a straight line
+        ///   parallel to <paramref name="w" />.
+        /// </summary>
+        /// <param name="v">Vector to project.</param>
+        /// <param name="w">Vector to project onto.</param>
+        /// <returns>Projected vector.</returns>
+        public static Vector2F Project(Vector2F v, Vector2F w)
+        {
+            // https://en.wikipedia.org/wiki/Vector_projection
+            return v.Length * Angle.Cos(Angle.Between(v, w)) * w.Normalize();
+        }
+
+        /// <summary>
+        ///   Orthogonally projects this vector onto a straight line
+        ///   parallel to the specified vector.
+        /// </summary>
+        /// <param name="v">Vector to project onto.</param>
+        /// <returns>Projected vector.</returns>
+        public Vector2F Project(Vector2F v)
+        {
+            return Project(this, v);
+        }
+
+        /// <summary>
         ///   Reflects the passed vector off the plane defined by the specified normal.
         /// </summary>
         /// <param name="v">Vector to reflect.</param>
