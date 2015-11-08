@@ -39,6 +39,7 @@
     <Compile Include="Algorithms\Bresenham.cs" />
     <Compile Include="Angle.cs" />
     <Compile Include="Constants.cs" />
+    <Compile Include="Functions\BallisticTrajectory.cs" />
     <Compile Include="Geometry\BoxF.cs" />
     <Compile Include="Geometry\BoxI.cs" />
     <Compile Include="Geometry\LineSegment2F.cs" />
