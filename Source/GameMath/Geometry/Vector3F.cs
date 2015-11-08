@@ -688,6 +688,28 @@
         }
 
         /// <summary>
+        ///   Reflects the passed vector off the plane defined by the specified normal.
+        /// </summary>
+        /// <param name="v">Vector to reflect.</param>
+        /// <param name="n">Normal of the plane to reflect off.</param>
+        /// <returns>Reflected vector.</returns>
+        public static Vector3F Reflect(Vector3F v, Vector3F n)
+        {
+            // http://www.blitzbasic.com/Community/posts.php?topic=52511
+            return v - (2 * n * Dot(n, v));
+        }
+
+        /// <summary>
+        ///   Reflects this off the plane defined by the specified normal.
+        /// </summary>
+        /// <param name="n">Normal of the plane to reflect off.</param>
+        /// <returns>Reflected vector.</returns>
+        public Vector3F Reflect(Vector3F n)
+        {
+            return Reflect(this, n);
+        }
+
+        /// <summary>
         ///   Subtracts the second vector from the first one.
         /// </summary>
         /// <param name="v1">

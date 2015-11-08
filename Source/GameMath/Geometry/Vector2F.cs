@@ -571,6 +571,28 @@
         }
 
         /// <summary>
+        ///   Reflects the passed vector off the plane defined by the specified normal.
+        /// </summary>
+        /// <param name="v">Vector to reflect.</param>
+        /// <param name="n">Normal of the plane to reflect off.</param>
+        /// <returns>Reflected vector.</returns>
+        public static Vector2F Reflect(Vector2F v, Vector2F n)
+        {
+            // http://www.blitzbasic.com/Community/posts.php?topic=52511
+            return v - (2 * n * Dot(n, v));
+        }
+
+        /// <summary>
+        ///   Reflects this off the plane defined by the specified normal.
+        /// </summary>
+        /// <param name="n">Normal of the plane to reflect off.</param>
+        /// <returns>Reflected vector.</returns>
+        public Vector2F Reflect(Vector2F n)
+        {
+            return Reflect(this, n);
+        }
+
+        /// <summary>
         ///   Rotates this vector counter-clockwise around its origin
         ///   by the specified angle in radians.
         /// </summary>
