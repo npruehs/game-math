@@ -571,6 +571,36 @@
         }
 
         /// <summary>
+        ///   Rotates this vector counter-clockwise around its origin
+        ///   by the specified angle in radians.
+        /// </summary>
+        /// <param name="theta">Angle to rotate by, in radians.</param>
+        /// <returns>Rotated vector.</returns>
+        public Vector2F Rotate(float theta)
+        {
+            return Rotate(this, theta);
+        }
+
+        /// <summary>
+        ///   Rotates the specified vector counter-clockwise around its origin
+        ///   by the specified angle in radians.
+        /// </summary>
+        /// <param name="v">Vector to rotate.</param>
+        /// <param name="theta">Angle to rotate by, in radians.</param>
+        /// <returns>Rotated vector.</returns>
+        public static Vector2F Rotate(Vector2F v, float theta)
+        {
+            // http://stackoverflow.com/questions/4780119/2d-euclidean-vector-rotations
+            var cos = Angle.Cos(theta);
+            var sin = Angle.Sin(theta);
+
+            var newX = v.X * cos - v.Y * sin;
+            var newY = v.X * sin + v.Y * cos;
+
+            return new Vector2F(newX, newY);
+        }
+
+        /// <summary>
         ///   Subtracts the second vector from the first one.
         /// </summary>
         /// <param name="v1">
