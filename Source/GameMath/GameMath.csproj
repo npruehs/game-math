@@ -43,12 +43,15 @@
     <Compile Include="Functions\BallisticTrajectory.cs" />
     <Compile Include="Geometry\BoxF.cs" />
     <Compile Include="Geometry\BoxI.cs" />
+    <Compile Include="Geometry\CircleF.cs" />
     <Compile Include="Geometry\LineSegment2F.cs" />
     <Compile Include="Geometry\LineSegment2I.cs" />
     <Compile Include="Geometry\LineSegment3F.cs" />
     <Compile Include="Geometry\LineSegment3I.cs" />
+    <Compile Include="Geometry\PlaneF.cs" />
     <Compile Include="Geometry\RectangleF.cs" />
     <Compile Include="Geometry\RectangleI.cs" />
+    <Compile Include="Geometry\SphereF.cs" />
     <Compile Include="Geometry\Vector2F.cs" />
     <Compile Include="Geometry\Vector2I.cs" />
     <Compile Include="Geometry\Vector3F.cs" />
