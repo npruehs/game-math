@@ -3,7 +3,7 @@
     using System;
 
     /// <summary>
-    ///   Rectangle with integer position and extent.
+    ///   Axis-aligned rectangle with integer position and extent.
     ///   Origin is top-left.
     ///   Note that rectangles are immutable.
     /// </summary>

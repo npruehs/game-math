@@ -3,7 +3,7 @@
     using System;
 
     /// <summary>
-    ///   Box with floating point position and extents.
+    ///   Axis-aligned box with floating point position and extents.
     ///   Origin is front-top-left.
     ///   Note that boxes are immutable.
     /// </summary>

@@ -3,7 +3,7 @@
     using System;
 
     /// <summary>
-    ///   Box with integer position and extents.
+    ///   Axis-aligned box with integer position and extents.
     ///   Origin is front-top-left.
     ///   Note that boxes are immutable.
     /// </summary>
