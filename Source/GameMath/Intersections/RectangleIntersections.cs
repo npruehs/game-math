@@ -46,6 +46,36 @@
                    && (first.Bottom > second.Top && first.Top < second.Bottom);
         }
 
+        /// <summary>
+        ///   Checks whether the specified rectangle intersects the passed circle.
+        /// </summary>
+        /// <param name="rectangle">
+        ///   Rectangle to check.
+        /// </param>
+        /// <param name="circle">
+        ///   Circle to check.
+        /// </param>
+        /// <returns>
+        ///   <c>true</c>, if rectangle and circle intersect each other, and <c>false</c> otherwise.
+        /// </returns>
+        public static bool Intersects(this RectangleF rectangle, CircleF circle)
+        {
+            // Check if rectangle contains center.
+            if (rectangle.Contains(circle.Center))
+            {
+                return true;
+            }
+
+            // Check each edge.
+            var left = new LineSegment2F(rectangle.TopLeft, rectangle.BottomLeft);
+            var right = new LineSegment2F(rectangle.TopRight, rectangle.BottomRight);
+            var top = new LineSegment2F(rectangle.TopLeft, rectangle.TopRight);
+            var bottom = new LineSegment2F(rectangle.BottomLeft, rectangle.BottomRight);
+
+            return left.Intersects(circle) || right.Intersects(circle) || top.Intersects(circle)
+                   || bottom.Intersects(circle);
+        }
+
         #endregion
     }
 }
