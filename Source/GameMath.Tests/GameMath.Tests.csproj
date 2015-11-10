@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Core\AngleTests.cs" />
     <Compile Include="Core\InRangeTests.cs" />
+    <Compile Include="Intersections\RectangleIntersectionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -49,9 +50,7 @@
       <Name>GameMath</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Intersections\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

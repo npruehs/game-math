@@ -1,4 +1,4 @@
-﻿namespace GameMath.Tests
+﻿namespace GameMath.Tests.Core
 {
     using NUnit.Framework;
 
