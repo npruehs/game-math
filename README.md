@@ -11,8 +11,12 @@ If you're missing anything, we'd love to see it - please refer to the [Contribut
 * Extensive vector structs for ints and floats (e.g. Vector2I, Vector3F)
 * Basic geometric shapes (e.g. RectangleF, LineF)
 * Intersection tests (e.g. line-line, line-circle)
-* Utility methods (e.g. rounding and casting to int)
+* Angle operations (e.g. angle difference, angle between vectors)
+* Advanced operations (e.g. Bresenham, ballistic trajectory)
 * Pseudo-random number generators
+* Utility methods (e.g. rounding and casting to int)
+* Unit tests and references for non-trivial operations
+* Public [API documentation](http://npruehs.de/game-math/api/0.1)
 
 ## Getting GameMath
 
@@ -26,6 +30,14 @@ You can either
 Just import the `GameMath` namespace and you're good to go!
 
     using GameMath;
+
+To get an overview of the library, take a glimpse at the [API documentation](http://npruehs.de/game-math/api/0.1).
+	
+## Remarks
+
+We don't want to impose any kind of coordinate system or origin on your implementation. Thus, we are avoiding property namings like "Right" or "Front", and use "MaxX" or "MaxZ" instead.
+
+For each of our non-trivial implementations, we provide unit tests and references to algorithms. If anything's unclear, feel free to contact us. We'd love to improve our documentation.
 
 ## Development Cycle
 
@@ -52,7 +64,7 @@ After being able to reproduce the issue, we'll look into fixing it immediately.
 
 * [Nick Prühs](https://github.com/npruehs) (Maintainer)
 * [Christian Oeing](https://github.com/coeing)
-* [Heiner Schmidt]
+* [Heiner Schmidt](https://github.com/heinerschmidt)
 
 ## License
 
