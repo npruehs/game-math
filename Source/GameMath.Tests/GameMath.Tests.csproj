@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Core\AngleTests.cs" />
     <Compile Include="Core\InRangeTests.cs" />
+    <Compile Include="Intersections\BoxIntersectionTests.cs" />
     <Compile Include="Intersections\RectangleIntersectionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

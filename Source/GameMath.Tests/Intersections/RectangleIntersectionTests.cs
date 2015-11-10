@@ -10,8 +10,8 @@
         public void TestNotRectangleIntersectsRectangle()
         {
             // ARRANGE.
-            var first = new RectangleF(0.0f, 0.0f, 1.0f, 1.0f);
-            var second = new RectangleF(2.0f, 0.0f, 1.0f, 1.0f);
+            var first = new RectangleF(new Vector2F(0.0f, 0.0f), new Vector2F(1.0f, 1.0f));
+            var second = new RectangleF(new Vector2F(2.0f, 0.0f), new Vector2F(1.0f, 1.0f));
 
             // ASSERT.
             Assert.IsFalse(first.Intersects(second));
@@ -21,8 +21,8 @@
         public void TestRectangleIntersectsRectangle()
         {
             // ARRANGE.
-            var first = new RectangleF(0.0f, 0.0f, 2.0f, 2.0f);
-            var second = new RectangleF(1.0f, 1.0f, 2.0f, 2.0f);
+            var first = new RectangleF(new Vector2F(0.0f, 0.0f), new Vector2F(2.0f, 2.0f));
+            var second = new RectangleF(new Vector2F(1.0f, 1.0f), new Vector2F(2.0f, 2.0f));
 
             // ASSERT.
             Assert.IsTrue(first.Intersects(second));
