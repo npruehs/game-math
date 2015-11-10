@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\AngleTests.cs" />
+    <Compile Include="Core\DirectionTests.cs" />
     <Compile Include="Core\InRangeTests.cs" />
     <Compile Include="Intersections\BoxIntersectionTests.cs" />
     <Compile Include="Intersections\LineIntersectionTests.cs" />
