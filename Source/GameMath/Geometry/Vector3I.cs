@@ -551,6 +551,7 @@
         ///   a three-dimensional vector by using zero as z component.
         /// </summary>
         /// <param name="v">Vector to convert.</param>
+        /// <returns>Passed vector as three-dimensional vector.</returns>
         public static implicit operator Vector3I(Vector2I v)
         {
             return new Vector3I(v.X, v.Y, 0);
