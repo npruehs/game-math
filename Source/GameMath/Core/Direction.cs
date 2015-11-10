@@ -11,28 +11,64 @@
     [Flags]
     public enum Direction
     {
+        /// <summary>
+        ///   No direction.
+        /// </summary>
         None = 0,
 
+        /// <summary>
+        ///   North.
+        /// </summary>
         North = 1 << 0,
 
+        /// <summary>
+        ///   East.
+        /// </summary>
         East = 1 << 1,
 
+        /// <summary>
+        ///   South.
+        /// </summary>
         South = 1 << 2,
 
+        /// <summary>
+        ///   West.
+        /// </summary>
         West = 1 << 3,
 
+        /// <summary>
+        ///   North, east, south and west.
+        /// </summary>
         All = North | East | South | West,
 
+        /// <summary>
+        ///   Northeast.
+        /// </summary>
         NorthEast = North | East,
 
+        /// <summary>
+        ///   Southeast.
+        /// </summary>
         SouthEast = South | East,
 
+        /// <summary>
+        ///   Southwest.
+        /// </summary>
         SouthWest = South | West,
 
+        /// <summary>
+        ///   Northwest.
+        /// </summary>
         NorthWest = North | West,
 
+        /// <summary>
+        ///   West and east.
+        /// </summary>
         Horizontal = West | East,
 
+        /// <summary>
+        ///   North and south.
+        /// </summary>
         Vertical = North | South
     }
 
