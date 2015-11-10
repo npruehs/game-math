@@ -63,6 +63,7 @@
     <Compile Include="Core\MathI.cs" />
     <Compile Include="Core\MathUtils.cs" />
     <Compile Include="Intersections\BoxIntersections.cs" />
+    <Compile Include="Intersections\LineIntersections.cs" />
     <Compile Include="Intersections\RectangleIntersections.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Core\Round.cs" />

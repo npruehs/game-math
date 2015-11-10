@@ -121,6 +121,34 @@
         }
 
         /// <summary>
+        ///   Gets the shortest distance of the specified point to this line segment.
+        /// </summary>
+        /// <param name="point">Point to get the distance of.</param>
+        /// <returns>Shortest distance of the specified point to this line segment.</returns>
+        public float GetDistance(Vector2F point)
+        {
+            // http://stackoverflow.com/questions/849211/shortest-distance-between-a-point-and-a-line-segment
+            // http://stackoverflow.com/users/167531/grumdrig
+            var t = Vector2F.Dot(point - this.P, this.Q - this.P) / this.LengthSquared;
+
+            // Check if point is beyond start (P) of this segment.
+            if (t < 0.0f)
+            {
+                return this.P.Distance(point);
+            }
+
+            // Check if point is beyond end (Q) of this segment.
+            if (t > 1.0f)
+            {
+                return this.Q.Distance(point);
+            }
+
+            // Projection falls onto this segment.
+            var projection = point + t * (this.Q - this.P);
+            return this.P.Distance(projection);
+        }
+
+        /// <summary>
         ///   Gets the hash code of this line segment.
         /// </summary>
         /// <returns>
