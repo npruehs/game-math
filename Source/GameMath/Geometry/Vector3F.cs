@@ -95,7 +95,7 @@
         {
             get
             {
-                return (this.x * this.x) + (this.y * this.y) + (this.z * this.z);
+                return Dot(this, this);
             }
         }
 
@@ -515,15 +515,7 @@
         /// </returns>
         public static Vector3F Normalize(Vector3F v)
         {
-            var lengthSquared = v.LengthSquared;
-            if (MathF.Equals(lengthSquared, 0f) || MathF.Equals(lengthSquared, 1f))
-            {
-                return v;
-            }
-
-            var lengthInverse = 1.0f / MathF.Sqrt(lengthSquared);
-
-            return new Vector3F(v.x * lengthInverse, v.y * lengthInverse, v.z * lengthInverse);
+            return v / v.Length;
         }
 
         /// <summary>
@@ -713,7 +705,7 @@
         public static Vector3F Reflect(Vector3F v, Vector3F n)
         {
             // http://www.blitzbasic.com/Community/posts.php?topic=52511
-            return v - (2 * n * Dot(n, v));
+            return v - (2 * n * (n * v));
         }
 
         /// <summary>

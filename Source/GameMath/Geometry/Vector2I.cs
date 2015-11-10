@@ -81,7 +81,7 @@
         {
             get
             {
-                return (this.x * this.x) + (this.y * this.y);
+                return Dot(this, this);
             }
         }
 
