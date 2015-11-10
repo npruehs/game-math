@@ -24,9 +24,9 @@
         /// </returns>
         public static bool Intersects(this BoxF first, BoxF second)
         {
-            return (first.Right > second.Left && first.Left < second.Right)
-                   && (first.Bottom > second.Top && first.Top < second.Bottom)
-                   && (first.Back > second.Front && first.Front < second.Back);
+            return (first.MaxX > second.X && first.X < second.MaxX)
+                   && (first.MaxY > second.Y && first.Y < second.MaxY)
+                   && (first.MaxZ > second.Z && first.Z < second.MaxZ);
         }
 
         /// <summary>
@@ -43,9 +43,9 @@
         /// </returns>
         public static bool Intersects(this BoxI first, BoxI second)
         {
-            return (first.Right > second.Left && first.Left < second.Right)
-                   && (first.Bottom > second.Top && first.Top < second.Bottom)
-                   && (first.Back > second.Front && first.Front < second.Back);
+            return (first.MaxX > second.X && first.X < second.MaxX)
+                   && (first.MaxY > second.Y && first.Y < second.MaxY)
+                   && (first.MaxZ > second.Z && first.Z < second.MaxZ);
         }
 
         #endregion

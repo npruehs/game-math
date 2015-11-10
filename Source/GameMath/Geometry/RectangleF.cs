@@ -4,7 +4,6 @@
 
     /// <summary>
     ///   Axis-aligned rectangle with floating point position and extent.
-    ///   Origin is top-left.
     ///   Note that rectangles are immutable.
     /// </summary>
     [CLSCompliant(true)]
@@ -121,39 +120,6 @@
         }
 
         /// <summary>
-        ///   Gets the y-component of the bottom side of this rectangle.
-        /// </summary>
-        public float Bottom
-        {
-            get
-            {
-                return this.Position.Y + this.Size.Y;
-            }
-        }
-
-        /// <summary>
-        ///   Gets the position of the bottom left corner of this rectangle.
-        /// </summary>
-        public Vector2F BottomLeft
-        {
-            get
-            {
-                return this.Position + new Vector2F(0f, this.Size.Y);
-            }
-        }
-
-        /// <summary>
-        ///   Gets the position of the bottom right corner of this rectangle.
-        /// </summary>
-        public Vector2F BottomRight
-        {
-            get
-            {
-                return this.Position + this.Size;
-            }
-        }
-
-        /// <summary>
         ///   Gets the position of the center of this rectangle.
         /// </summary>
         public Vector2F Center
@@ -176,13 +142,24 @@
         }
 
         /// <summary>
-        ///   Gets the x-component of the left side of this rectangle.
+        ///   Gets the maximum x-component of this rectangle.
         /// </summary>
-        public float Left
+        public float MaxX
         {
             get
             {
-                return this.Position.X;
+                return this.Position.X + this.Size.X;
+            }
+        }
+
+        /// <summary>
+        ///   Gets the maximum y-component of this rectangle.
+        /// </summary>
+        public float MaxY
+        {
+            get
+            {
+                return this.Position.Y + this.Size.Y;
             }
         }
 
@@ -198,17 +175,6 @@
         }
 
         /// <summary>
-        ///   Gets the x-component of the right side of this rectangle.
-        /// </summary>
-        public float Right
-        {
-            get
-            {
-                return this.Position.X + this.Size.X;
-            }
-        }
-
-        /// <summary>
         ///   Gets or sets the size of this rectangle, its width and height.
         /// </summary>
         public Vector2F Size
@@ -216,39 +182,6 @@
             get
             {
                 return this.size;
-            }
-        }
-
-        /// <summary>
-        ///   Gets the y-component of the top side of this rectangle.
-        /// </summary>
-        public float Top
-        {
-            get
-            {
-                return this.Position.Y;
-            }
-        }
-
-        /// <summary>
-        ///   Gets the position of the top left corner of this rectangle.
-        /// </summary>
-        public Vector2F TopLeft
-        {
-            get
-            {
-                return this.Position;
-            }
-        }
-
-        /// <summary>
-        ///   Gets the position of the top right corner of this rectangle.
-        /// </summary>
-        public Vector2F TopRight
-        {
-            get
-            {
-                return this.Position + new Vector2F(this.Size.X, 0f);
             }
         }
 
@@ -300,8 +233,7 @@
         /// </returns>
         public bool Contains(RectangleF other)
         {
-            return (this.Left <= other.Left && this.Right >= other.Right)
-                   && (this.Top <= other.Top && this.Bottom >= other.Bottom);
+            return (this.X <= other.X && this.MaxX >= other.MaxX) && (this.Y <= other.Y && this.MaxY >= other.MaxY);
         }
 
         /// <summary>
@@ -315,7 +247,7 @@
         /// </returns>
         public bool Contains(Vector2F point)
         {
-            return point.X.IsWithinBounds(this.Left, this.Right) && point.Y.IsWithinBounds(this.Top, this.Bottom);
+            return point.X.IsWithinBounds(this.X, this.MaxX) && point.Y.IsWithinBounds(this.Y, this.MaxY);
         }
 
         /// <summary>

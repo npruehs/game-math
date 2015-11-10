@@ -24,8 +24,8 @@
         /// </returns>
         public static bool Intersects(this RectangleF first, RectangleF second)
         {
-            return (first.Right > second.Left && first.Left < second.Right)
-                   && (first.Bottom > second.Top && first.Top < second.Bottom);
+            return (first.MaxX > second.X && first.X < second.MaxX)
+                   && (first.MaxY > second.Y && first.Y < second.MaxY);
         }
 
         /// <summary>
@@ -42,8 +42,8 @@
         /// </returns>
         public static bool Intersects(this RectangleI first, RectangleI second)
         {
-            return (first.Right > second.Left && first.Left < second.Right)
-                   && (first.Bottom > second.Top && first.Top < second.Bottom);
+            return (first.MaxX > second.X && first.X < second.MaxX)
+                   && (first.MaxY > second.Y && first.Y < second.MaxY);
         }
 
         /// <summary>
@@ -67,10 +67,15 @@
             }
 
             // Check each edge.
-            var left = new LineSegment2F(rectangle.TopLeft, rectangle.BottomLeft);
-            var right = new LineSegment2F(rectangle.TopRight, rectangle.BottomRight);
-            var top = new LineSegment2F(rectangle.TopLeft, rectangle.TopRight);
-            var bottom = new LineSegment2F(rectangle.BottomLeft, rectangle.BottomRight);
+            var topLeft = new Vector2F(rectangle.X, rectangle.Y);
+            var bottomLeft = new Vector2F(rectangle.X, rectangle.MaxY);
+            var topRight = new Vector2F(rectangle.MaxX, rectangle.Y);
+            var bottomRight = new Vector2F(rectangle.MaxX, rectangle.MaxY);
+
+            var left = new LineSegment2F(topLeft, bottomLeft);
+            var right = new LineSegment2F(topRight, bottomRight);
+            var top = new LineSegment2F(topLeft, topRight);
+            var bottom = new LineSegment2F(bottomLeft, bottomRight);
 
             return left.Intersects(circle) || right.Intersects(circle) || top.Intersects(circle)
                    || bottom.Intersects(circle);

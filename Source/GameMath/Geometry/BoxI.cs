@@ -4,7 +4,6 @@
 
     /// <summary>
     ///   Axis-aligned box with integer position and extents.
-    ///   Origin is front-top-left.
     ///   Note that boxes are immutable.
     /// </summary>
     [CLSCompliant(true)]
@@ -127,28 +126,6 @@
         #region Properties
 
         /// <summary>
-        ///   Gets the z-component of the back face of this box.
-        /// </summary>
-        public int Back
-        {
-            get
-            {
-                return this.Position.Z + this.Size.Z;
-            }
-        }
-
-        /// <summary>
-        ///   Gets the y-component of the bottom face of this box.
-        /// </summary>
-        public int Bottom
-        {
-            get
-            {
-                return this.Position.Y + this.Size.Y;
-            }
-        }
-
-        /// <summary>
         ///   Gets the position of the center of this box.
         /// </summary>
         public Vector3I Center
@@ -171,17 +148,6 @@
         }
 
         /// <summary>
-        ///   Gets the z-component of the front face of this box.
-        /// </summary>
-        public int Front
-        {
-            get
-            {
-                return this.Position.Z;
-            }
-        }
-
-        /// <summary>
         ///   Gets or sets the height of this box.
         /// </summary>
         public int Height
@@ -193,13 +159,35 @@
         }
 
         /// <summary>
-        ///   Gets the x-component of the left face of this box.
+        ///   Gets the maximum x-component of this box.
         /// </summary>
-        public int Left
+        public int MaxX
         {
             get
             {
-                return this.Position.X;
+                return this.Position.X + this.Size.X;
+            }
+        }
+
+        /// <summary>
+        ///   Gets the maximum y-component of this box.
+        /// </summary>
+        public int MaxY
+        {
+            get
+            {
+                return this.Position.Y + this.Size.Y;
+            }
+        }
+
+        /// <summary>
+        ///   Gets the maximum z-component of this box.
+        /// </summary>
+        public int MaxZ
+        {
+            get
+            {
+                return this.Position.Z + this.Size.Z;
             }
         }
 
@@ -215,17 +203,6 @@
         }
 
         /// <summary>
-        ///   Gets the x-component of the right face of this box.
-        /// </summary>
-        public int Right
-        {
-            get
-            {
-                return this.Position.X + this.Size.X;
-            }
-        }
-
-        /// <summary>
         ///   Gets or sets the size of this box, its width, height and depth.
         /// </summary>
         public Vector3I Size
@@ -233,17 +210,6 @@
             get
             {
                 return this.size;
-            }
-        }
-
-        /// <summary>
-        ///   Gets the y-component of the top face of this box.
-        /// </summary>
-        public int Top
-        {
-            get
-            {
-                return this.Position.Y;
             }
         }
 
@@ -317,9 +283,8 @@
         /// </returns>
         public bool Contains(BoxI other)
         {
-            return (this.Left <= other.Left && this.Right >= other.Right)
-                   && (this.Top <= other.Top && this.Bottom >= other.Bottom)
-                   && (this.Front <= other.Front && this.Back >= other.Front);
+            return (this.X <= other.X && this.MaxX >= other.MaxX) && (this.Y <= other.Y && this.MaxY >= other.MaxY)
+                   && (this.Z <= other.Z && this.MaxZ >= other.MaxZ);
         }
 
         /// <summary>
@@ -333,8 +298,8 @@
         /// </returns>
         public bool Contains(Vector3I point)
         {
-            return point.X.IsWithinBounds(this.Left, this.Right) && point.Y.IsWithinBounds(this.Top, this.Bottom)
-                   && point.Z.IsWithinBounds(this.Front, this.Back);
+            return point.X.IsWithinBounds(this.X, this.MaxX) && point.Y.IsWithinBounds(this.Y, this.MaxY)
+                   && point.Z.IsWithinBounds(this.Z, this.MaxZ);
         }
 
         /// <summary>
