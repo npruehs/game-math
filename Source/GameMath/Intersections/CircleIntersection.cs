@@ -54,6 +54,23 @@
             return line.Intersects(circle, out first, out second);
         }
 
+        /// <summary>
+        ///   Checks whether the specified circle intersects the passed rectangle.
+        /// </summary>
+        /// <param name="circle">
+        ///   Circle to check.
+        /// </param>
+        /// <param name="rectangle">
+        ///   Rectangle to check.
+        /// </param>
+        /// <returns>
+        ///   <c>true</c>, if circle and rectangle intersect each other, and <c>false</c> otherwise.
+        /// </returns>
+        public static bool Intersects(this CircleF circle, RectangleF rectangle)
+        {
+            return rectangle.Intersects(circle);
+        }
+
         #endregion
     }
 }
