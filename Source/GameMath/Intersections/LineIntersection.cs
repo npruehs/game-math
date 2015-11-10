@@ -6,7 +6,7 @@
     ///   Intersection tests for line segments.
     /// </summary>
     [CLSCompliant(true)]
-    public static class LineIntersections
+    public static class LineIntersection
     {
         #region Public Methods and Operators
 

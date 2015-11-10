@@ -10,42 +10,42 @@
         public static void TestAngleDeltaNegative()
         {
             // ARRANGE.
-            const float A = Constants.PiOverFour;
-            const float B = Constants.PiOverTwo;
+            const float A = Constant.PiOverFour;
+            const float B = Constant.PiOverTwo;
 
             // ACT.
             var delta = Angle.Delta(A, B);
 
             // ASSERT.
-            Assert.AreEqual(-Constants.PiOverFour, delta);
+            Assert.AreEqual(-Constant.PiOverFour, delta);
         }
 
         [Test]
         public static void TestAngleDeltaPositive()
         {
             // ARRANGE.
-            const float A = Constants.PiOverTwo;
-            const float B = Constants.PiOverFour;
+            const float A = Constant.PiOverTwo;
+            const float B = Constant.PiOverFour;
 
             // ACT.
             var delta = Angle.Delta(A, B);
 
             // ASSERT.
-            Assert.AreEqual(Constants.PiOverFour, delta);
+            Assert.AreEqual(Constant.PiOverFour, delta);
         }
 
         [Test]
         public static void TestAngleDeltaWrappedAround()
         {
             // ARRANGE.
-            const float A = Constants.Pi * 3 / 2;
+            const float A = Constant.Pi * 3 / 2;
             const float B = 0;
 
             // ACT.
             var delta = Angle.Delta(A, B);
 
             // ASSERT.
-            Assert.AreEqual(-Constants.PiOverTwo, delta);
+            Assert.AreEqual(-Constant.PiOverTwo, delta);
         }
 
         [Test]

@@ -72,7 +72,7 @@
         {
             get
             {
-                return Constants.Pi * this.Diameter;
+                return Constant.Pi * this.Diameter;
             }
         }
 

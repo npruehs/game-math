@@ -97,7 +97,7 @@
         /// </returns>
         public static float DegreesToRadians(float degrees)
         {
-            return degrees * (Constants.Pi / 180.0f);
+            return degrees * (Constant.Pi / 180.0f);
         }
 
         /// <summary>
@@ -142,7 +142,7 @@
         /// </returns>
         public static float RadiansToDegrees(float degrees)
         {
-            return degrees * (180.0f / Constants.Pi);
+            return degrees * (180.0f / Constant.Pi);
         }
 
         /// <summary>

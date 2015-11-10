@@ -6,7 +6,7 @@
     ///   Common math constants.
     /// </summary>
     [CLSCompliant(true)]
-    public static class Constants
+    public static class Constant
     {
         #region Constants
 
