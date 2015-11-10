@@ -586,6 +586,7 @@
         ///   a vector with floating point components.
         /// </summary>
         /// <param name="v">Vector to convert.</param>
+        /// <returns>Passed vector with floating point components.</returns>
         public static implicit operator Vector3F(Vector3I v)
         {
             return new Vector3F(v.X, v.Y, v.Z);
@@ -596,6 +597,7 @@
         ///   a three-dimensional vector by using zero as z component.
         /// </summary>
         /// <param name="v">Vector to convert.</param>
+        /// <returns>Passed vector as three-dimensional vector.</returns>
         public static implicit operator Vector3F(Vector2F v)
         {
             return new Vector3F(v.X, v.Y, 0.0f);
@@ -606,6 +608,7 @@
         ///   a three-dimensional vector with floating point components by using zero as z component.
         /// </summary>
         /// <param name="v">Vector to convert.</param>
+        /// <returns>Passed vector as three-dimensional vector with floating point components..</returns>
         public static implicit operator Vector3F(Vector2I v)
         {
             return new Vector3F(v.X, v.Y, 0.0f);

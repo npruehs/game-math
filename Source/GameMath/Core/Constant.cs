@@ -11,6 +11,11 @@
         #region Constants
 
         /// <summary>
+        ///   Factor converting angles in degrees to radians.
+        /// </summary>
+        public const float DegreesToRadians = Pi / 180.0f;
+
+        /// <summary>
         ///   Base of the natural logarithm.
         /// </summary>
         public const float E = 2.7182818284590452354f;
@@ -34,6 +39,11 @@
         ///   Square of math constant Pi.
         /// </summary>
         public const float PiSquared = Pi * Pi;
+
+        /// <summary>
+        ///   Factor converting angles in radians to degrees.
+        /// </summary>
+        public const float RadiansToDegrees = 180.0f / Pi;
 
         /// <summary>
         ///   Sine of 45 degrees.
