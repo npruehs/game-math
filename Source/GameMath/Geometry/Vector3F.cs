@@ -637,6 +637,23 @@
         }
 
         /// <summary>
+        ///   Computes the dot product of the two passed vectors.
+        /// </summary>
+        /// <param name="v">
+        ///   First vector to compute the dot product of.
+        /// </param>
+        /// <param name="w">
+        ///   Second vector to compute the dot product of.
+        /// </param>
+        /// <returns>
+        ///   Dot product of the two passed vectors.
+        /// </returns>
+        public static float operator *(Vector3F v, Vector3F w)
+        {
+            return Dot(v, w);
+        }
+
+        /// <summary>
         ///   Multiplies the passed vector with the specified scalar.
         /// </summary>
         /// <param name="v">

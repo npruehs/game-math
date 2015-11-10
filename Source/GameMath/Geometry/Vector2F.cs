@@ -554,6 +554,23 @@
         }
 
         /// <summary>
+        ///   Computes the dot product of the two passed vectors.
+        /// </summary>
+        /// <param name="v">
+        ///   First vector to compute the dot product of.
+        /// </param>
+        /// <param name="w">
+        ///   Second vector to compute the dot product of.
+        /// </param>
+        /// <returns>
+        ///   Dot product of the two passed vectors.
+        /// </returns>
+        public static float operator *(Vector2F v, Vector2F w)
+        {
+            return Dot(v, w);
+        }
+
+        /// <summary>
         ///   Subtracts the second vector from the first one.
         /// </summary>
         /// <param name="v1">
