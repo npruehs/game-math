@@ -66,6 +66,29 @@
         }
 
         /// <summary>
+        ///   Linear distance around the edge of this sphere.
+        /// </summary>
+        public float Circumference
+        {
+            get
+            {
+                return Constants.Pi * this.Diameter;
+            }
+        }
+
+        /// <summary>
+        ///   Length of a straight line segment that passes through the center
+        ///   of this sphere and whose endpoints lie on the sphere.
+        /// </summary>
+        public float Diameter
+        {
+            get
+            {
+                return 2 * this.Radius;
+            }
+        }
+
+        /// <summary>
         ///   Radius of this sphere.
         /// </summary>
         public float Radius
