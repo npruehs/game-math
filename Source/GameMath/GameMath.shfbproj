@@ -45,7 +45,8 @@
     <MissingTags>Summary, Parameter, Returns, AutoDocumentCtors, Namespace, TypeParameter</MissingTags>
     <DocumentationSources>
       <DocumentationSource sourceFile="..\..\Bin\GameMath\AnyCPU\Debug\GameMath.XML" />
-<DocumentationSource sourceFile="..\..\Bin\GameMath\AnyCPU\Debug\GameMath.dll" /></DocumentationSources>
+      <DocumentationSource sourceFile="..\..\Bin\GameMath\AnyCPU\Debug\GameMath.dll" />
+    </DocumentationSources>
     <ProjectSummary>
     </ProjectSummary>
     <NamespaceSummaries>
@@ -53,6 +54,7 @@
     </NamespaceSummaries>
     <ApiFilter>
     </ApiFilter>
+    <FooterText>API documentation generated with Sandcastle Help File Builder.</FooterText>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
 			 the build.  The others are optional common platform types that may appear. -->

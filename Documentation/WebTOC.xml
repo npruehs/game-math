@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpTOC>
 
-  <HelpTOCNode Id="7de191a9-f0d7-46ee-b489-5e48813eb67a" Title="GameMath" Url="html/37d2341d-9120-211b-9f4f-8d3c7edcef1f.htm">
-    <HelpTOCNode Id="1384c88f-cfae-4607-976a-5fee398d6ddf" Title="Angle Class" Url="html/06e252f0-c81e-2aa6-6777-fef649c39df1.htm">
-      <HelpTOCNode Id="0183ffcd-7b51-4a01-bfc9-4c1784285c27" Title="Angle Methods" Url="html/2839d318-12b7-7261-4f86-fcf4a790a521.htm">
+  <HelpTOCNode Id="067c8330-36d8-403e-9726-d0c537c44261" Title="GameMath" Url="html/37d2341d-9120-211b-9f4f-8d3c7edcef1f.htm">
+    <HelpTOCNode Id="33c13da0-0604-446c-acc2-561d65e1e05d" Title="Angle Class" Url="html/06e252f0-c81e-2aa6-6777-fef649c39df1.htm">
+      <HelpTOCNode Id="ecdd88f7-dda2-4c03-aa87-4731388baee5" Title="Angle Methods" Url="html/2839d318-12b7-7261-4f86-fcf4a790a521.htm">
         <HelpTOCNode Title="Acos Method " Url="html/89fe4a4e-5d3a-a309-9a75-590095e72201.htm" />
         <HelpTOCNode Title="Asin Method " Url="html/39902090-6666-762f-59aa-036e9f0cfbab.htm" />
         <HelpTOCNode Title="Atan Method " Url="html/a345679f-dd18-b352-6fe2-50879e16146e.htm" />
@@ -21,23 +21,23 @@
         <HelpTOCNode Title="Tanh Method " Url="html/44b7b545-209c-bc5c-ab5b-a6a005ca9a57.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="0df09151-d8fd-47dc-ac6d-36a00d0e7c53" Title="BallisticTrajectory Class" Url="html/451b6fe8-ee0f-6216-654f-ef67e47333ed.htm">
-      <HelpTOCNode Id="0b33bc8f-31ae-4ab3-bc74-70b73f225c68" Title="BallisticTrajectory Methods" Url="html/e05da552-2d3c-0ee6-fd4f-9951a5e3c262.htm">
+    <HelpTOCNode Id="34d060c7-d576-4f02-bea4-81d335468f0f" Title="BallisticTrajectory Class" Url="html/451b6fe8-ee0f-6216-654f-ef67e47333ed.htm">
+      <HelpTOCNode Id="7e62f34e-c7f9-4430-8437-5f54e426c97e" Title="BallisticTrajectory Methods" Url="html/e05da552-2d3c-0ee6-fd4f-9951a5e3c262.htm">
         <HelpTOCNode Title="AngleOfReach Method " Url="html/2f3b5bd4-290d-6da0-664a-a0739c78ad18.htm" />
         <HelpTOCNode Title="Height Method " Url="html/10ca9588-00b2-9f6f-dae9-75a3fe17f5f8.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="3881fa37-c4e6-4ff9-a0e5-c3a0d629c638" Title="BallisticTrajectory Fields" Url="html/297ffca5-b346-82fe-2507-9bb792d28a33.htm">
+      <HelpTOCNode Id="a7d04882-e921-4771-bb27-da44e9418931" Title="BallisticTrajectory Fields" Url="html/297ffca5-b346-82fe-2507-9bb792d28a33.htm">
         <HelpTOCNode Title="G Field" Url="html/87aaadaf-5223-49fd-e968-1addb854d6b2.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="a6f6a1f2-365a-4fab-9615-2d3e84b26f56" Title="BoxF Structure" Url="html/5c2293ef-0d1c-fbaf-04d0-a20a913451af.htm">
-      <HelpTOCNode Id="e3657413-7056-4f79-903b-68bf63d92ce1" Title="BoxF Constructor " Url="html/e34d3548-ac2a-f8e5-8667-87c5e40c4e7e.htm">
+    <HelpTOCNode Id="a2693b8c-9afa-43c2-8187-4d08310fe48d" Title="BoxF Structure" Url="html/5c2293ef-0d1c-fbaf-04d0-a20a913451af.htm">
+      <HelpTOCNode Id="7373776d-c8d7-48cb-9637-1343a1053ef5" Title="BoxF Constructor " Url="html/e34d3548-ac2a-f8e5-8667-87c5e40c4e7e.htm">
         <HelpTOCNode Title="BoxF Constructor (Vector3F, Vector3F)" Url="html/fc4b8141-97a2-3875-31bf-01ef2c399c1e.htm" />
         <HelpTOCNode Title="BoxF Constructor (Single, Single, Single, Vector3F)" Url="html/f9f6ece3-43e2-984a-8eb3-2d4de068e6cf.htm" />
         <HelpTOCNode Title="BoxF Constructor (Vector3F, Single, Single, Single)" Url="html/553d3310-9645-214f-a94a-824553d3450b.htm" />
         <HelpTOCNode Title="BoxF Constructor (Single, Single, Single, Single, Single, Single)" Url="html/ad1ee449-5a48-3575-8e5d-a32e22560844.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="c9f1a102-0568-4c12-822f-ee00429349e4" Title="BoxF Properties" Url="html/93c8847e-109d-7e41-85f7-4c0886bf39f8.htm">
+      <HelpTOCNode Id="ac055f00-e4f5-4667-800f-a4733d7a0292" Title="BoxF Properties" Url="html/93c8847e-109d-7e41-85f7-4c0886bf39f8.htm">
         <HelpTOCNode Title="Center Property " Url="html/d65b04c5-e76d-36f6-578c-3955e9c29353.htm" />
         <HelpTOCNode Title="Depth Property " Url="html/3a58486b-9665-2844-2a6e-58627e14a950.htm" />
         <HelpTOCNode Title="Height Property " Url="html/1b87570f-197b-24e6-6a08-311a32ce9c8e.htm" />
@@ -52,35 +52,35 @@
         <HelpTOCNode Title="Y Property " Url="html/e61d6e62-ae7f-4bf4-8c5f-07639402bf6b.htm" />
         <HelpTOCNode Title="Z Property " Url="html/9f40eaf4-65fe-3602-e520-73843091e8a1.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="6726c071-8430-4cd0-9c4b-65fab439874f" Title="BoxF Methods" Url="html/d1189fc3-af02-95b4-1c96-5d528095fbdf.htm">
-        <HelpTOCNode Id="03d3da9e-6232-4a16-bc3e-e4afe26d2578" Title="Contains Method " Url="html/5f519757-e7b8-a0c1-7a21-ac67b1dd55f2.htm">
+      <HelpTOCNode Id="1cad5b7a-41b1-42ed-8192-16dfef0bc6b0" Title="BoxF Methods" Url="html/d1189fc3-af02-95b4-1c96-5d528095fbdf.htm">
+        <HelpTOCNode Id="62bc577f-d9d8-4a2b-be1c-498eaabafb93" Title="Contains Method " Url="html/5f519757-e7b8-a0c1-7a21-ac67b1dd55f2.htm">
           <HelpTOCNode Title="Contains Method (BoxF)" Url="html/5419c479-486f-65ea-f2da-811b806b9c74.htm" />
           <HelpTOCNode Title="Contains Method (Vector3F)" Url="html/8e0abe84-5627-3ae6-886b-ca2bfef82cd6.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="a488f27a-7fb5-47f6-8f78-10aac186afcf" Title="Equals Method " Url="html/8a047a0e-01fe-909d-efd4-c02b3180b063.htm">
+        <HelpTOCNode Id="375192f2-9223-45e5-b36d-4f172537257e" Title="Equals Method " Url="html/8a047a0e-01fe-909d-efd4-c02b3180b063.htm">
           <HelpTOCNode Title="Equals Method (Object)" Url="html/c1e4fbfe-e35b-c0a7-1ba3-43ccaa669c06.htm" />
           <HelpTOCNode Title="Equals Method (BoxF)" Url="html/0943887c-e643-4aab-2961-6bd7cbd5c04a.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="GetHashCode Method " Url="html/8197469b-0caf-07ae-13af-6d648e055be8.htm" />
         <HelpTOCNode Title="ToString Method " Url="html/998eafd6-1d07-c766-c5db-1432f4078009.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="9599f9ba-1d63-48c4-be35-3e7f092df768" Title="BoxF Operators" Url="html/360e4696-3b76-c24a-7995-d57a8c5615fb.htm">
+      <HelpTOCNode Id="173acb72-81d8-4dbf-9dba-78b83891a25e" Title="BoxF Operators" Url="html/360e4696-3b76-c24a-7995-d57a8c5615fb.htm">
         <HelpTOCNode Title="Equality Operator " Url="html/83006b15-16b8-5426-9e7e-176b9d10ba68.htm" />
         <HelpTOCNode Title="Inequality Operator " Url="html/71ecab53-a1ce-f4cb-df67-3fa389c50bac.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="2be59dc9-8608-45ce-86d1-de9a75391044" Title="BoxF Fields" Url="html/5a279db8-dd0a-3d32-1914-9a14f5260f17.htm">
+      <HelpTOCNode Id="32da9b01-5830-452c-a5aa-d9d14287ccf4" Title="BoxF Fields" Url="html/5a279db8-dd0a-3d32-1914-9a14f5260f17.htm">
         <HelpTOCNode Title="position Field" Url="html/f5331fc7-1829-1714-3b7e-cfa0a607a901.htm" />
         <HelpTOCNode Title="size Field" Url="html/e3aef205-fdf6-de36-42b7-d0a02634e096.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="54e6ccc7-eb45-4603-8232-3f0e2161d285" Title="BoxI Structure" Url="html/d2bad449-3818-7398-e903-b04d606da302.htm">
-      <HelpTOCNode Id="7bbf4685-dd5b-47ce-9e8e-bf63ae5c4f82" Title="BoxI Constructor " Url="html/0d2d6491-cf0f-2c4c-fc5e-6d00c4f33039.htm">
+    <HelpTOCNode Id="b34b3a6b-fec6-4505-8248-491b88ab9de0" Title="BoxI Structure" Url="html/d2bad449-3818-7398-e903-b04d606da302.htm">
+      <HelpTOCNode Id="38bcd243-b6dd-4a7e-8500-56b39aad3c4d" Title="BoxI Constructor " Url="html/0d2d6491-cf0f-2c4c-fc5e-6d00c4f33039.htm">
         <HelpTOCNode Title="BoxI Constructor (Vector3I, Vector3I)" Url="html/8a99f34c-a254-5052-9299-03e0bcfaa1a0.htm" />
         <HelpTOCNode Title="BoxI Constructor (Int32, Int32, Int32, Vector3I)" Url="html/33898e22-97b4-72f6-51c4-11da21699a70.htm" />
         <HelpTOCNode Title="BoxI Constructor (Vector3I, Int32, Int32, Int32)" Url="html/18ccc0cf-e979-5343-faac-4de6284bca20.htm" />
         <HelpTOCNode Title="BoxI Constructor (Int32, Int32, Int32, Int32, Int32, Int32)" Url="html/a36e0272-c600-134a-517b-0c5ce7598cfb.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="93180d8e-b67c-4a80-a413-f9b12cadd800" Title="BoxI Properties" Url="html/c2d954c4-4de1-8711-9ee2-30c7c6af1167.htm">
+      <HelpTOCNode Id="ee01f290-d31a-45b6-884a-f822a3cbd121" Title="BoxI Properties" Url="html/c2d954c4-4de1-8711-9ee2-30c7c6af1167.htm">
         <HelpTOCNode Title="Center Property " Url="html/47d5d1b5-aa9b-f9ae-114a-81ee4b3400bc.htm" />
         <HelpTOCNode Title="Depth Property " Url="html/3e73c22e-05c9-ed87-6385-d9a7c05d2039.htm" />
         <HelpTOCNode Title="Height Property " Url="html/0b4dd69f-cd84-f8a8-8b8f-7fc6dc2b4d56.htm" />
@@ -95,78 +95,78 @@
         <HelpTOCNode Title="Y Property " Url="html/919b8e6e-ff9e-dcf5-c96c-43824c2963e1.htm" />
         <HelpTOCNode Title="Z Property " Url="html/433de7ae-4314-1d63-f162-d1936403cd1f.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="b345229e-c8d0-4c1b-bea2-18789a23da6d" Title="BoxI Methods" Url="html/3c6411e6-f337-a408-990d-8c2da079a41e.htm">
-        <HelpTOCNode Id="ee8d26bf-2b21-4d6c-aef1-0bff4efe155f" Title="Contains Method " Url="html/bcb4d3a3-5233-2c86-e464-7c9f17b7a53d.htm">
+      <HelpTOCNode Id="48c248ad-f0a6-40eb-991e-d5f50245ba8a" Title="BoxI Methods" Url="html/3c6411e6-f337-a408-990d-8c2da079a41e.htm">
+        <HelpTOCNode Id="9747230b-3b57-4f75-88f2-ee9434d16894" Title="Contains Method " Url="html/bcb4d3a3-5233-2c86-e464-7c9f17b7a53d.htm">
           <HelpTOCNode Title="Contains Method (BoxI)" Url="html/7bfa4c2c-4cc1-f72d-6c26-105bdfaf8fed.htm" />
           <HelpTOCNode Title="Contains Method (Vector3I)" Url="html/9f8e2716-7638-3099-abc1-e699194eb096.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="7a385bed-6748-4ebd-9a7b-3922d893a6c9" Title="Equals Method " Url="html/a041af7c-df47-376a-cbf1-72544c334084.htm">
+        <HelpTOCNode Id="ccd47027-5a43-4f29-bd71-45dd4bc33005" Title="Equals Method " Url="html/a041af7c-df47-376a-cbf1-72544c334084.htm">
           <HelpTOCNode Title="Equals Method (Object)" Url="html/0c4c2d6b-fdf6-9002-a2dc-baa0c23cfdf4.htm" />
           <HelpTOCNode Title="Equals Method (BoxI)" Url="html/75b03a98-6748-4fa7-1873-d29c3870eaf7.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="GetHashCode Method " Url="html/e7fd062c-dde6-7f75-2356-6ca5fe5b105d.htm" />
         <HelpTOCNode Title="ToString Method " Url="html/1fa590a6-3d05-011b-ebc3-867e05a68150.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="8111c51c-ec3d-4a82-b444-b2192ae29aca" Title="BoxI Operators" Url="html/1c01431d-bffb-71f7-6c20-d152cbb06723.htm">
+      <HelpTOCNode Id="b621c28c-1d92-40b1-88ac-31a00f73fe4c" Title="BoxI Operators" Url="html/1c01431d-bffb-71f7-6c20-d152cbb06723.htm">
         <HelpTOCNode Title="Equality Operator " Url="html/f2afebdd-2be7-cd76-2c54-f8dbb5dd6bc0.htm" />
         <HelpTOCNode Title="Inequality Operator " Url="html/05583597-a057-4673-b611-93867bc89166.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="867af73a-c369-4999-bf97-fcfd3e456cb1" Title="BoxI Fields" Url="html/51445071-a4e0-de3a-8c43-a6f111a69052.htm">
+      <HelpTOCNode Id="73e57c30-b567-4fbe-a369-56e9b03a11c0" Title="BoxI Fields" Url="html/51445071-a4e0-de3a-8c43-a6f111a69052.htm">
         <HelpTOCNode Title="position Field" Url="html/1869269a-b295-2c37-6681-bf8d467f1d37.htm" />
         <HelpTOCNode Title="size Field" Url="html/16be046c-00e1-08ab-b07f-e93dbf5c4fd0.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="b24c099a-a21d-45a8-bc45-eaf7cec099ef" Title="BoxIntersection Class" Url="html/6f25eea3-1093-c5f9-67b6-2669ba6158d5.htm">
-      <HelpTOCNode Id="88352fc8-b8ef-4498-bab3-7bfbf4e61911" Title="BoxIntersection Methods" Url="html/2e2b111a-7b27-cb95-cc79-3148ce812586.htm">
-        <HelpTOCNode Id="c5d1f513-009f-4af0-8edf-16656f20d609" Title="Intersects Method " Url="html/09f56df2-9afb-2d9d-42e0-a5da86a038c4.htm">
+    <HelpTOCNode Id="50f51f44-0133-4f6f-94fd-96ba1c5ce7dc" Title="BoxIntersection Class" Url="html/6f25eea3-1093-c5f9-67b6-2669ba6158d5.htm">
+      <HelpTOCNode Id="b22fa2a1-dd62-4e49-afdd-34f765be79df" Title="BoxIntersection Methods" Url="html/2e2b111a-7b27-cb95-cc79-3148ce812586.htm">
+        <HelpTOCNode Id="693ef28a-0f15-4b77-84c8-7a8082425eb9" Title="Intersects Method " Url="html/09f56df2-9afb-2d9d-42e0-a5da86a038c4.htm">
           <HelpTOCNode Title="Intersects Method (BoxF, BoxF)" Url="html/1a736f6d-0116-7783-83d1-d2938eee6662.htm" />
           <HelpTOCNode Title="Intersects Method (BoxI, BoxI)" Url="html/be3f6b98-0247-f003-82ae-de56fdba30a5.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="bdc0570d-59b4-471e-8de1-c677be01ea4b" Title="Bresenham Class" Url="html/abe18502-d53e-92be-37d9-3a1db7718cb9.htm">
-      <HelpTOCNode Id="8450fb37-3c09-473e-b101-6a7847974fe1" Title="Bresenham Methods" Url="html/daa2a6dd-d414-d812-c919-66fda55c511d.htm">
+    <HelpTOCNode Id="24da8b6d-7207-4c73-862b-84fb285ae66c" Title="Bresenham Class" Url="html/abe18502-d53e-92be-37d9-3a1db7718cb9.htm">
+      <HelpTOCNode Id="9914dbeb-a3fd-4b99-abc3-826709c0fe1d" Title="Bresenham Methods" Url="html/daa2a6dd-d414-d812-c919-66fda55c511d.htm">
         <HelpTOCNode Title="Plot Method " Url="html/7ec69ee2-182a-a9b8-984b-95deab18dd76.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="0f4b6e51-490e-43f9-a265-9682c09cf1a6" Title="CircleF Structure" Url="html/1ab226c0-2cc7-83ad-d684-873b489408f9.htm">
+    <HelpTOCNode Id="8b718d98-6f7e-4d9f-b626-f0929e9db4bf" Title="CircleF Structure" Url="html/1ab226c0-2cc7-83ad-d684-873b489408f9.htm">
       <HelpTOCNode Title="CircleF Constructor " Url="html/db156c5c-e75a-3dc1-520a-126f288aa705.htm" />
       <HelpTOCNode Title="CircleF Constructor " Url="html/b16901c9-3437-99fe-816a-d8276bd9267d.htm" />
-      <HelpTOCNode Id="0c6b21bf-eff7-49ea-b53f-b9f6392c3093" Title="CircleF Properties" Url="html/7f10d37e-630c-bfe0-c039-9ab49e3e80a8.htm">
+      <HelpTOCNode Id="6558c5e1-a519-406b-992f-1e8348f33ba1" Title="CircleF Properties" Url="html/7f10d37e-630c-bfe0-c039-9ab49e3e80a8.htm">
         <HelpTOCNode Title="Center Property " Url="html/406be950-feb0-6727-cd7c-557330f238b5.htm" />
         <HelpTOCNode Title="Circumference Property " Url="html/268f9350-ff57-1b2c-dbfb-3f2818f1d25a.htm" />
         <HelpTOCNode Title="Diameter Property " Url="html/15ecef3a-93cf-4e04-9b72-cd1560b66fcf.htm" />
         <HelpTOCNode Title="Radius Property " Url="html/d6ad9859-e307-74a7-7500-9b4829c52618.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="6a08f357-e108-4f3c-8c82-c4c9ab640c39" Title="CircleF Methods" Url="html/2e6fc35e-b93b-6f50-c9d2-388a01f9918b.htm">
-        <HelpTOCNode Id="0c41c6bc-7596-4a92-bb97-b7c14029cb40" Title="Equals Method " Url="html/7bb7cca7-b3f5-ba28-1b1c-a6ca8c1c9029.htm">
+      <HelpTOCNode Id="32e7302f-a6d4-4e5b-8f4f-0e8af24b4ac5" Title="CircleF Methods" Url="html/2e6fc35e-b93b-6f50-c9d2-388a01f9918b.htm">
+        <HelpTOCNode Id="5856be08-52ee-43ee-a880-ff486aef1201" Title="Equals Method " Url="html/7bb7cca7-b3f5-ba28-1b1c-a6ca8c1c9029.htm">
           <HelpTOCNode Title="Equals Method (Object)" Url="html/f96bf199-f6cf-0bee-fd7d-0e32f1856977.htm" />
           <HelpTOCNode Title="Equals Method (CircleF)" Url="html/816e64b3-c6d9-0e4a-bf33-efdea7c1b70c.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="GetHashCode Method " Url="html/6d947328-1727-dc02-dd5e-ba70e2f4a579.htm" />
         <HelpTOCNode Title="ToString Method " Url="html/e2f7a7fa-1f43-9d98-693b-8bb1428ee256.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="29996efd-c808-4d7d-b587-51a554d4e991" Title="CircleF Operators" Url="html/362b9dea-d7d6-cb32-b897-2a371c69928e.htm">
+      <HelpTOCNode Id="93038cc3-778a-49d1-84b8-851e607b3e15" Title="CircleF Operators" Url="html/362b9dea-d7d6-cb32-b897-2a371c69928e.htm">
         <HelpTOCNode Title="Equality Operator " Url="html/a3525b6e-8414-553e-5963-711462659a78.htm" />
         <HelpTOCNode Title="Inequality Operator " Url="html/903d8646-f288-f53d-a191-d465e0269f1d.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="2a2983f6-4993-4a81-b6b7-d30999cbb76b" Title="CircleF Fields" Url="html/94061d6a-f3f8-233c-f5de-42197b595fca.htm">
+      <HelpTOCNode Id="7b82fa2a-f7fe-48b8-8f10-69a88c05c7c7" Title="CircleF Fields" Url="html/94061d6a-f3f8-233c-f5de-42197b595fca.htm">
         <HelpTOCNode Title="center Field" Url="html/98b54d67-3adc-bffb-f127-2ec4375d07da.htm" />
         <HelpTOCNode Title="radius Field" Url="html/97b60bbb-6dd3-ea33-d130-d3c8c2f5383c.htm" />
         <HelpTOCNode Title="UnitCircle Field" Url="html/544a4324-390b-768a-a16f-ab52e7b63f58.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="a59bb212-70cb-4ee6-8a4e-1581048d1e6a" Title="CircleIntersection Class" Url="html/f5dc2174-c7f8-9263-d712-13858fd4b3a5.htm">
-      <HelpTOCNode Id="cc1b32f0-0832-46f1-afe8-0261aafb1ac0" Title="CircleIntersection Methods" Url="html/c0b124d6-e609-33e4-3bb6-c66ca026cf55.htm">
-        <HelpTOCNode Id="cffcb511-d1ed-4c16-b4c4-3797b6ce4b43" Title="Intersects Method " Url="html/0f1577c8-c67a-e254-c8af-004d5527fbe9.htm">
+    <HelpTOCNode Id="b929023f-339d-4fe3-8337-828980abb955" Title="CircleIntersection Class" Url="html/f5dc2174-c7f8-9263-d712-13858fd4b3a5.htm">
+      <HelpTOCNode Id="e24d7b86-3758-43b2-af40-5094880b33d9" Title="CircleIntersection Methods" Url="html/c0b124d6-e609-33e4-3bb6-c66ca026cf55.htm">
+        <HelpTOCNode Id="6a32788d-c70b-4bab-bc0a-3a8b7115cf13" Title="Intersects Method " Url="html/0f1577c8-c67a-e254-c8af-004d5527fbe9.htm">
           <HelpTOCNode Title="Intersects Method (CircleF, LineSegment2F)" Url="html/a9757022-58fa-db5c-3535-42f65a687e0b.htm" />
           <HelpTOCNode Title="Intersects Method (CircleF, RectangleF)" Url="html/ce437599-2821-73dc-5f4a-b51f28ea74df.htm" />
           <HelpTOCNode Title="Intersects Method (CircleF, LineSegment2F, Nullable(Vector2F), Nullable(Vector2F))" Url="html/f2630512-d98c-51b9-c765-5ba8c5f88770.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="21b89a4e-724f-4165-b5eb-6b2b7b0702fe" Title="Constant Class" Url="html/d304598c-cd83-ca78-2098-e0f9eb4ed6e9.htm">
-      <HelpTOCNode Id="a65eb1c0-d171-4828-bd4d-94978774ad38" Title="Constant Fields" Url="html/eb323ebd-6ba0-a5ad-fdfa-74b6e26d47bb.htm">
+    <HelpTOCNode Id="a968fb2a-f9d7-4d40-b0a4-64ab4a2e88b4" Title="Constant Class" Url="html/d304598c-cd83-ca78-2098-e0f9eb4ed6e9.htm">
+      <HelpTOCNode Id="9dc1f405-c2f0-4b15-bbf0-860e907d75c7" Title="Constant Fields" Url="html/eb323ebd-6ba0-a5ad-fdfa-74b6e26d47bb.htm">
         <HelpTOCNode Title="DegreesToRadians Field" Url="html/f7c670f3-afa2-2949-946f-6ef3a6933227.htm" />
         <HelpTOCNode Title="E Field" Url="html/e123f55e-36b7-64b2-3e5c-540251d33d19.htm" />
         <HelpTOCNode Title="Pi Field" Url="html/6032ca64-e5a0-0ca6-2d02-3beb287c03b3.htm" />
@@ -179,8 +179,8 @@
       </HelpTOCNode>
     </HelpTOCNode>
     <HelpTOCNode Title="Direction Enumeration" Url="html/25a4dd52-5db7-d939-7ebb-54d860bc757d.htm" />
-    <HelpTOCNode Id="95f89a80-43a8-41e9-a6a6-f6b397bddddf" Title="Directions Class" Url="html/c68f0989-e520-0aa1-23c1-8aadffa5a1bc.htm">
-      <HelpTOCNode Id="a90ffa4e-06fd-4381-9c04-1d05f964582e" Title="Directions Methods" Url="html/3e035edc-b4b7-97d4-2a48-3a4e63c3389c.htm">
+    <HelpTOCNode Id="bcab0c50-b016-4ea6-a877-81bd6adf4da4" Title="Directions Class" Url="html/c68f0989-e520-0aa1-23c1-8aadffa5a1bc.htm">
+      <HelpTOCNode Id="91eb34be-deb8-4fe5-aac6-1cef89707beb" Title="Directions Methods" Url="html/3e035edc-b4b7-97d4-2a48-3a4e63c3389c.htm">
         <HelpTOCNode Title="All Method " Url="html/2b517152-5eda-b96a-053d-9a1839076b62.htm" />
         <HelpTOCNode Title="Diagonal Method " Url="html/356ca042-1b7f-3ca0-9183-eecbe3b310bc.htm" />
         <HelpTOCNode Title="HorizontalVertical Method " Url="html/d0b080ae-a257-79ba-10fe-c01d32dd7995.htm" />
@@ -190,24 +190,24 @@
         <HelpTOCNode Title="Opposite Method " Url="html/62978078-c3c5-8913-7bd7-8a067ec37d51.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="68828988-3950-4f6f-9954-a9806b433006" Title="LineIntersection Class" Url="html/d3ecaf1b-f03b-55ec-c97e-2e312ff7d772.htm">
-      <HelpTOCNode Id="0ea3ed85-df49-4053-bc68-723da99e278b" Title="LineIntersection Methods" Url="html/032d1118-2caa-29bc-0dc6-816595262da0.htm">
-        <HelpTOCNode Id="f3a9986a-5e17-45cd-a7d5-9d664b9af0e3" Title="Intersects Method " Url="html/53394a8a-dee6-929b-c88b-38fa2bf32ffe.htm">
+    <HelpTOCNode Id="dcd32552-6ac0-4ba6-8fd3-e090914d9662" Title="LineIntersection Class" Url="html/d3ecaf1b-f03b-55ec-c97e-2e312ff7d772.htm">
+      <HelpTOCNode Id="22f222e7-1124-4bd8-bf58-e3880953145f" Title="LineIntersection Methods" Url="html/032d1118-2caa-29bc-0dc6-816595262da0.htm">
+        <HelpTOCNode Id="85c4ffd3-2ef7-4163-96c3-d3e876fff251" Title="Intersects Method " Url="html/53394a8a-dee6-929b-c88b-38fa2bf32ffe.htm">
           <HelpTOCNode Title="Intersects Method (LineSegment2F, CircleF)" Url="html/8f8f0496-04d3-9b78-67cc-dfcc42dac30c.htm" />
           <HelpTOCNode Title="Intersects Method (LineSegment2F, CircleF, Nullable(Vector2F), Nullable(Vector2F))" Url="html/ae804d94-2dc0-fa1b-bb2e-9f260eee7803.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="609646be-ffeb-496a-bc47-c2a486865c68" Title="LineSegment2F Structure" Url="html/69f8c852-3195-19fc-72d5-706faa8ad1f8.htm">
+    <HelpTOCNode Id="73020d19-33d8-4a61-9472-24063233b54e" Title="LineSegment2F Structure" Url="html/69f8c852-3195-19fc-72d5-706faa8ad1f8.htm">
       <HelpTOCNode Title="LineSegment2F Constructor " Url="html/bb5a310f-d131-b556-8659-c09cfe062abb.htm" />
-      <HelpTOCNode Id="72a716f5-24c8-4196-8a23-8a18b390684f" Title="LineSegment2F Properties" Url="html/c957e5d4-9ed4-d667-1e07-6a1f8fd43af6.htm">
+      <HelpTOCNode Id="0062059c-b832-4ff7-974a-0a1cf534f83a" Title="LineSegment2F Properties" Url="html/c957e5d4-9ed4-d667-1e07-6a1f8fd43af6.htm">
         <HelpTOCNode Title="Length Property " Url="html/e5a0bf80-16e9-822b-3f6a-15784f6f3cc8.htm" />
         <HelpTOCNode Title="LengthSquared Property " Url="html/da05240a-2be9-341c-cb59-77b519026875.htm" />
         <HelpTOCNode Title="P Property " Url="html/313aafa5-397e-137c-eb3f-8164aa65910c.htm" />
         <HelpTOCNode Title="Q Property " Url="html/f52115a2-839a-b55e-1d6b-87f6ae559fe5.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="dcc547ef-bae5-4ad8-9c5b-eaef8a62ddaa" Title="LineSegment2F Methods" Url="html/76188d57-1a57-1c40-6f13-b2299c221432.htm">
-        <HelpTOCNode Id="e6104e03-cfff-48cf-bee8-c5e2b877441f" Title="Equals Method " Url="html/b8998f6e-6f4f-a597-17bd-2a4a36c4f16a.htm">
+      <HelpTOCNode Id="998c30ec-c482-4a59-a521-3df96948ef60" Title="LineSegment2F Methods" Url="html/76188d57-1a57-1c40-6f13-b2299c221432.htm">
+        <HelpTOCNode Id="b5a36535-2a0e-4d37-b96e-517fac2578f9" Title="Equals Method " Url="html/b8998f6e-6f4f-a597-17bd-2a4a36c4f16a.htm">
           <HelpTOCNode Title="Equals Method (Object)" Url="html/78477ec4-222d-4890-1314-4be5fe43e7fa.htm" />
           <HelpTOCNode Title="Equals Method (LineSegment2F)" Url="html/c86b6822-2659-6289-8d33-e5b261fbd328.htm" />
         </HelpTOCNode>
@@ -215,98 +215,98 @@
         <HelpTOCNode Title="GetHashCode Method " Url="html/0c9b5ec4-bd00-7461-8eea-41ad5c8e4026.htm" />
         <HelpTOCNode Title="ToString Method " Url="html/00b06c97-1fef-a83e-ebf6-16acb4cf0bfc.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="e0112217-223d-45c8-9dca-7e96c64bdddc" Title="LineSegment2F Operators" Url="html/7fa2b559-bc4e-d983-2379-b9a5165858ab.htm">
+      <HelpTOCNode Id="39977b0a-7e01-4384-bcbc-e3da3e33065e" Title="LineSegment2F Operators" Url="html/7fa2b559-bc4e-d983-2379-b9a5165858ab.htm">
         <HelpTOCNode Title="Equality Operator " Url="html/9d033401-7cc0-df20-ab47-e992a83212d1.htm" />
         <HelpTOCNode Title="Inequality Operator " Url="html/5a0db628-a50d-728a-4e43-3b2f2007d31f.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="535dd61c-b010-4845-af91-7d5590f9c14e" Title="LineSegment2F Fields" Url="html/f50c21d0-b8d8-e159-c27c-b07077b30e66.htm">
+      <HelpTOCNode Id="d758f85e-d56b-4c49-8863-6108cb6fd07f" Title="LineSegment2F Fields" Url="html/f50c21d0-b8d8-e159-c27c-b07077b30e66.htm">
         <HelpTOCNode Title="p Field" Url="html/115e2030-c7b7-b51e-5ada-9a7d1e76833c.htm" />
         <HelpTOCNode Title="q Field" Url="html/30640e08-0c88-520d-0973-b287578d5538.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="15f92e08-9947-4972-a36e-fbb739e2d14b" Title="LineSegment2I Structure" Url="html/964ebec1-09cb-ed80-1c92-710f46bf2bf8.htm">
+    <HelpTOCNode Id="1c704534-1a66-4394-a980-9d050efbb627" Title="LineSegment2I Structure" Url="html/964ebec1-09cb-ed80-1c92-710f46bf2bf8.htm">
       <HelpTOCNode Title="LineSegment2I Constructor " Url="html/da8619ff-9c27-81e0-6c62-66a108db6949.htm" />
-      <HelpTOCNode Id="661e0666-bccb-4b0c-b75e-bc0890fc2111" Title="LineSegment2I Properties" Url="html/dc23197a-3206-7a5e-0b68-9e2afb863c3f.htm">
+      <HelpTOCNode Id="993ff5de-a487-40e5-9be3-0c9e9717bb7d" Title="LineSegment2I Properties" Url="html/dc23197a-3206-7a5e-0b68-9e2afb863c3f.htm">
         <HelpTOCNode Title="Length Property " Url="html/1358e891-2c42-94f0-b449-1209e7c46a9e.htm" />
         <HelpTOCNode Title="LengthSquared Property " Url="html/6a5c4a53-2cc9-c6ab-54ef-f3a599c2f4f8.htm" />
         <HelpTOCNode Title="P Property " Url="html/b8f64d32-011e-6f14-2820-9e879d28e4eb.htm" />
         <HelpTOCNode Title="Q Property " Url="html/183b9050-fb71-59b9-f1fd-da237cc42451.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="7e5ea54b-7d51-4986-9529-d1f3eaadd798" Title="LineSegment2I Methods" Url="html/efbd6af0-b118-5ef6-98ed-190f965959e8.htm">
-        <HelpTOCNode Id="9c7f509e-2f70-49ab-b0a6-660997ccb3ec" Title="Equals Method " Url="html/5c1b386a-39cb-22aa-e793-c369606892ec.htm">
+      <HelpTOCNode Id="82698296-f8a0-495c-9601-e190caa3110b" Title="LineSegment2I Methods" Url="html/efbd6af0-b118-5ef6-98ed-190f965959e8.htm">
+        <HelpTOCNode Id="856d497a-4e68-4728-97c8-8d22071d76c8" Title="Equals Method " Url="html/5c1b386a-39cb-22aa-e793-c369606892ec.htm">
           <HelpTOCNode Title="Equals Method (Object)" Url="html/c193196e-5ccd-b9fa-dbe6-d076507ef678.htm" />
           <HelpTOCNode Title="Equals Method (LineSegment2I)" Url="html/6e005e42-c544-adb9-afd1-06eaa6dad865.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="GetHashCode Method " Url="html/b1134ff6-4c03-e969-aa4a-04972d631de7.htm" />
         <HelpTOCNode Title="ToString Method " Url="html/c1ecb1c0-21e8-d86c-a265-3dede359eb17.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="9ed86db0-db00-4ba5-a15f-13eafef4e5a3" Title="LineSegment2I Operators" Url="html/8fbdfb2f-5466-3c1c-bf17-d64640d6fd97.htm">
+      <HelpTOCNode Id="15b553fb-a3db-48ca-9589-96c3840df967" Title="LineSegment2I Operators" Url="html/8fbdfb2f-5466-3c1c-bf17-d64640d6fd97.htm">
         <HelpTOCNode Title="Equality Operator " Url="html/0e8bc03c-cf80-491f-a6bf-10ea9d383c18.htm" />
         <HelpTOCNode Title="Inequality Operator " Url="html/5300b633-4318-1cd6-c3d4-bc4508272b39.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="846c5bd9-ad3a-4b05-840c-7f1c1ba31674" Title="LineSegment2I Fields" Url="html/d2bcac07-1e6f-634d-27cd-ec50f3122212.htm">
+      <HelpTOCNode Id="3e6d1e08-5f92-4870-81ac-030cf35b1a55" Title="LineSegment2I Fields" Url="html/d2bcac07-1e6f-634d-27cd-ec50f3122212.htm">
         <HelpTOCNode Title="p Field" Url="html/33c47b5f-492b-0c06-47c7-c967a1499317.htm" />
         <HelpTOCNode Title="q Field" Url="html/d7fc48c0-a83d-ac8f-94cd-5f5ffb414097.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="3e2516dc-7f99-4eb8-97e7-3968458a2d7c" Title="LineSegment3F Structure" Url="html/e46532f5-5947-0cad-bfd1-c084329d22a1.htm">
+    <HelpTOCNode Id="ccc5289d-ab86-4030-95f3-fbcb49345b86" Title="LineSegment3F Structure" Url="html/e46532f5-5947-0cad-bfd1-c084329d22a1.htm">
       <HelpTOCNode Title="LineSegment3F Constructor " Url="html/f1c5683b-0c42-0c95-62ed-967c879a475b.htm" />
-      <HelpTOCNode Id="6a5642aa-8fe1-44c5-8f15-68d86a327469" Title="LineSegment3F Properties" Url="html/23ad44f7-6956-e6f9-a391-e286c790c887.htm">
+      <HelpTOCNode Id="0f02148d-190b-48e2-a069-23bb76312a74" Title="LineSegment3F Properties" Url="html/23ad44f7-6956-e6f9-a391-e286c790c887.htm">
         <HelpTOCNode Title="Length Property " Url="html/7a63d902-cda9-b51a-b607-b7d70cc41557.htm" />
         <HelpTOCNode Title="LengthSquared Property " Url="html/1a6f73e7-83e7-f2db-b98a-9e00442bc02c.htm" />
         <HelpTOCNode Title="P Property " Url="html/b8a0fc13-e667-af26-bf96-24c97de7900d.htm" />
         <HelpTOCNode Title="Q Property " Url="html/d394fc0b-e525-b64e-3557-3085d618bcd1.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="72df54f3-175d-4b92-9d6c-729e16902f4e" Title="LineSegment3F Methods" Url="html/022f5e69-e7aa-f411-48cc-56a4ea8aa06c.htm">
-        <HelpTOCNode Id="ce6ab1be-4a93-401f-8071-c83544dc9d7f" Title="Equals Method " Url="html/df9fe02d-922a-3539-9c80-d761f4ab2e47.htm">
+      <HelpTOCNode Id="f0cd6a9e-60da-4b57-96f4-5cb6af6bd26b" Title="LineSegment3F Methods" Url="html/022f5e69-e7aa-f411-48cc-56a4ea8aa06c.htm">
+        <HelpTOCNode Id="0c633634-9a30-45b3-a29e-2339f22a85f8" Title="Equals Method " Url="html/df9fe02d-922a-3539-9c80-d761f4ab2e47.htm">
           <HelpTOCNode Title="Equals Method (Object)" Url="html/08ce05e5-0e73-379a-2c7e-ee5a6307e071.htm" />
           <HelpTOCNode Title="Equals Method (LineSegment3F)" Url="html/b7a9cf29-8d94-de4e-dfcb-7070a3f0f371.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="GetHashCode Method " Url="html/f3f5627f-aed9-04e8-99b2-7de8e0af9b6c.htm" />
         <HelpTOCNode Title="ToString Method " Url="html/15a98507-0543-0d98-462b-c9207784b70f.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="abd8ceef-a87c-4c5f-b48e-92fa5e2c5271" Title="LineSegment3F Operators" Url="html/d0905a90-8df1-fcac-8d8b-68108477923d.htm">
+      <HelpTOCNode Id="b93fce41-f834-4528-825b-e2f5ca47fdad" Title="LineSegment3F Operators" Url="html/d0905a90-8df1-fcac-8d8b-68108477923d.htm">
         <HelpTOCNode Title="Equality Operator " Url="html/f94ac014-d671-9cd3-1f69-ae497121daff.htm" />
         <HelpTOCNode Title="Inequality Operator " Url="html/f7372dca-9c92-b255-d6f1-d0eda287377a.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="ef011c8f-f2e3-42ec-987d-af0955b5f7c3" Title="LineSegment3F Fields" Url="html/2412c642-2e10-949b-1619-9bdd51ff1fc3.htm">
+      <HelpTOCNode Id="4a6c7d0d-ef93-44c2-887d-e4411f9cfdf4" Title="LineSegment3F Fields" Url="html/2412c642-2e10-949b-1619-9bdd51ff1fc3.htm">
         <HelpTOCNode Title="p Field" Url="html/a8cabb8c-e35b-9641-534b-3d16b924f66a.htm" />
         <HelpTOCNode Title="q Field" Url="html/551dca2e-913f-ee41-d491-5a576a9c62f5.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="f58ae591-aa23-4848-ba72-1c48a8f0afa9" Title="LineSegment3I Structure" Url="html/4d3700b7-f9a3-ba1c-f1b9-8ed2e72de0ac.htm">
+    <HelpTOCNode Id="f76fc411-c363-4c55-8731-de8e6efd1992" Title="LineSegment3I Structure" Url="html/4d3700b7-f9a3-ba1c-f1b9-8ed2e72de0ac.htm">
       <HelpTOCNode Title="LineSegment3I Constructor " Url="html/300bd997-9d5c-1276-4453-96fc057d1c76.htm" />
-      <HelpTOCNode Id="b120218d-cfab-43f7-ac09-2bbba5a84c49" Title="LineSegment3I Properties" Url="html/4fa3db38-32a9-260b-5e0c-4dac795c6f37.htm">
+      <HelpTOCNode Id="727fe4cd-0a6e-4adc-808c-d83628d20649" Title="LineSegment3I Properties" Url="html/4fa3db38-32a9-260b-5e0c-4dac795c6f37.htm">
         <HelpTOCNode Title="Length Property " Url="html/260a7937-ac66-5417-cfab-908ac9e66ad6.htm" />
         <HelpTOCNode Title="LengthSquared Property " Url="html/b2fae4f0-9f4c-6a7a-f2d7-735caa345286.htm" />
         <HelpTOCNode Title="P Property " Url="html/02cd2711-3468-2692-cffa-bdf5b018a49b.htm" />
         <HelpTOCNode Title="Q Property " Url="html/99493971-6618-d18c-ff8a-90cb59182b52.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="fb23ba83-8c08-497e-a7b2-f9356e8923d3" Title="LineSegment3I Methods" Url="html/2df00034-8df5-a100-7edb-fae9a84d02a5.htm">
-        <HelpTOCNode Id="3a3a3f92-ce9a-4aa2-8115-c58c2de7e099" Title="Equals Method " Url="html/f4fad2da-1941-d431-f19b-0099a7d2aa4e.htm">
+      <HelpTOCNode Id="ed01c2c1-98b2-44d8-9c8c-7d48a28687d8" Title="LineSegment3I Methods" Url="html/2df00034-8df5-a100-7edb-fae9a84d02a5.htm">
+        <HelpTOCNode Id="76b556f5-165a-48a1-a4a0-8225afe92db2" Title="Equals Method " Url="html/f4fad2da-1941-d431-f19b-0099a7d2aa4e.htm">
           <HelpTOCNode Title="Equals Method (Object)" Url="html/5aff6f9e-eb13-3321-1ba2-a9cccac8e873.htm" />
           <HelpTOCNode Title="Equals Method (LineSegment3I)" Url="html/fc490e1f-a145-6bd1-c7ca-40eef223ccb1.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="GetHashCode Method " Url="html/c2b65ffd-66e0-6d0a-28c7-d74684188f3c.htm" />
         <HelpTOCNode Title="ToString Method " Url="html/210112a6-1de4-291b-93b0-d7b79d701812.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="9c035223-6930-4595-881d-0676f21bc19c" Title="LineSegment3I Operators" Url="html/0a012f51-dc0a-47d0-9001-1275cf4256f8.htm">
+      <HelpTOCNode Id="3f107bf5-bcac-475b-95b7-047d5e22dbd3" Title="LineSegment3I Operators" Url="html/0a012f51-dc0a-47d0-9001-1275cf4256f8.htm">
         <HelpTOCNode Title="Equality Operator " Url="html/2811af85-71b0-e9f7-7872-65cdd5eeb4a2.htm" />
         <HelpTOCNode Title="Inequality Operator " Url="html/11abb0ed-8061-513d-6ab0-24fdb5db896e.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="b3119b16-7071-45b3-b62f-4bb1bbf2481a" Title="LineSegment3I Fields" Url="html/20ad596e-48c2-a9b5-92ad-2e9a994c3ed9.htm">
+      <HelpTOCNode Id="f8330067-8e5a-4f45-8253-ac3e95baf9e3" Title="LineSegment3I Fields" Url="html/20ad596e-48c2-a9b5-92ad-2e9a994c3ed9.htm">
         <HelpTOCNode Title="p Field" Url="html/d97586d6-8786-d18d-41ee-00f72d4cd5de.htm" />
         <HelpTOCNode Title="q Field" Url="html/0bffa464-24c2-643a-0472-fd3eff556765.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="fd6cbe98-61b3-4e39-a65c-3e1873130b23" Title="MathD Class" Url="html/dbb29181-6aa8-8644-ce8b-0a2fe9367bf2.htm">
-      <HelpTOCNode Id="d3571138-9478-4b25-9c8f-ca6914ea43ed" Title="MathD Methods" Url="html/5a478115-81dd-e010-f31f-e4ea2bcbf2ee.htm">
+    <HelpTOCNode Id="699ea71e-1f9e-4c10-8c25-8cba65050e96" Title="MathD Class" Url="html/dbb29181-6aa8-8644-ce8b-0a2fe9367bf2.htm">
+      <HelpTOCNode Id="480912f1-2ecc-41e6-b729-e17661adcf2b" Title="MathD Methods" Url="html/5a478115-81dd-e010-f31f-e4ea2bcbf2ee.htm">
         <HelpTOCNode Title="Equals Method " Url="html/8679b43d-94e3-7784-bf4a-31e57a32371f.htm" />
         <HelpTOCNode Title="Lerp Method " Url="html/682fec0d-fd85-ec03-0eda-21d013aa8310.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="64c9c592-2979-4d14-a788-eecd4f7665aa" Title="MathF Class" Url="html/83914df2-1369-ee2b-865c-6ca04f1eb6f0.htm">
-      <HelpTOCNode Id="dddaf604-d37f-432e-86c8-4a21d9d60b64" Title="MathF Methods" Url="html/be113087-c497-7124-b9ac-36cf4d06853c.htm">
+    <HelpTOCNode Id="d8e08b13-eaa2-47a6-bf76-c7627f8ed641" Title="MathF Class" Url="html/83914df2-1369-ee2b-865c-6ca04f1eb6f0.htm">
+      <HelpTOCNode Id="323e4fae-8921-4527-a2de-336bfde76349" Title="MathF Methods" Url="html/be113087-c497-7124-b9ac-36cf4d06853c.htm">
         <HelpTOCNode Title="Equals Method " Url="html/92724afa-be92-2029-d1f3-8bbe2ebac834.htm" />
         <HelpTOCNode Title="Exp Method " Url="html/0e45915d-7b6c-6ab8-e3f9-df96936068b7.htm" />
         <HelpTOCNode Title="Lerp Method " Url="html/07f19cb9-b6d0-a748-85fc-cfb1df7a0f42.htm" />
@@ -316,39 +316,39 @@
         <HelpTOCNode Title="Sqrt Method " Url="html/99187d6c-dbff-094d-1eeb-3e383e92b012.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="f49d195c-ea92-491b-b3b7-8c26298caf9d" Title="MathI Class" Url="html/bec656fc-ac33-a382-9ab0-db19c3cb6332.htm">
-      <HelpTOCNode Id="ce5ab082-a2c0-47d2-9cb6-65029dbe3b3e" Title="MathI Methods" Url="html/1274c190-a62b-fe24-667c-081a53c2cb98.htm">
+    <HelpTOCNode Id="ee43f817-52c1-4eb0-9f41-cafa698d78b8" Title="MathI Class" Url="html/bec656fc-ac33-a382-9ab0-db19c3cb6332.htm">
+      <HelpTOCNode Id="c5d713d4-8146-415e-9d89-fee3ac041ca6" Title="MathI Methods" Url="html/1274c190-a62b-fe24-667c-081a53c2cb98.htm">
         <HelpTOCNode Title="GetBit Method " Url="html/de858c1f-36a0-9b40-0c97-581800111dc2.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="535904c9-bc7c-4949-a412-e726d63f4b6a" Title="MathUtils Class" Url="html/e9e1b0bc-5da2-bf36-c304-1ba7b95df0ea.htm">
-      <HelpTOCNode Id="7cd80939-14b2-4d2c-947e-c69d02c18962" Title="MathUtils Methods" Url="html/27e08e12-53df-ae0d-8162-223910b857e1.htm">
+    <HelpTOCNode Id="c20f58ce-8d5d-4284-a703-e46b29587244" Title="MathUtils Class" Url="html/e9e1b0bc-5da2-bf36-c304-1ba7b95df0ea.htm">
+      <HelpTOCNode Id="9c5404e4-8f2f-4139-8d7d-3f0fce29970e" Title="MathUtils Methods" Url="html/27e08e12-53df-ae0d-8162-223910b857e1.htm">
         <HelpTOCNode Title="Clamp(T) Method " Url="html/b156230c-d4f0-2ba5-04f8-0b66b8ddce86.htm" />
         <HelpTOCNode Title="IsWithinBounds(T) Method " Url="html/46512607-7cbe-01e8-3c06-6ff4867833ec.htm" />
         <HelpTOCNode Title="Max(T) Method " Url="html/fee248ea-683d-5f05-1c63-1e1541b1c9b4.htm" />
         <HelpTOCNode Title="Min(T) Method " Url="html/af0481cb-d08c-63db-7b31-ccf72ff7e2a7.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="a64c0ab5-8dd8-49d7-be58-9104739144fe" Title="PlaneF Structure" Url="html/e77901ab-0e43-97fa-3f8d-a8b821ec2e4c.htm">
+    <HelpTOCNode Id="28c4f956-68bb-4cf7-9669-a8568882b191" Title="PlaneF Structure" Url="html/e77901ab-0e43-97fa-3f8d-a8b821ec2e4c.htm">
       <HelpTOCNode Title="PlaneF Constructor " Url="html/41a7b018-d127-3c94-e479-b149522d1f8b.htm" />
       <HelpTOCNode Title="PlaneF Constructor " Url="html/9a725318-a4d3-542b-632d-e383a3424c26.htm" />
-      <HelpTOCNode Id="1e5df8e8-dfe1-4306-ab75-7f94aa1d1123" Title="PlaneF Properties" Url="html/5a8cc0f3-6153-c27c-5c3d-e00bc40f3770.htm">
+      <HelpTOCNode Id="52328161-46b1-455b-90e2-853546fca7a3" Title="PlaneF Properties" Url="html/5a8cc0f3-6153-c27c-5c3d-e00bc40f3770.htm">
         <HelpTOCNode Title="Normal Property " Url="html/20bd56bc-d643-4ed7-c735-97239691b436.htm" />
         <HelpTOCNode Title="Point Property " Url="html/153232eb-1c45-6aa3-104b-1aa8fd9bd395.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="0a52bb74-fe0b-40d9-bc9e-14685610c844" Title="PlaneF Methods" Url="html/1018538a-50b7-ed67-8953-b8d17e92a6d2.htm">
-        <HelpTOCNode Id="3dfb92b4-5358-4f03-ac28-3859547b080a" Title="Equals Method " Url="html/ceb34a50-ea6c-7b2d-9e01-c3422f2f909f.htm">
+      <HelpTOCNode Id="e45ccb6b-35bd-4f50-816f-4761fe486c38" Title="PlaneF Methods" Url="html/1018538a-50b7-ed67-8953-b8d17e92a6d2.htm">
+        <HelpTOCNode Id="99f2eb9c-a966-4fc7-9d2d-3e265b00a586" Title="Equals Method " Url="html/ceb34a50-ea6c-7b2d-9e01-c3422f2f909f.htm">
           <HelpTOCNode Title="Equals Method (Object)" Url="html/d2b22357-7f15-c002-c534-cd57a0994171.htm" />
           <HelpTOCNode Title="Equals Method (PlaneF)" Url="html/912b53c5-e2af-f7ec-2648-7b116ad88fa4.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="GetHashCode Method " Url="html/cb87f56d-fac1-d1c4-07f6-fb5153b8acb2.htm" />
         <HelpTOCNode Title="ToString Method " Url="html/2151c05b-4f19-48fd-c8b4-dd63fc55092b.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="e9ee8649-d843-4b2d-bb7a-2e748c85104c" Title="PlaneF Operators" Url="html/43a44761-a7a4-ef47-70a5-d75de052fd09.htm">
+      <HelpTOCNode Id="cb07daf1-23a2-4d04-8dcb-3f4fa2e59bde" Title="PlaneF Operators" Url="html/43a44761-a7a4-ef47-70a5-d75de052fd09.htm">
         <HelpTOCNode Title="Equality Operator " Url="html/7942592d-6a86-6e0e-71b5-0a4cc22d8a21.htm" />
         <HelpTOCNode Title="Inequality Operator " Url="html/0408812f-7cc8-bb34-f99f-51fe9d6c8bfb.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="c1c39296-f798-49de-a85a-ab0bad1a08c0" Title="PlaneF Fields" Url="html/b01fbe3c-08d7-fc13-173a-d682ce809d43.htm">
+      <HelpTOCNode Id="153315e0-20c7-465e-9e36-416812948b17" Title="PlaneF Fields" Url="html/b01fbe3c-08d7-fc13-173a-d682ce809d43.htm">
         <HelpTOCNode Title="normal Field" Url="html/ae846692-8cce-2819-c8ad-f952182d79e4.htm" />
         <HelpTOCNode Title="point Field" Url="html/011faafe-aa02-efe4-7623-d661a3fb4c5c.htm" />
         <HelpTOCNode Title="XYPlane Field" Url="html/6e3a0ad7-a824-9f9f-6590-645ea0fba68e.htm" />
@@ -356,28 +356,28 @@
         <HelpTOCNode Title="YZPlane Field" Url="html/cd554e21-592d-7301-c6f2-e76d413cb395.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="5090ead2-4a3c-47bf-8b77-57bb60020242" Title="Random2 Class" Url="html/c8ab105a-8f26-86bb-deb1-13a95370aa52.htm">
-      <HelpTOCNode Id="6655c11a-3567-4c57-a076-0bc150e392e1" Title="Random2 Constructor " Url="html/bef64ae0-79bb-0134-b9c8-2dd9913e864b.htm">
+    <HelpTOCNode Id="939f4244-6bd4-4c4c-8685-dd16770050cc" Title="Random2 Class" Url="html/c8ab105a-8f26-86bb-deb1-13a95370aa52.htm">
+      <HelpTOCNode Id="d2e8244a-daf8-4c6d-9312-9d63fa285a7c" Title="Random2 Constructor " Url="html/bef64ae0-79bb-0134-b9c8-2dd9913e864b.htm">
         <HelpTOCNode Title="Random2 Constructor " Url="html/3be4658b-2e21-2bdb-99a9-b64a651c2c1a.htm" />
         <HelpTOCNode Title="Random2 Constructor (Int64)" Url="html/c055f2e7-6fae-caaf-9b39-0375d4b23082.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="0060d8e1-dfc8-4123-8da4-be203e803880" Title="Random2 Properties" Url="html/d7044eb0-62f4-9aa4-6728-ad9b57164929.htm">
+      <HelpTOCNode Id="59706d37-cf87-44f8-8340-0a1c3ff21b61" Title="Random2 Properties" Url="html/d7044eb0-62f4-9aa4-6728-ad9b57164929.htm">
         <HelpTOCNode Title="Seed Property " Url="html/cbc53cc9-61bf-cdbe-811a-5959c5660828.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="b63fbfa8-c883-40a1-bf98-6cab925a1680" Title="Random2 Methods" Url="html/a2b6f3be-8b30-8d80-8518-03859182bdc9.htm">
+      <HelpTOCNode Id="626cf26b-82ed-4033-bee0-87cbae0aa2bf" Title="Random2 Methods" Url="html/a2b6f3be-8b30-8d80-8518-03859182bdc9.htm">
         <HelpTOCNode Title="NextDouble Method " Url="html/e4be36c5-4542-5f0b-7164-fb6de78264d5.htm" />
         <HelpTOCNode Title="NextFloat Method " Url="html/fd6e347b-541b-4056-4d71-cc534bbbf9d5.htm" />
-        <HelpTOCNode Id="c0897529-a197-42c6-9e0b-df38747d4c17" Title="NextInt Method " Url="html/156d888a-8229-1785-5d34-aecdc0f78fea.htm">
+        <HelpTOCNode Id="c74b7607-673b-4118-9646-b6cfe2be844b" Title="NextInt Method " Url="html/156d888a-8229-1785-5d34-aecdc0f78fea.htm">
           <HelpTOCNode Title="NextInt Method " Url="html/854d3bc0-3ed2-963e-9b66-b94e41665129.htm" />
           <HelpTOCNode Title="NextInt Method (Int32)" Url="html/ce4cc82e-b24a-b7b9-1970-01f0decb6e96.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="e84c29a2-5a3f-4baa-8bca-757fee1699b6" Title="NextLong Method " Url="html/03927e33-d5a6-b70d-9898-cd4a656df0c2.htm">
+        <HelpTOCNode Id="03a56095-e069-4602-8906-9f48f954eccc" Title="NextLong Method " Url="html/03927e33-d5a6-b70d-9898-cd4a656df0c2.htm">
           <HelpTOCNode Title="NextLong Method " Url="html/4465c507-e269-5b20-9f47-70ddf3568467.htm" />
           <HelpTOCNode Title="NextLong Method (Int64)" Url="html/19eb0eaf-d59e-5fc2-4f78-3213dbd76aa3.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="NextULong Method " Url="html/b619be90-e154-2240-8f47-25a35a800a5f.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="d358bdd8-3ab8-48a4-93f3-c3b23c459491" Title="Random2 Fields" Url="html/3de6b67a-766b-dbee-977b-4a51fcbae084.htm">
+      <HelpTOCNode Id="c87d8650-f24e-4ba8-8df7-42ab29337fe4" Title="Random2 Fields" Url="html/3de6b67a-766b-dbee-977b-4a51fcbae084.htm">
         <HelpTOCNode Title="A Field" Url="html/d56a6522-10d8-9bf6-d6d7-525603bfd713.htm" />
         <HelpTOCNode Title="A1 Field" Url="html/c502e17d-1971-dcb2-2ef3-f5a55ad5b258.htm" />
         <HelpTOCNode Title="A2 Field" Url="html/689c1193-c06f-ead4-4628-dcb5aafde6ac.htm" />
@@ -386,14 +386,14 @@
         <HelpTOCNode Title="v Field" Url="html/cf426b9a-045c-8d16-b13b-7b0fe70bd86d.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="4d985c5e-31ce-4e7e-85f7-756cb90acada" Title="Ray2F Structure" Url="html/7df2eeec-47ab-bf43-18a4-2aafa2c948b2.htm">
+    <HelpTOCNode Id="dc784c34-741c-4dcd-8cfa-84476a47fc05" Title="Ray2F Structure" Url="html/7df2eeec-47ab-bf43-18a4-2aafa2c948b2.htm">
       <HelpTOCNode Title="Ray2F Constructor " Url="html/6c33fc12-1c14-5484-66bf-efc90f74972a.htm" />
-      <HelpTOCNode Id="9de95dda-5584-40a3-b03b-58b978422407" Title="Ray2F Properties" Url="html/2f91131c-9986-ba9b-3e10-0788acfda176.htm">
+      <HelpTOCNode Id="d8d03ba9-75c6-49ae-988e-cf150a56f5e2" Title="Ray2F Properties" Url="html/2f91131c-9986-ba9b-3e10-0788acfda176.htm">
         <HelpTOCNode Title="Direction Property " Url="html/fd54c5d9-2722-7afb-16ee-c0cf4ff1b5b4.htm" />
         <HelpTOCNode Title="Origin Property " Url="html/8db1909d-7a0c-c814-bc7e-6b82fa6f8dde.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="8d1ded63-45aa-44ab-a259-20ee3e35cb5b" Title="Ray2F Methods" Url="html/56aeed20-baa4-b1ec-d83a-a83721a720c8.htm">
-        <HelpTOCNode Id="801fa32e-95aa-422c-9031-8dd6adf91752" Title="Equals Method " Url="html/2fa9c00f-fcbf-2ec6-c871-d9e3dc3318d8.htm">
+      <HelpTOCNode Id="336e2a32-7a62-4875-822d-baff9babf1ac" Title="Ray2F Methods" Url="html/56aeed20-baa4-b1ec-d83a-a83721a720c8.htm">
+        <HelpTOCNode Id="b4b76750-efcb-4185-83a4-554558ab947c" Title="Equals Method " Url="html/2fa9c00f-fcbf-2ec6-c871-d9e3dc3318d8.htm">
           <HelpTOCNode Title="Equals Method (Object)" Url="html/19d581fc-04a2-6ef3-615a-60817ac317fb.htm" />
           <HelpTOCNode Title="Equals Method (Ray2F)" Url="html/5220d7d3-2e75-0554-0d12-ed3c0df3f9f9.htm" />
         </HelpTOCNode>
@@ -401,23 +401,23 @@
         <HelpTOCNode Title="GetPoint Method " Url="html/3aa91501-fb99-f426-bc59-cae7208ad667.htm" />
         <HelpTOCNode Title="ToString Method " Url="html/eed2b609-d724-cf56-3f02-9159a994a23a.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="fdb0c786-105b-4c5e-9c42-e0a2315da67b" Title="Ray2F Operators" Url="html/6ac94a5b-f6d6-be57-6512-fede205562b5.htm">
+      <HelpTOCNode Id="6c1a1718-d25c-4d18-96e3-980a28235148" Title="Ray2F Operators" Url="html/6ac94a5b-f6d6-be57-6512-fede205562b5.htm">
         <HelpTOCNode Title="Equality Operator " Url="html/f322b5be-be0a-0c92-fd9e-bd00d85aad59.htm" />
         <HelpTOCNode Title="Inequality Operator " Url="html/f73e610f-ddee-df86-217b-23a6720210b8.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="a5c5824b-bbcd-4e2e-a839-4ad28a4dbf9b" Title="Ray2F Fields" Url="html/82948dc4-0a7a-dd3b-7272-15b0b2fbd9e4.htm">
+      <HelpTOCNode Id="8d350bae-bb36-4e53-b123-87ae3e2d8300" Title="Ray2F Fields" Url="html/82948dc4-0a7a-dd3b-7272-15b0b2fbd9e4.htm">
         <HelpTOCNode Title="direction Field" Url="html/a773d68e-1232-419a-62c8-4af6cf1c8ff0.htm" />
         <HelpTOCNode Title="origin Field" Url="html/a27dd728-7f0d-0320-ebac-4cba1480f493.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="887f5dd1-fccd-4958-a465-186be31e48f3" Title="Ray3F Structure" Url="html/d940b269-efc3-43e9-f07a-220d870e4126.htm">
+    <HelpTOCNode Id="d088dec6-cbe8-46f9-8ed4-eb45671557eb" Title="Ray3F Structure" Url="html/d940b269-efc3-43e9-f07a-220d870e4126.htm">
       <HelpTOCNode Title="Ray3F Constructor " Url="html/591d6178-c772-5292-5ac9-18f606eb3b1d.htm" />
-      <HelpTOCNode Id="49afcc00-ff2f-4035-8dcf-52f091304a42" Title="Ray3F Properties" Url="html/70755087-eec1-afe4-ac73-74c5823e28b3.htm">
+      <HelpTOCNode Id="87542ab3-20aa-48b5-a713-d0b74081d93a" Title="Ray3F Properties" Url="html/70755087-eec1-afe4-ac73-74c5823e28b3.htm">
         <HelpTOCNode Title="Direction Property " Url="html/eac10c9d-65b9-e4f8-7971-1492e4a816ce.htm" />
         <HelpTOCNode Title="Origin Property " Url="html/e7c81e45-7063-2acd-76c2-a3e27e5db56f.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="53faf242-728b-4886-a650-85d88785b250" Title="Ray3F Methods" Url="html/4710b930-952b-3437-e354-f24e4d8e8709.htm">
-        <HelpTOCNode Id="07c02f45-01d6-457b-8839-37d5516d6626" Title="Equals Method " Url="html/1ecf0173-611b-3dea-1d1e-eb13ac6b0281.htm">
+      <HelpTOCNode Id="fdb6d1bb-0cad-4cbf-80b1-3396aa8a06fb" Title="Ray3F Methods" Url="html/4710b930-952b-3437-e354-f24e4d8e8709.htm">
+        <HelpTOCNode Id="85612b73-a85c-4feb-aa7b-0f8fe12f0ed0" Title="Equals Method " Url="html/1ecf0173-611b-3dea-1d1e-eb13ac6b0281.htm">
           <HelpTOCNode Title="Equals Method (Object)" Url="html/408df242-4c90-d0a9-675a-9e896e3bfd83.htm" />
           <HelpTOCNode Title="Equals Method (Ray3F)" Url="html/5a17b85d-d300-7555-e8b9-5f445e4b053b.htm" />
         </HelpTOCNode>
@@ -425,23 +425,23 @@
         <HelpTOCNode Title="GetPoint Method " Url="html/97b4c532-e070-5c8a-47c6-61a2b8ee49a1.htm" />
         <HelpTOCNode Title="ToString Method " Url="html/581bea8d-5da9-3b2c-5782-c71680a4e23c.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="9f0ad88f-f845-410c-8d47-f5b93ece12ef" Title="Ray3F Operators" Url="html/2b0d4f51-d19c-8c0e-70e4-5242baa0f62e.htm">
+      <HelpTOCNode Id="e2576ce8-16a2-4c31-a29d-9194610521dd" Title="Ray3F Operators" Url="html/2b0d4f51-d19c-8c0e-70e4-5242baa0f62e.htm">
         <HelpTOCNode Title="Equality Operator " Url="html/8e00d9ae-a914-81b2-0b2e-edf37dca7979.htm" />
         <HelpTOCNode Title="Inequality Operator " Url="html/0a1059e2-e925-49d9-fea4-e6c6228c5d1f.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="5441e375-9931-49f4-a190-bf3f406f99a7" Title="Ray3F Fields" Url="html/768ad370-cfc9-8b84-abd8-fa8dc7c80b7d.htm">
+      <HelpTOCNode Id="ce27d92f-609b-46e1-b62f-b2bd7fd486f4" Title="Ray3F Fields" Url="html/768ad370-cfc9-8b84-abd8-fa8dc7c80b7d.htm">
         <HelpTOCNode Title="direction Field" Url="html/276dded3-cc74-0701-4f46-a7a07f2bf0d6.htm" />
         <HelpTOCNode Title="origin Field" Url="html/f64201a6-7996-82f5-3aa0-3d852fea0ede.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="593e5ccf-d25f-41ae-80a2-b083ce154b09" Title="RectangleF Structure" Url="html/8728f3c3-6df1-9c05-ac20-890856c8b268.htm">
-      <HelpTOCNode Id="f4b3eb65-1dc6-403b-b42d-a0ba54eb883a" Title="RectangleF Constructor " Url="html/8b0567a4-01f9-8f87-43d9-a676de631169.htm">
+    <HelpTOCNode Id="9d2cc93b-36f6-4b1e-8596-487b896a1f5c" Title="RectangleF Structure" Url="html/8728f3c3-6df1-9c05-ac20-890856c8b268.htm">
+      <HelpTOCNode Id="43fb2766-2f0f-44e3-807e-c67d1678f54e" Title="RectangleF Constructor " Url="html/8b0567a4-01f9-8f87-43d9-a676de631169.htm">
         <HelpTOCNode Title="RectangleF Constructor (Vector2F, Vector2F)" Url="html/2d41ec12-3707-33fc-83ff-4ee412384670.htm" />
         <HelpTOCNode Title="RectangleF Constructor (Single, Single, Vector2F)" Url="html/bf0fe2d4-cbd5-6d7d-234d-6412a0ca018f.htm" />
         <HelpTOCNode Title="RectangleF Constructor (Vector2F, Single, Single)" Url="html/97abb909-460d-9d01-df44-3e96e5691677.htm" />
         <HelpTOCNode Title="RectangleF Constructor (Single, Single, Single, Single)" Url="html/d1f29ca0-7fc5-366c-a067-def4b4945849.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="0f0b63fd-4003-4f9b-9812-0fb2f3069bec" Title="RectangleF Properties" Url="html/7edb870b-c75d-49c5-2c9e-d7a4d53eb409.htm">
+      <HelpTOCNode Id="ce54e2a7-32b3-486c-93de-676ff09f4197" Title="RectangleF Properties" Url="html/7edb870b-c75d-49c5-2c9e-d7a4d53eb409.htm">
         <HelpTOCNode Title="Area Property " Url="html/25029e24-444f-76d8-3493-4bd64d2d34b9.htm" />
         <HelpTOCNode Title="Center Property " Url="html/221c6f44-8627-dcaf-e3a6-c895e97a70a7.htm" />
         <HelpTOCNode Title="Height Property " Url="html/8297763a-9418-6788-c0ab-2e5633f0d4e2.htm" />
@@ -453,35 +453,35 @@
         <HelpTOCNode Title="X Property " Url="html/5c7894ee-e133-98a1-ba5a-2a91a4a0ed2b.htm" />
         <HelpTOCNode Title="Y Property " Url="html/1a4901fa-9493-8c15-0306-949fef8b2e4c.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="2e38c516-40d3-45cb-a692-dba5f3cc72fb" Title="RectangleF Methods" Url="html/786b72cb-1824-99c4-a2e4-fd631be37387.htm">
-        <HelpTOCNode Id="30aecfb6-2f10-4c43-83e1-cdb072e39c34" Title="Contains Method " Url="html/5a4b3e30-5808-73e1-8bdc-feaf9eb8ace2.htm">
+      <HelpTOCNode Id="3622023f-22cb-426d-b2aa-50f6f9ca6a8e" Title="RectangleF Methods" Url="html/786b72cb-1824-99c4-a2e4-fd631be37387.htm">
+        <HelpTOCNode Id="2a931896-aeba-4c8f-91e1-950ebcc6f1bf" Title="Contains Method " Url="html/5a4b3e30-5808-73e1-8bdc-feaf9eb8ace2.htm">
           <HelpTOCNode Title="Contains Method (RectangleF)" Url="html/2033424f-e9cd-a984-327f-d96690550462.htm" />
           <HelpTOCNode Title="Contains Method (Vector2F)" Url="html/825e4519-5a61-75cd-4181-95d067cf63ab.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="b8118294-8a02-4f12-9e0a-f69ed64e9461" Title="Equals Method " Url="html/2baade65-395d-2296-8fe1-e7a2a78a0c6f.htm">
+        <HelpTOCNode Id="8601eed5-67f1-4ab5-8db2-9e74bc0953d1" Title="Equals Method " Url="html/2baade65-395d-2296-8fe1-e7a2a78a0c6f.htm">
           <HelpTOCNode Title="Equals Method (Object)" Url="html/26c78272-db85-bc47-2909-e575b32279ab.htm" />
           <HelpTOCNode Title="Equals Method (RectangleF)" Url="html/63898df5-73ee-e109-4432-8eee003ac944.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="GetHashCode Method " Url="html/73e097b1-ca75-bab8-cd85-d3f1cc0d4dfd.htm" />
         <HelpTOCNode Title="ToString Method " Url="html/a3def772-4a6f-942c-462d-6617a5b275df.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="722b2d57-a5f0-40c0-9528-67cbd2b500a4" Title="RectangleF Operators" Url="html/b7609261-be89-2d85-5687-ecd2750b1c15.htm">
+      <HelpTOCNode Id="ddb6257e-150e-4ffe-b484-9880c6ef0c17" Title="RectangleF Operators" Url="html/b7609261-be89-2d85-5687-ecd2750b1c15.htm">
         <HelpTOCNode Title="Equality Operator " Url="html/e36288ad-9e03-6658-9efe-cb9489201783.htm" />
         <HelpTOCNode Title="Inequality Operator " Url="html/1acd2021-213e-cc79-4d86-0486a7794dd9.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="89b5b96c-cbf5-4eb7-9560-c64e673bf4cc" Title="RectangleF Fields" Url="html/5b9c2bf0-645e-66df-dfaf-bd408d2439ba.htm">
+      <HelpTOCNode Id="8ecd0d1b-c47f-4d53-bfcc-18084f2ebf61" Title="RectangleF Fields" Url="html/5b9c2bf0-645e-66df-dfaf-bd408d2439ba.htm">
         <HelpTOCNode Title="position Field" Url="html/62cd4749-45c4-098c-3fff-44b4e273bb01.htm" />
         <HelpTOCNode Title="size Field" Url="html/1ca153db-fe11-5225-b8c5-fd04c87be2ca.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="e455cdc1-4d53-449f-96dd-e6bc1b754db7" Title="RectangleI Structure" Url="html/66be06f7-4354-f6d9-a42c-ce709eaf961a.htm">
-      <HelpTOCNode Id="112a167b-7031-4ace-a53d-dc309d5a8e23" Title="RectangleI Constructor " Url="html/39f16802-ec4a-557c-6116-16cac35bc7b5.htm">
+    <HelpTOCNode Id="5924567c-a027-4ac0-ad0e-610ef56aa591" Title="RectangleI Structure" Url="html/66be06f7-4354-f6d9-a42c-ce709eaf961a.htm">
+      <HelpTOCNode Id="cdd5d48c-c06f-4c20-8e53-b6330889f2cf" Title="RectangleI Constructor " Url="html/39f16802-ec4a-557c-6116-16cac35bc7b5.htm">
         <HelpTOCNode Title="RectangleI Constructor (Vector2I, Vector2I)" Url="html/f78beaed-8756-4d0d-97ec-a5e679383e56.htm" />
         <HelpTOCNode Title="RectangleI Constructor (Int32, Int32, Vector2I)" Url="html/4b0cf911-11cf-070d-9f8d-9c858d961b3a.htm" />
         <HelpTOCNode Title="RectangleI Constructor (Vector2I, Int32, Int32)" Url="html/7ed7285c-0a40-0a61-7a62-c79d8d88782b.htm" />
         <HelpTOCNode Title="RectangleI Constructor (Int32, Int32, Int32, Int32)" Url="html/1e646e68-7dec-d374-9f23-8aac0d0363aa.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="ab44e0ae-540a-44fd-973a-638738946828" Title="RectangleI Properties" Url="html/e9de58c7-46f9-5fff-6d84-e3d3a0619db5.htm">
+      <HelpTOCNode Id="a930ebaa-f7e9-49d5-be25-8cdf1b4ee314" Title="RectangleI Properties" Url="html/e9de58c7-46f9-5fff-6d84-e3d3a0619db5.htm">
         <HelpTOCNode Title="Area Property " Url="html/064a5f3e-e35f-0983-8d02-4bf16500b8f2.htm" />
         <HelpTOCNode Title="Center Property " Url="html/c5e59a61-5acb-dedc-1a88-6c4b335b04d2.htm" />
         <HelpTOCNode Title="Height Property " Url="html/51c94416-0df6-7a9f-dab8-b646a59f8fe1.htm" />
@@ -493,132 +493,132 @@
         <HelpTOCNode Title="X Property " Url="html/8f894ed5-38fd-299f-b3c1-948f0c2f838a.htm" />
         <HelpTOCNode Title="Y Property " Url="html/ec840cb3-f03c-3bc8-ac9c-a27575ae7f51.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="8a1b95d4-b284-4dba-b658-64e3e1309cd8" Title="RectangleI Methods" Url="html/ca1f3264-b26b-0b83-cee7-2be8fd5bae3c.htm">
-        <HelpTOCNode Id="303b4906-e649-486e-869d-bae4fbf10e18" Title="Contains Method " Url="html/bb5a4877-6936-d324-87f2-09d1b42cd6c7.htm">
+      <HelpTOCNode Id="bed8921e-33ee-489a-a3d4-388d77fb6e44" Title="RectangleI Methods" Url="html/ca1f3264-b26b-0b83-cee7-2be8fd5bae3c.htm">
+        <HelpTOCNode Id="60fd2da2-66f8-4bde-9068-c328353d79ac" Title="Contains Method " Url="html/bb5a4877-6936-d324-87f2-09d1b42cd6c7.htm">
           <HelpTOCNode Title="Contains Method (RectangleI)" Url="html/4f85f734-e70f-b1f5-b350-fa7e05717e20.htm" />
           <HelpTOCNode Title="Contains Method (Vector2I)" Url="html/505e39fa-042d-baf8-5d50-83fa519454e4.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="341281cf-3211-44cd-b27c-447abd156646" Title="Equals Method " Url="html/490c219d-5a80-c643-6217-aba8cfd4ea7e.htm">
+        <HelpTOCNode Id="7ef36dd2-75d6-4e19-b768-f75fbe75a964" Title="Equals Method " Url="html/490c219d-5a80-c643-6217-aba8cfd4ea7e.htm">
           <HelpTOCNode Title="Equals Method (Object)" Url="html/925363fb-4d38-4046-7d5f-158552b9d2f9.htm" />
           <HelpTOCNode Title="Equals Method (RectangleI)" Url="html/71848644-681c-8f97-0288-67e9c6b427b8.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="GetHashCode Method " Url="html/0fca6584-d926-aa26-06f7-5d2009e98a68.htm" />
         <HelpTOCNode Title="ToString Method " Url="html/9514c34c-93f6-89a6-5440-62f4c4bedf19.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="6734a1df-3594-4a65-b7c6-afb7f3086447" Title="RectangleI Operators" Url="html/4fa80725-9aa8-f825-96d1-4953b25b2520.htm">
+      <HelpTOCNode Id="397b0185-3709-4556-bd34-b2a39518c9ef" Title="RectangleI Operators" Url="html/4fa80725-9aa8-f825-96d1-4953b25b2520.htm">
         <HelpTOCNode Title="Equality Operator " Url="html/9f01e27b-556b-ea76-15c9-5d0d4f264b9e.htm" />
         <HelpTOCNode Title="Inequality Operator " Url="html/6b1e86fa-491b-b32e-5ea1-811e71c79758.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="42833b3a-8d58-4fb3-8207-ba44868392bf" Title="RectangleI Fields" Url="html/13a7e85b-2c1b-f2ed-af29-79f9d0d9a544.htm">
+      <HelpTOCNode Id="9bb88d35-9617-45f2-be47-29979597ca64" Title="RectangleI Fields" Url="html/13a7e85b-2c1b-f2ed-af29-79f9d0d9a544.htm">
         <HelpTOCNode Title="position Field" Url="html/45ded18c-d147-adfc-7405-43cd51a0f4c1.htm" />
         <HelpTOCNode Title="size Field" Url="html/21d1f531-69a5-ddeb-326d-0bd198b44a85.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="474c8717-684c-47da-af06-9d8c0defce12" Title="RectangleIntersection Class" Url="html/1bfe34e2-21d6-0d91-870e-375fda3c86c4.htm">
-      <HelpTOCNode Id="28a3e288-e7de-425c-af48-68919a88af69" Title="RectangleIntersection Methods" Url="html/96adaa59-38ae-aca5-057e-554a6093fff9.htm">
-        <HelpTOCNode Id="2793ce25-49b1-42e0-bf5b-842c5043b063" Title="Intersects Method " Url="html/52a5c930-12d4-8c5f-8702-d848a87531f2.htm">
+    <HelpTOCNode Id="7522aa72-10fb-47e8-9058-26747b4aa8cb" Title="RectangleIntersection Class" Url="html/1bfe34e2-21d6-0d91-870e-375fda3c86c4.htm">
+      <HelpTOCNode Id="7b2a980c-309b-4858-85d4-af9e6d04221f" Title="RectangleIntersection Methods" Url="html/96adaa59-38ae-aca5-057e-554a6093fff9.htm">
+        <HelpTOCNode Id="5d8f85fa-c219-4667-9c32-18012f857bc7" Title="Intersects Method " Url="html/52a5c930-12d4-8c5f-8702-d848a87531f2.htm">
           <HelpTOCNode Title="Intersects Method (RectangleF, CircleF)" Url="html/7c979e7f-c283-5eb7-5fc6-75036551554c.htm" />
           <HelpTOCNode Title="Intersects Method (RectangleF, RectangleF)" Url="html/fbe9c0ca-69d0-fc30-b046-0f02744250e7.htm" />
           <HelpTOCNode Title="Intersects Method (RectangleI, RectangleI)" Url="html/54ce6e09-94f8-3fa3-1482-a2339929445a.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="be81eeda-61fe-4d29-bfed-ab291ab4567c" Title="Round Class" Url="html/105359dc-0dc8-5ec8-755e-e41845bbc0a1.htm">
-      <HelpTOCNode Id="e83764e9-5bc2-4e3d-8411-76fc06cd5418" Title="Round Methods" Url="html/70185cfa-a437-6054-3b0d-ab232c6fde4c.htm">
+    <HelpTOCNode Id="717f9d97-33d7-40f1-b599-756742b16ecf" Title="Round Class" Url="html/105359dc-0dc8-5ec8-755e-e41845bbc0a1.htm">
+      <HelpTOCNode Id="57ac8c80-ecd6-4ca8-bcea-fece6698ec53" Title="Round Methods" Url="html/70185cfa-a437-6054-3b0d-ab232c6fde4c.htm">
         <HelpTOCNode Title="Ceil Method " Url="html/5903ff5a-98b9-e6e3-3025-fb1d0b828ef5.htm" />
         <HelpTOCNode Title="Floor Method " Url="html/268bdcc6-0e99-34a8-1c76-53575c36151c.htm" />
         <HelpTOCNode Title="Nearest Method " Url="html/42e04ab6-ec3d-46d2-1444-bd64d80f4ead.htm" />
         <HelpTOCNode Title="Truncate Method " Url="html/ac7853f7-767b-0eef-0bc5-aafa218b0224.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="c7e7fdad-97ad-4d7a-b9e6-b2fb7d96a8ac" Title="SphereF Structure" Url="html/ad0ff148-f729-601c-c7d9-3ab29302cff1.htm">
+    <HelpTOCNode Id="536454ea-7a86-4cd6-94d0-929811bf8334" Title="SphereF Structure" Url="html/ad0ff148-f729-601c-c7d9-3ab29302cff1.htm">
       <HelpTOCNode Title="SphereF Constructor " Url="html/4aada5b3-cde3-aa49-0475-f1efb0987b66.htm" />
       <HelpTOCNode Title="SphereF Constructor " Url="html/bc124d56-ccfb-0c1d-6dd8-adafd68efae4.htm" />
-      <HelpTOCNode Id="3fce29bd-7e5f-4baa-978b-dd387b191d1d" Title="SphereF Properties" Url="html/39b40386-977c-ce46-791d-b83cf215cf31.htm">
+      <HelpTOCNode Id="3286b0c3-f74a-48bd-b5f6-9b54fe2e00cd" Title="SphereF Properties" Url="html/39b40386-977c-ce46-791d-b83cf215cf31.htm">
         <HelpTOCNode Title="Center Property " Url="html/20cfbcf5-fc0c-08a9-26ea-66413d50fdee.htm" />
         <HelpTOCNode Title="Circumference Property " Url="html/e6cba774-c2c2-fcdd-78cf-0627af743868.htm" />
         <HelpTOCNode Title="Diameter Property " Url="html/e43049df-1d5c-3986-750b-6b3295085e00.htm" />
         <HelpTOCNode Title="Radius Property " Url="html/4d70f828-e7d0-fb0c-3bd0-8dcd6cee49b5.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="241bc06d-0a02-4d6e-b137-26f9f95dba5e" Title="SphereF Methods" Url="html/4d77b0d9-08a5-b8ca-fac1-fc965acfc34b.htm">
-        <HelpTOCNode Id="5dfed656-555a-48f2-a3e8-d4f38dfa8b8f" Title="Equals Method " Url="html/5fae0549-86e0-fb24-d63e-862b49b98a5f.htm">
+      <HelpTOCNode Id="05741c27-1168-4252-a577-84c424349cc3" Title="SphereF Methods" Url="html/4d77b0d9-08a5-b8ca-fac1-fc965acfc34b.htm">
+        <HelpTOCNode Id="892e5504-c94c-4f75-aced-37a8ae439b3f" Title="Equals Method " Url="html/5fae0549-86e0-fb24-d63e-862b49b98a5f.htm">
           <HelpTOCNode Title="Equals Method (Object)" Url="html/531ff7e5-5050-5b6b-ecd7-a4ed76a02090.htm" />
           <HelpTOCNode Title="Equals Method (SphereF)" Url="html/1c9b819a-6165-033d-3238-99f703d2db5b.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="GetHashCode Method " Url="html/19e724ad-8711-f04d-2d35-ba2dcbc75288.htm" />
         <HelpTOCNode Title="ToString Method " Url="html/74a2f8f4-56bd-9ccb-7cf5-2c1fe8a41bbf.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="26c1c69f-1236-4202-916a-88b801859158" Title="SphereF Operators" Url="html/de6f18cb-5faa-c016-a6c3-9dac07ba0ccc.htm">
+      <HelpTOCNode Id="7cf68897-5ac0-4689-8ef9-41a0d86de643" Title="SphereF Operators" Url="html/de6f18cb-5faa-c016-a6c3-9dac07ba0ccc.htm">
         <HelpTOCNode Title="Equality Operator " Url="html/17166d5e-b977-f2fa-3731-07a35370867c.htm" />
         <HelpTOCNode Title="Inequality Operator " Url="html/b23ba398-8bf1-1f6b-e2ef-f44762dd9886.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="fabf5093-c998-449d-a3e5-4598c39429dd" Title="SphereF Fields" Url="html/ccbb2817-f5b6-6f87-26cf-e517160a5a09.htm">
+      <HelpTOCNode Id="e4cecfb5-bb67-490a-918d-b9e07d1ffa19" Title="SphereF Fields" Url="html/ccbb2817-f5b6-6f87-26cf-e517160a5a09.htm">
         <HelpTOCNode Title="center Field" Url="html/ea64a363-53f0-13b8-2f02-30cfdcd4abf4.htm" />
         <HelpTOCNode Title="radius Field" Url="html/21ba8985-3e96-4026-659c-6a62ef103c4b.htm" />
         <HelpTOCNode Title="UnitSphere Field" Url="html/21bf2124-83d3-8ddc-b30a-c59ddce34add.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="bbcabebf-4dc8-4a6f-ba7c-8b50d1adc6d7" Title="Vector2F Structure" Url="html/103ccd8c-4c07-c1d9-e526-1e507585858c.htm">
+    <HelpTOCNode Id="95d926e9-afad-4751-a771-dc602b64cb84" Title="Vector2F Structure" Url="html/103ccd8c-4c07-c1d9-e526-1e507585858c.htm">
       <HelpTOCNode Title="Vector2F Constructor " Url="html/8c559b0d-5a40-cf8e-9e13-c3f6aa7ec050.htm" />
       <HelpTOCNode Title="Vector2F Constructor " Url="html/79ba7bce-9705-a5d1-89f5-7d64ae8a90c0.htm" />
-      <HelpTOCNode Id="81577c94-d04b-4532-a828-e9125ccc426e" Title="Vector2F Properties" Url="html/021aefef-0b74-a60e-e27d-ebc120fc8b50.htm">
+      <HelpTOCNode Id="cf42618c-000c-4ff1-9019-40430943072b" Title="Vector2F Properties" Url="html/021aefef-0b74-a60e-e27d-ebc120fc8b50.htm">
         <HelpTOCNode Title="Length Property " Url="html/0a466fe5-1ece-bc1e-5366-29cd980ba74d.htm" />
         <HelpTOCNode Title="LengthSquared Property " Url="html/6c641c29-ceaa-c12b-6165-b8e4bcb23a03.htm" />
         <HelpTOCNode Title="X Property " Url="html/b1dd1bca-2f05-a41b-49cb-0a2c999d3d2e.htm" />
         <HelpTOCNode Title="Y Property " Url="html/22812b91-b610-6639-5b8b-831b99d106b8.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="4b764da6-a1af-4974-ae01-ea452e7a3322" Title="Vector2F Methods" Url="html/51fc89c7-8c51-81dc-69bd-119e812e5454.htm">
-        <HelpTOCNode Id="bb2d075e-e1a3-4900-8169-a01adc0341fc" Title="Add Method " Url="html/e04b198a-d9d2-fb69-1309-506a145a1366.htm">
+      <HelpTOCNode Id="f93c6ebb-c231-4150-9144-f234bd9589ff" Title="Vector2F Methods" Url="html/51fc89c7-8c51-81dc-69bd-119e812e5454.htm">
+        <HelpTOCNode Id="d2b4cd91-4db8-4bde-b7ab-afa55a2dcb06" Title="Add Method " Url="html/e04b198a-d9d2-fb69-1309-506a145a1366.htm">
           <HelpTOCNode Title="Add Method (Vector2F)" Url="html/22e9e08c-2350-a3da-1ee3-e583564f62f0.htm" />
           <HelpTOCNode Title="Add Method (Vector2F, Vector2F)" Url="html/1983d14b-0cff-c308-52c9-63951b5aa1db.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="fb9c6db4-5c36-4e3d-be2a-0b8d03b1b780" Title="Distance Method " Url="html/a3884d73-4568-a5a5-f1f3-b2d214eb7804.htm">
+        <HelpTOCNode Id="55a391a2-49c6-41a0-abd2-c72ac0c7f3bb" Title="Distance Method " Url="html/a3884d73-4568-a5a5-f1f3-b2d214eb7804.htm">
           <HelpTOCNode Title="Distance Method (Vector2F)" Url="html/ac9e3743-91d8-3182-9561-ede8d7993b19.htm" />
           <HelpTOCNode Title="Distance Method (Vector2F, Vector2F)" Url="html/d239c000-9671-d83c-fc32-d26248f11962.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="fc38056d-fec0-4020-87b4-24cf2350149e" Title="DistanceSquared Method " Url="html/467fc004-7a5f-8ff1-4269-a6b54a9720b6.htm">
+        <HelpTOCNode Id="57ea6b9c-a7ee-4b8e-98d3-4828210a4ea2" Title="DistanceSquared Method " Url="html/467fc004-7a5f-8ff1-4269-a6b54a9720b6.htm">
           <HelpTOCNode Title="DistanceSquared Method (Vector2F)" Url="html/2ea800c1-6d7b-ab24-ffb2-b6c23181d4e0.htm" />
           <HelpTOCNode Title="DistanceSquared Method (Vector2F, Vector2F)" Url="html/34ad7eb6-0217-4b3d-4705-3b60aa3fa36a.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="6ea22993-cb69-4193-9068-e56e08f963eb" Title="Divide Method " Url="html/085dec6b-da9e-e264-42e6-0f0b4fb68d89.htm">
+        <HelpTOCNode Id="f8d953c1-eaf8-4dfb-a39d-1906a3cfbe4e" Title="Divide Method " Url="html/085dec6b-da9e-e264-42e6-0f0b4fb68d89.htm">
           <HelpTOCNode Title="Divide Method (Single)" Url="html/3f62b155-ac17-86ee-a2ac-161d24b6231e.htm" />
           <HelpTOCNode Title="Divide Method (Vector2F, Single)" Url="html/118bffe2-db15-f3e4-056a-96d1a8cf7aaa.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="327b945d-904a-43bc-ac2c-eb098166d2f7" Title="Dot Method " Url="html/a68f4033-490f-fd3a-f5c2-5a693b5fa075.htm">
+        <HelpTOCNode Id="26bd6ebb-8eae-49d5-93f2-1ec0a21f0f57" Title="Dot Method " Url="html/a68f4033-490f-fd3a-f5c2-5a693b5fa075.htm">
           <HelpTOCNode Title="Dot Method (Vector2F)" Url="html/ce4ca132-5ebe-6d41-65cf-b62dbbaecb74.htm" />
           <HelpTOCNode Title="Dot Method (Vector2F, Vector2F)" Url="html/2b18cf3f-4382-c543-ff25-90b1b5a2a5a9.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="44fe3b8b-f296-4553-b299-59f7b915ad1e" Title="Equals Method " Url="html/6215d9f7-afd0-baef-1110-ecde47c34021.htm">
+        <HelpTOCNode Id="c1abdda8-b3da-4f90-aa00-63cbf6ee8c4d" Title="Equals Method " Url="html/6215d9f7-afd0-baef-1110-ecde47c34021.htm">
           <HelpTOCNode Title="Equals Method (Object)" Url="html/89e5e0f2-a6db-6c4e-1ee9-3e2a2e28e0ee.htm" />
           <HelpTOCNode Title="Equals Method (Vector2F)" Url="html/ea12d8aa-1f86-e284-7364-508ac31d563b.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="GetHashCode Method " Url="html/2329339f-387e-eeca-8589-004d49be14ff.htm" />
-        <HelpTOCNode Id="4e3b4da6-04ef-4ef8-8dc5-3266bc477edc" Title="Lerp Method " Url="html/0db45454-3513-ba95-af74-6bfa9f65c07e.htm">
+        <HelpTOCNode Id="4e00ea02-15bf-49be-932f-032f6edc30e7" Title="Lerp Method " Url="html/0db45454-3513-ba95-af74-6bfa9f65c07e.htm">
           <HelpTOCNode Title="Lerp Method (Vector2F, Single)" Url="html/5f911776-f7fa-9057-8b37-581b8092ae52.htm" />
           <HelpTOCNode Title="Lerp Method (Vector2F, Vector2F, Single)" Url="html/8f4109e4-ae05-8c40-26ed-b69bb9b17d74.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="f3fce108-689a-47db-991d-331c19ce6682" Title="Multiply Method " Url="html/f363807f-3c56-4453-1a6f-d3ebc63e8ed2.htm">
+        <HelpTOCNode Id="c1f4780b-5254-4c19-8713-d196cc9529b1" Title="Multiply Method " Url="html/f363807f-3c56-4453-1a6f-d3ebc63e8ed2.htm">
           <HelpTOCNode Title="Multiply Method (Single)" Url="html/7c7f9c05-9670-642d-1372-206c11d8fbde.htm" />
           <HelpTOCNode Title="Multiply Method (Single, Vector2F)" Url="html/c3ac6265-d013-8bf0-e60e-652dec1bcd10.htm" />
           <HelpTOCNode Title="Multiply Method (Vector2F, Single)" Url="html/4aeb1465-0c26-d289-e57c-7d26d489b92a.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="ca19347f-ae38-45f2-9afa-8fa8791ce745" Title="Normalize Method " Url="html/4f67a053-cea6-7439-43b1-06102d5ad92a.htm">
+        <HelpTOCNode Id="08f31a62-4484-40b4-b888-531485cff8e4" Title="Normalize Method " Url="html/4f67a053-cea6-7439-43b1-06102d5ad92a.htm">
           <HelpTOCNode Title="Normalize Method " Url="html/8e5aa1b4-b8ca-9d94-5d99-ebd206a41469.htm" />
           <HelpTOCNode Title="Normalize Method (Vector2F)" Url="html/d39b871c-13f2-f93a-a1f4-9eef85b7fdb4.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="f8492e13-9a9e-492c-8e38-4412095bf03d" Title="Project Method " Url="html/3823f0a4-c416-f2bc-85ca-7a65046b0c62.htm">
+        <HelpTOCNode Id="a69f1018-546a-4097-a91f-f51f5fe19dd3" Title="Project Method " Url="html/3823f0a4-c416-f2bc-85ca-7a65046b0c62.htm">
           <HelpTOCNode Title="Project Method (Vector2F)" Url="html/05ec4138-38a2-518f-2ece-64c27b46d7ea.htm" />
           <HelpTOCNode Title="Project Method (Vector2F, Vector2F)" Url="html/201bd38f-d836-da77-74a1-ca75efc2321d.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="b4b04b6f-928f-4d30-9299-94ac8dd40f2a" Title="Reflect Method " Url="html/07b02e63-01a6-614a-38c2-dfe8f3e3727c.htm">
+        <HelpTOCNode Id="bf20aedb-3150-4481-a7cd-7446c35417e4" Title="Reflect Method " Url="html/07b02e63-01a6-614a-38c2-dfe8f3e3727c.htm">
           <HelpTOCNode Title="Reflect Method (Vector2F)" Url="html/66cfc066-5f1e-4a21-59b0-b8ce6b89a77e.htm" />
           <HelpTOCNode Title="Reflect Method (Vector2F, Vector2F)" Url="html/bf48ad74-8aef-f4d8-5414-3b1ed02d177f.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="988e51f0-bab1-4309-8ce3-dc8e7a138d56" Title="Rotate Method " Url="html/0d4fa7c0-50cf-e374-7214-69c8a887eb54.htm">
+        <HelpTOCNode Id="3c5207da-b251-4a77-88f7-fa4071018110" Title="Rotate Method " Url="html/0d4fa7c0-50cf-e374-7214-69c8a887eb54.htm">
           <HelpTOCNode Title="Rotate Method (Single)" Url="html/2665dc53-d95f-f945-bdd3-23b9cb191b45.htm" />
           <HelpTOCNode Title="Rotate Method (Vector2F, Single)" Url="html/9d7fc7f5-4b26-ae02-e9a0-fd3abb4a900d.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="82e5e4e0-2c39-4f33-947a-225058f257c2" Title="Subtract Method " Url="html/da4fefd1-f4f9-2532-fff0-4f33d7387b71.htm">
+        <HelpTOCNode Id="597aca69-22fc-46f0-bd43-7fd76bf44bb7" Title="Subtract Method " Url="html/da4fefd1-f4f9-2532-fff0-4f33d7387b71.htm">
           <HelpTOCNode Title="Subtract Method (Vector2F)" Url="html/775231e3-d657-cf38-7310-bf7e0c0f1aaa.htm" />
           <HelpTOCNode Title="Subtract Method (Vector2F, Vector2F)" Url="html/776f78d7-a310-c606-89f2-5e869eaadb02.htm" />
         </HelpTOCNode>
@@ -626,20 +626,20 @@
         <HelpTOCNode Title="WithX Method " Url="html/0a33242b-52f5-a343-78a8-2b3cb24c33eb.htm" />
         <HelpTOCNode Title="WithY Method " Url="html/83dda77f-e7c4-4232-3336-0256665201c6.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="aabf9dd5-ae72-4f3d-8db6-f0aa235c3497" Title="Vector2F Operators and Type Conversions" Url="html/bb7a43f0-37ff-1d33-ee90-5a6a8e917de3.htm">
+      <HelpTOCNode Id="665e65b9-7b6d-4d5a-92a0-5f31077cdf8f" Title="Vector2F Operators and Type Conversions" Url="html/bb7a43f0-37ff-1d33-ee90-5a6a8e917de3.htm">
         <HelpTOCNode Title="Addition Operator " Url="html/b8a626dc-9cc5-1515-fe53-8452ce4b108d.htm" />
         <HelpTOCNode Title="Division Operator " Url="html/53cf7a27-fbbd-4266-cdbc-804a70aa3770.htm" />
         <HelpTOCNode Title="Equality Operator " Url="html/22dc66f6-0f08-e786-062f-7947976122c6.htm" />
         <HelpTOCNode Title="Implicit Conversion (Vector2I to Vector2F)" Url="html/6fb188a6-f6ea-14cc-b904-b847017eed84.htm" />
         <HelpTOCNode Title="Inequality Operator " Url="html/65d1960b-0382-f7de-8315-fb7d8b536de8.htm" />
-        <HelpTOCNode Id="3e90c8dd-3e28-4e54-abb2-d82c141c0b23" Title="Multiply Operator " Url="html/a1f30285-f8aa-7499-b559-6a988fc3451f.htm">
+        <HelpTOCNode Id="c3f2024d-0935-4516-9b9e-6bb71de675ce" Title="Multiply Operator " Url="html/a1f30285-f8aa-7499-b559-6a988fc3451f.htm">
           <HelpTOCNode Title="Multiply Operator (Single, Vector2F)" Url="html/cd62298c-8cc3-d0db-a5b1-c0534685fc9a.htm" />
           <HelpTOCNode Title="Multiply Operator (Vector2F, Vector2F)" Url="html/3edac130-6240-02f7-abf1-3c83a883e425.htm" />
           <HelpTOCNode Title="Multiply Operator (Vector2F, Single)" Url="html/bf11a6dd-ad74-b5bd-7fb2-a9057bc3e69a.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="Subtraction Operator " Url="html/6776cd01-8c64-00a3-d97f-2921c5918bae.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="93d42f23-62ae-4574-a304-552acd26c3d7" Title="Vector2F Fields" Url="html/18362ed8-cc59-d610-4db2-580fc2e27a8b.htm">
+      <HelpTOCNode Id="970326a4-8bfb-4430-8f1a-17f0c960972a" Title="Vector2F Fields" Url="html/18362ed8-cc59-d610-4db2-580fc2e27a8b.htm">
         <HelpTOCNode Title="UnitX Field" Url="html/9e398648-b785-a79a-f069-b55676608206.htm" />
         <HelpTOCNode Title="UnitY Field" Url="html/f2ef0bdf-c3ef-0277-c19f-c41f53079054.htm" />
         <HelpTOCNode Title="x Field" Url="html/0d5fdbf1-dcc4-6470-1e18-ee3290c72831.htm" />
@@ -647,51 +647,51 @@
         <HelpTOCNode Title="Zero Field" Url="html/260b4c87-a76b-e160-9a77-34c876a829d8.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="c3d295af-662b-4cab-9e44-e3cd8c72beef" Title="Vector2I Structure" Url="html/c9efdfb4-fc38-b955-ff14-c175c4fd618b.htm">
+    <HelpTOCNode Id="049cbb92-a873-4f3d-ab5b-4cdff8749dd0" Title="Vector2I Structure" Url="html/c9efdfb4-fc38-b955-ff14-c175c4fd618b.htm">
       <HelpTOCNode Title="Vector2I Constructor " Url="html/93cacfdc-424e-ed18-a18d-dedbe5fce4c6.htm" />
       <HelpTOCNode Title="Vector2I Constructor " Url="html/29bb0ffc-ed53-7caa-8a74-668ac11da864.htm" />
-      <HelpTOCNode Id="48747d89-e177-4b41-8397-e8b1de3aa713" Title="Vector2I Properties" Url="html/08966ddd-1997-ba8d-3f1e-754879a8d667.htm">
+      <HelpTOCNode Id="275f6785-84b8-4126-b729-7298285fbdbf" Title="Vector2I Properties" Url="html/08966ddd-1997-ba8d-3f1e-754879a8d667.htm">
         <HelpTOCNode Title="Length Property " Url="html/a1019ee2-17ca-68dc-402c-3588bcffd930.htm" />
         <HelpTOCNode Title="LengthSquared Property " Url="html/bcc2c5ed-f4bd-51f2-c387-71eca7039ca2.htm" />
         <HelpTOCNode Title="X Property " Url="html/1bcf3a42-fd03-7d05-c38f-0723649ee7ed.htm" />
         <HelpTOCNode Title="Y Property " Url="html/e24c65c6-050a-01c7-63d5-f91c74f184f8.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="bbda75b7-8c9f-439f-8ced-940222814109" Title="Vector2I Methods" Url="html/edfe7356-15ef-b519-d3e1-0dec9e9d584f.htm">
-        <HelpTOCNode Id="a614c2ba-5f3a-4c0f-b895-e4b870e99c9a" Title="Add Method " Url="html/7450431a-a9e8-a2c7-db3c-1d73da9eeeba.htm">
+      <HelpTOCNode Id="284350e8-a3d3-4d6a-9dd3-f8e8ba9054a1" Title="Vector2I Methods" Url="html/edfe7356-15ef-b519-d3e1-0dec9e9d584f.htm">
+        <HelpTOCNode Id="a02e9054-ee7a-4754-8eb0-ba47a774605f" Title="Add Method " Url="html/7450431a-a9e8-a2c7-db3c-1d73da9eeeba.htm">
           <HelpTOCNode Title="Add Method (Vector2I)" Url="html/16ba93d0-ca82-d145-f04b-c788eda12f7c.htm" />
           <HelpTOCNode Title="Add Method (Vector2I, Vector2I)" Url="html/4adc7e74-15b2-ecf0-aff0-1ae5d02031b5.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="21f6a4cb-9c27-4f78-9575-d6a4111d0f1a" Title="Distance Method " Url="html/81cc2ce2-3bca-b0ef-e69d-eee0eed2b4c3.htm">
+        <HelpTOCNode Id="c74aeb32-3197-44cd-82ee-e0527e71b484" Title="Distance Method " Url="html/81cc2ce2-3bca-b0ef-e69d-eee0eed2b4c3.htm">
           <HelpTOCNode Title="Distance Method (Vector2I)" Url="html/4cfb07e3-e4a4-c182-6053-de93f5616383.htm" />
           <HelpTOCNode Title="Distance Method (Vector2I, Vector2I)" Url="html/46c114cc-8e6d-1dec-42d3-051563cc7df7.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="1e2f20b5-ea02-4cb2-a071-c34a6a7e75a5" Title="DistanceSquared Method " Url="html/f33ac97f-79a0-245c-0eb3-3cff7ad9d544.htm">
+        <HelpTOCNode Id="0d97273b-c16f-480a-b112-24fd34fc0933" Title="DistanceSquared Method " Url="html/f33ac97f-79a0-245c-0eb3-3cff7ad9d544.htm">
           <HelpTOCNode Title="DistanceSquared Method (Vector2I)" Url="html/7e6d8063-cde3-b94a-2241-57fcc568a6b6.htm" />
           <HelpTOCNode Title="DistanceSquared Method (Vector2I, Vector2I)" Url="html/3d1229ca-8468-5a5e-a68a-15be26a93629.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="739bc913-1e71-4d29-92a1-8d54a2760343" Title="Divide Method " Url="html/5c0052e7-ab3c-2071-eabb-c65cdc0a8556.htm">
+        <HelpTOCNode Id="5c8935d1-28f2-454e-825f-d45b2e9d0a2e" Title="Divide Method " Url="html/5c0052e7-ab3c-2071-eabb-c65cdc0a8556.htm">
           <HelpTOCNode Title="Divide Method (Int32)" Url="html/51f76799-c60d-a772-14d1-c4554f8d480b.htm" />
           <HelpTOCNode Title="Divide Method (Vector2I, Int32)" Url="html/cb048b67-0ae1-8e54-0c35-d9b8a7906d0b.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="566885b1-a8ac-4b7c-b213-a02eecb027fd" Title="Dot Method " Url="html/305d6d98-8f20-3e3f-7d90-eeebbd8a0f4f.htm">
+        <HelpTOCNode Id="d87ece94-2bac-43be-ba1e-553dbf5ba87d" Title="Dot Method " Url="html/305d6d98-8f20-3e3f-7d90-eeebbd8a0f4f.htm">
           <HelpTOCNode Title="Dot Method (Vector2I)" Url="html/afd90032-a748-25f2-d309-7202fde88c58.htm" />
           <HelpTOCNode Title="Dot Method (Vector2I, Vector2I)" Url="html/d9e41a38-dce4-0839-bdc4-d14c2d9c2ea6.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="26531b4c-0bfa-45cf-9886-a226954bd6f8" Title="Equals Method " Url="html/28d0343a-3199-2114-113e-55ce28e2bd90.htm">
+        <HelpTOCNode Id="a98a225f-d746-4244-88e7-01dbb4813eee" Title="Equals Method " Url="html/28d0343a-3199-2114-113e-55ce28e2bd90.htm">
           <HelpTOCNode Title="Equals Method (Object)" Url="html/7b3f313b-73ba-12b2-9266-73d2adf1d966.htm" />
           <HelpTOCNode Title="Equals Method (Vector2I)" Url="html/ba523251-940b-a382-61de-5018ce23dd20.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="GetHashCode Method " Url="html/9faf4e96-8020-cb4a-6310-cf4780d09d9c.htm" />
-        <HelpTOCNode Id="6a470612-5ed2-4059-a812-5ff574ffabbc" Title="ManhattanDistance Method " Url="html/3fbe6b33-6654-0bf7-3c74-ce44ba1ab732.htm">
+        <HelpTOCNode Id="65c2e2da-c9fe-47f0-bc8b-629fb4f60f08" Title="ManhattanDistance Method " Url="html/3fbe6b33-6654-0bf7-3c74-ce44ba1ab732.htm">
           <HelpTOCNode Title="ManhattanDistance Method (Vector2I)" Url="html/3136d3b6-825f-a4fb-e550-835612f98f1b.htm" />
           <HelpTOCNode Title="ManhattanDistance Method (Vector2I, Vector2I)" Url="html/79eb63f2-7f67-4d79-04e2-070e6489321c.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="ad643e8c-bc49-488e-8a65-dd8531100d69" Title="Multiply Method " Url="html/1dadc713-6421-2ab8-def2-618fab45b7c2.htm">
+        <HelpTOCNode Id="e54e5e37-5d02-4129-8632-879ab5e30418" Title="Multiply Method " Url="html/1dadc713-6421-2ab8-def2-618fab45b7c2.htm">
           <HelpTOCNode Title="Multiply Method (Int32)" Url="html/6160ab22-1e8d-2b93-74ab-ac6916329edb.htm" />
           <HelpTOCNode Title="Multiply Method (Int32, Vector2I)" Url="html/4930f8d3-9269-4e31-ae9e-0c995fd31a79.htm" />
           <HelpTOCNode Title="Multiply Method (Vector2I, Int32)" Url="html/af6257e5-1a57-b49a-20f0-ff5baa0721e9.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="725422af-901c-4a15-ad2c-b5801b99ea16" Title="Subtract Method " Url="html/3cfc387c-2ed4-149f-b78d-c477c4d45104.htm">
+        <HelpTOCNode Id="bbd135c9-fa3b-4ab3-9b8b-46493e69af11" Title="Subtract Method " Url="html/3cfc387c-2ed4-149f-b78d-c477c4d45104.htm">
           <HelpTOCNode Title="Subtract Method (Vector2I)" Url="html/74f7b3f3-8e95-308b-2bd6-666218e8df5a.htm" />
           <HelpTOCNode Title="Subtract Method (Vector2I, Vector2I)" Url="html/8baa7783-5772-c79b-5f9f-e75aa931a17c.htm" />
         </HelpTOCNode>
@@ -699,19 +699,19 @@
         <HelpTOCNode Title="WithX Method " Url="html/3d7b38f2-ce38-94f5-25ca-79e524f21cf3.htm" />
         <HelpTOCNode Title="WithY Method " Url="html/fb0e2d3f-fe9d-d7da-ad83-e84131b29adf.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="6ed0d04d-73ed-419d-a878-d288f9b3df91" Title="Vector2I Operators" Url="html/bd2d1806-3011-56b2-42b3-d10e3d344800.htm">
+      <HelpTOCNode Id="2822e39f-8b13-4488-b64e-f69b1b327670" Title="Vector2I Operators" Url="html/bd2d1806-3011-56b2-42b3-d10e3d344800.htm">
         <HelpTOCNode Title="Addition Operator " Url="html/3a3b70ef-798f-d395-e35d-e20e259b7853.htm" />
         <HelpTOCNode Title="Division Operator " Url="html/c45bab32-809e-b7b5-82ca-8186896f782f.htm" />
         <HelpTOCNode Title="Equality Operator " Url="html/f527d1a4-1c8e-b605-946d-ebd09256537a.htm" />
         <HelpTOCNode Title="Inequality Operator " Url="html/cf02bc80-43de-2e75-1942-d973b2b7c152.htm" />
-        <HelpTOCNode Id="e5dc679f-d38d-4364-af0c-001eb1c239b2" Title="Multiply Operator " Url="html/f09c6a22-a181-a80b-b8d4-b40b42dc201c.htm">
+        <HelpTOCNode Id="1fd1f9f0-7220-4048-ba4d-53c4b27273f7" Title="Multiply Operator " Url="html/f09c6a22-a181-a80b-b8d4-b40b42dc201c.htm">
           <HelpTOCNode Title="Multiply Operator (Int32, Vector2I)" Url="html/9b6db85e-5e37-d5a4-d721-e2dd5fada135.htm" />
           <HelpTOCNode Title="Multiply Operator (Vector2I, Vector2I)" Url="html/4b124293-ec69-710d-07b3-bdf50c63f715.htm" />
           <HelpTOCNode Title="Multiply Operator (Vector2I, Int32)" Url="html/43b7a780-c289-bf9a-f8b6-9389cca839cd.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="Subtraction Operator " Url="html/09426512-06d5-2dae-bafd-04f872fee7fe.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="82820a9f-5201-47cf-af4a-0cbc4f53948e" Title="Vector2I Fields" Url="html/944923e5-135e-c03f-91a8-ad4d1ca6dd25.htm">
+      <HelpTOCNode Id="fdd94ef2-4b29-4ade-ad37-fa124da52b16" Title="Vector2I Fields" Url="html/944923e5-135e-c03f-91a8-ad4d1ca6dd25.htm">
         <HelpTOCNode Title="UnitX Field" Url="html/3fd42396-f3ce-9c84-bd06-0cdf8a64d91b.htm" />
         <HelpTOCNode Title="UnitY Field" Url="html/75fa9de8-97b0-d4a4-2046-212be8a2c8fe.htm" />
         <HelpTOCNode Title="x Field" Url="html/9d663da6-0286-a62d-2a62-3edd3e384f40.htm" />
@@ -719,10 +719,10 @@
         <HelpTOCNode Title="Zero Field" Url="html/a43edcc1-6ef4-bbd4-5cae-66357785f614.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="ad0a1986-412e-4024-8258-a1bcd7f17b61" Title="Vector3F Structure" Url="html/c4f6fd43-eb78-2dd7-b2fa-3740e8a84067.htm">
+    <HelpTOCNode Id="2e1833b1-a893-4b71-8a49-93139d841b96" Title="Vector3F Structure" Url="html/c4f6fd43-eb78-2dd7-b2fa-3740e8a84067.htm">
       <HelpTOCNode Title="Vector3F Constructor " Url="html/6d8d2dd0-1e50-76cd-8c11-0240dd1442b6.htm" />
       <HelpTOCNode Title="Vector3F Constructor " Url="html/88ef3797-b503-57dc-823c-d0900b8dfd7c.htm" />
-      <HelpTOCNode Id="2d4bd095-f94a-4175-8895-d8f40880b700" Title="Vector3F Properties" Url="html/e694d594-d0e7-6ca3-1122-6f1de211a9cd.htm">
+      <HelpTOCNode Id="260d077a-4d2d-411f-95d3-73a1ecf4fa93" Title="Vector3F Properties" Url="html/e694d594-d0e7-6ca3-1122-6f1de211a9cd.htm">
         <HelpTOCNode Title="Length Property " Url="html/0ab81482-c763-4932-8527-c673f9303190.htm" />
         <HelpTOCNode Title="LengthSquared Property " Url="html/cdc638b4-dc6d-33f6-1f5f-2fb9492ab808.htm" />
         <HelpTOCNode Title="X Property " Url="html/9aff5982-e7a5-9e5d-0721-d3d7160539da.htm" />
@@ -732,54 +732,54 @@
         <HelpTOCNode Title="YZ Property " Url="html/497498f0-0247-bf61-73c6-3f58dbe052e5.htm" />
         <HelpTOCNode Title="Z Property " Url="html/85d4fffb-8f49-9cf1-c69b-397b251c1f1d.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="643e48ef-84d2-49f3-ab22-5d47dad65e2f" Title="Vector3F Methods" Url="html/eefd1d7b-1c99-ab77-bd91-5dc389e37a80.htm">
-        <HelpTOCNode Id="76aaadcc-9f8b-4ced-be64-51073b3c6cb4" Title="Add Method " Url="html/f17aa809-9389-7436-7027-467edc48eadc.htm">
+      <HelpTOCNode Id="890a0468-2908-4b7d-864e-c3a47ce0ac38" Title="Vector3F Methods" Url="html/eefd1d7b-1c99-ab77-bd91-5dc389e37a80.htm">
+        <HelpTOCNode Id="3d545185-0599-4c82-86e8-f42b5d41d4be" Title="Add Method " Url="html/f17aa809-9389-7436-7027-467edc48eadc.htm">
           <HelpTOCNode Title="Add Method (Vector3F)" Url="html/8b742cc6-1816-78b4-37db-04b6f72dd5e3.htm" />
           <HelpTOCNode Title="Add Method (Vector3F, Vector3F)" Url="html/5f67451e-ae36-dd56-a68f-4c3e2d1907da.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="940add8c-7190-4d60-939e-1b82673f03b4" Title="Cross Method " Url="html/056d6aa3-6ee9-a88d-f22a-e694ee858590.htm">
+        <HelpTOCNode Id="4cd40b95-173e-400b-848d-40239073610f" Title="Cross Method " Url="html/056d6aa3-6ee9-a88d-f22a-e694ee858590.htm">
           <HelpTOCNode Title="Cross Method (Vector3F)" Url="html/ce22630b-25ef-fd34-c618-72d7c7332abe.htm" />
           <HelpTOCNode Title="Cross Method (Vector3F, Vector3F)" Url="html/7ebc5a46-0c6f-25d9-97bf-61b4130aa7a3.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="64ea942a-3154-43a7-a7dc-c1034b603c05" Title="Distance Method " Url="html/dc7ec138-d39f-fb3a-f74b-a867f5911dcd.htm">
+        <HelpTOCNode Id="ae68ee93-4bd7-41ef-aa2a-3f280cabae23" Title="Distance Method " Url="html/dc7ec138-d39f-fb3a-f74b-a867f5911dcd.htm">
           <HelpTOCNode Title="Distance Method (Vector3F)" Url="html/c6b0f022-4421-cc93-adc0-1ea7a569c3ca.htm" />
           <HelpTOCNode Title="Distance Method (Vector3F, Vector3F)" Url="html/bd67ee4c-fd0b-50a3-d460-d6072c5b0c14.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="a4e3594a-36f7-4757-bdd4-2d40d74aad18" Title="DistanceSquared Method " Url="html/b6e95a0e-ff1d-c209-52f4-6268fc845c33.htm">
+        <HelpTOCNode Id="c38e36a8-5be0-447e-9c5f-47e124694a6e" Title="DistanceSquared Method " Url="html/b6e95a0e-ff1d-c209-52f4-6268fc845c33.htm">
           <HelpTOCNode Title="DistanceSquared Method (Vector3F)" Url="html/aea04e2b-43a5-2dc8-ce7a-40befe7928dd.htm" />
           <HelpTOCNode Title="DistanceSquared Method (Vector3F, Vector3F)" Url="html/ef488748-78d0-9b8d-f8d7-346c2ff39e01.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="06d544fa-5cd4-4fbf-9c2b-e5324a7701dc" Title="Divide Method " Url="html/23e2daa9-693c-1478-e8d8-e6461faedbd8.htm">
+        <HelpTOCNode Id="34b97667-a1c0-4fa9-80bb-c850be558d03" Title="Divide Method " Url="html/23e2daa9-693c-1478-e8d8-e6461faedbd8.htm">
           <HelpTOCNode Title="Divide Method (Single)" Url="html/b919386d-dde5-f70f-70f1-06cf3e639c0f.htm" />
           <HelpTOCNode Title="Divide Method (Vector3F, Single)" Url="html/1da2b682-8fa8-a384-d4d0-3a3b6bfced50.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="99fb78a2-566a-43c7-b94c-d7b24be42e1b" Title="Dot Method " Url="html/be37f799-effc-96a6-ff14-7df06c1b3a63.htm">
+        <HelpTOCNode Id="baaa3331-94f0-4754-90c0-bf0d4f21d184" Title="Dot Method " Url="html/be37f799-effc-96a6-ff14-7df06c1b3a63.htm">
           <HelpTOCNode Title="Dot Method (Vector3F)" Url="html/41217bfd-9fcc-3473-912e-8fcc7ae500db.htm" />
           <HelpTOCNode Title="Dot Method (Vector3F, Vector3F)" Url="html/c9c3ee4b-d860-bb75-2a91-f87365b775a2.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="fdbcb334-0ed3-417e-814b-d419a3b26d04" Title="Equals Method " Url="html/dca87bca-7f53-e05b-cc63-d93ee35369ef.htm">
+        <HelpTOCNode Id="818a66e6-8b48-40ba-9f70-14bc93298cf4" Title="Equals Method " Url="html/dca87bca-7f53-e05b-cc63-d93ee35369ef.htm">
           <HelpTOCNode Title="Equals Method (Object)" Url="html/bda05091-4093-6fe4-b1a5-f9c5261f2a1e.htm" />
           <HelpTOCNode Title="Equals Method (Vector3F)" Url="html/1b814057-c88a-83fd-7e4e-4baf86791488.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="GetHashCode Method " Url="html/e93e9e44-a6cb-2b21-37f0-90b8585437d9.htm" />
-        <HelpTOCNode Id="c692f532-62d3-4563-98dd-1335fdb6777b" Title="Lerp Method " Url="html/730087d0-71a2-95c1-a70a-a23c5e7714dd.htm">
+        <HelpTOCNode Id="05916e77-af8d-4712-ab77-95eb4d00290f" Title="Lerp Method " Url="html/730087d0-71a2-95c1-a70a-a23c5e7714dd.htm">
           <HelpTOCNode Title="Lerp Method (Vector3F, Single)" Url="html/40c259bf-4c57-0e60-3e78-2e31a3ec9644.htm" />
           <HelpTOCNode Title="Lerp Method (Vector3F, Vector3F, Single)" Url="html/f7c53f69-9a18-f73f-ac98-45e414443361.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="99b60b4f-3ade-4dd6-ac7c-d7028f0be031" Title="Multiply Method " Url="html/8916c5b6-1a54-55e0-23f0-82646505a977.htm">
+        <HelpTOCNode Id="526ace94-5d9f-485d-9418-e7fa80a5cdb9" Title="Multiply Method " Url="html/8916c5b6-1a54-55e0-23f0-82646505a977.htm">
           <HelpTOCNode Title="Multiply Method (Single)" Url="html/289f14a6-bf10-8c1e-8746-f6921931f004.htm" />
           <HelpTOCNode Title="Multiply Method (Single, Vector3F)" Url="html/7435182d-d63f-1f9c-24c3-977d8a8a74de.htm" />
           <HelpTOCNode Title="Multiply Method (Vector3F, Single)" Url="html/2876c6c1-4536-34bf-4b7f-efc5fa3baa40.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="cf457873-2e90-4d8d-b3e2-214dcf3406bf" Title="Normalize Method " Url="html/7d909a7b-a625-5e15-aa88-41a91781a072.htm">
+        <HelpTOCNode Id="1a47421f-bd22-4d11-b7b3-461d7b77c898" Title="Normalize Method " Url="html/7d909a7b-a625-5e15-aa88-41a91781a072.htm">
           <HelpTOCNode Title="Normalize Method " Url="html/a3eb0c76-062e-2283-ab46-3ca4a63963e9.htm" />
           <HelpTOCNode Title="Normalize Method (Vector3F)" Url="html/2638d978-aa18-d8a4-0b1e-42ac11823965.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="86cd056d-6330-4477-8f93-2aeda8f5772e" Title="Reflect Method " Url="html/dbe659c5-e901-3637-3114-4a17fd0a77d3.htm">
+        <HelpTOCNode Id="81d1cc8c-8716-446a-b4e3-8df887f1702a" Title="Reflect Method " Url="html/dbe659c5-e901-3637-3114-4a17fd0a77d3.htm">
           <HelpTOCNode Title="Reflect Method (Vector3F)" Url="html/f13793a3-049d-d50a-3bb0-30ee5eb9e21b.htm" />
           <HelpTOCNode Title="Reflect Method (Vector3F, Vector3F)" Url="html/6e779e7e-504b-6289-3605-8506bfc4ab81.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="c718d5d2-5e40-489d-8d14-f7474d34f1be" Title="Subtract Method " Url="html/0f11b34f-e932-3d52-83e7-6a9676d2c0b5.htm">
+        <HelpTOCNode Id="4fedeb5f-f779-4e3f-93a4-bc017947214e" Title="Subtract Method " Url="html/0f11b34f-e932-3d52-83e7-6a9676d2c0b5.htm">
           <HelpTOCNode Title="Subtract Method (Vector3F)" Url="html/8ee0bb99-c09c-a690-2bbc-2bffb717ed9d.htm" />
           <HelpTOCNode Title="Subtract Method (Vector3F, Vector3F)" Url="html/55fcd2e2-f04c-c261-ebe2-47e28be3daeb.htm" />
         </HelpTOCNode>
@@ -788,24 +788,24 @@
         <HelpTOCNode Title="WithY Method " Url="html/ce53f810-1f25-2bc7-2fa7-a99c54298f88.htm" />
         <HelpTOCNode Title="WithZ Method " Url="html/ad636009-98ac-3e56-ed5f-337c61e16c1c.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="d040b5cf-4c53-4570-9126-fdde8053770d" Title="Vector3F Operators and Type Conversions" Url="html/ddeb756d-6e7b-3e25-d6b2-a779968c7e9e.htm">
+      <HelpTOCNode Id="f4c0ebce-8c4a-4370-b9c5-32981566a180" Title="Vector3F Operators and Type Conversions" Url="html/ddeb756d-6e7b-3e25-d6b2-a779968c7e9e.htm">
         <HelpTOCNode Title="Addition Operator " Url="html/252a3cc8-b675-8a30-de34-a791af9a4d6f.htm" />
         <HelpTOCNode Title="Division Operator " Url="html/0fb4adf8-7e49-b26b-4115-01825fbfdc61.htm" />
         <HelpTOCNode Title="Equality Operator " Url="html/05534019-0d2e-7833-8977-2473e034851b.htm" />
-        <HelpTOCNode Id="c8a5d817-6a30-4d5d-9528-05e484bfd7bf" Title="Implicit Conversion Operators" Url="html/99940017-f473-54f9-960e-8f9e59acf59a.htm">
+        <HelpTOCNode Id="5d6b4a3b-a67e-4392-b182-968ad709780e" Title="Implicit Conversion Operators" Url="html/99940017-f473-54f9-960e-8f9e59acf59a.htm">
           <HelpTOCNode Title="Implicit Conversion (Vector2F to Vector3F)" Url="html/35df8412-cf85-0369-ce16-f126de614a47.htm" />
           <HelpTOCNode Title="Implicit Conversion (Vector2I to Vector3F)" Url="html/363917b2-a981-aefc-3ca6-7f44abaa8066.htm" />
           <HelpTOCNode Title="Implicit Conversion (Vector3I to Vector3F)" Url="html/96c7bd6f-137c-3a0d-8a69-6b43f7593da9.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="Inequality Operator " Url="html/d9e82ba2-0121-60bf-2b3e-7a945094a9a6.htm" />
-        <HelpTOCNode Id="794bd720-767a-444f-9490-00245de92f74" Title="Multiply Operator " Url="html/afe40c31-b63a-a0ed-4390-821075a13e61.htm">
+        <HelpTOCNode Id="66931e1f-ff3d-4e78-9916-758bed14f84f" Title="Multiply Operator " Url="html/afe40c31-b63a-a0ed-4390-821075a13e61.htm">
           <HelpTOCNode Title="Multiply Operator (Single, Vector3F)" Url="html/e0cb15f1-4930-2ae8-7453-39e8e290ab5e.htm" />
           <HelpTOCNode Title="Multiply Operator (Vector3F, Vector3F)" Url="html/0d1940a9-c03b-2bf5-649f-bb78d21c1d5e.htm" />
           <HelpTOCNode Title="Multiply Operator (Vector3F, Single)" Url="html/deedb6fa-8554-3d9e-f506-7379f8a40da5.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="Subtraction Operator " Url="html/d4d65840-7227-e7e7-39b4-a1ebca0eaf05.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="0edfab3b-4028-409e-9823-2c44f19e2471" Title="Vector3F Fields" Url="html/e2d4fa61-bae7-b728-9921-862b0c83465a.htm">
+      <HelpTOCNode Id="21910bbc-6c07-4f65-a930-7dd2797df4e1" Title="Vector3F Fields" Url="html/e2d4fa61-bae7-b728-9921-862b0c83465a.htm">
         <HelpTOCNode Title="UnitX Field" Url="html/58880af9-613e-b993-0ccb-299070695a63.htm" />
         <HelpTOCNode Title="UnitY Field" Url="html/7eb4e45f-8ac8-2626-f819-c9fce48b75af.htm" />
         <HelpTOCNode Title="UnitZ Field" Url="html/b1265dd5-7942-4492-d59a-45817bace826.htm" />
@@ -815,10 +815,10 @@
         <HelpTOCNode Title="Zero Field" Url="html/b3f835c9-aec9-4810-ed28-5d5fffc46e20.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="91cd5a82-2759-4421-8b8b-68f06f97db02" Title="Vector3I Structure" Url="html/19643049-d1b1-1e32-39ff-114588947802.htm">
+    <HelpTOCNode Id="07652685-2964-4153-a894-b65be2d3ef1f" Title="Vector3I Structure" Url="html/19643049-d1b1-1e32-39ff-114588947802.htm">
       <HelpTOCNode Title="Vector3I Constructor " Url="html/36b02e49-b77f-07f6-ba42-3433cdb99748.htm" />
       <HelpTOCNode Title="Vector3I Constructor " Url="html/f582bc65-896b-d9b0-2ba8-99872b0fdae6.htm" />
-      <HelpTOCNode Id="b6f574ce-69b4-45f5-995a-6f1fe40a8649" Title="Vector3I Properties" Url="html/064fe458-a874-9719-7a6d-1754d852118f.htm">
+      <HelpTOCNode Id="58f22025-4e6e-47a7-b167-92b47a9cd0db" Title="Vector3I Properties" Url="html/064fe458-a874-9719-7a6d-1754d852118f.htm">
         <HelpTOCNode Title="Length Property " Url="html/ed83ad41-cf2e-e53e-09a6-2bd3657368b7.htm" />
         <HelpTOCNode Title="LengthSquared Property " Url="html/ecc55652-02f8-029a-b6d7-8006311d7260.htm" />
         <HelpTOCNode Title="X Property " Url="html/0a0d8fd0-d6b3-e63b-6655-508c9f1ffd59.htm" />
@@ -828,46 +828,46 @@
         <HelpTOCNode Title="YZ Property " Url="html/5bd747dc-e268-837c-b235-7e2294e604ba.htm" />
         <HelpTOCNode Title="Z Property " Url="html/761deefb-bffc-6a4b-354a-84565fe62a7a.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="ddc87527-273a-46be-912c-3477f2252f2f" Title="Vector3I Methods" Url="html/d6fa074d-e3c7-5dd1-042c-f2a345446ed1.htm">
-        <HelpTOCNode Id="37a41f59-d6f6-4d4f-8efc-f66f4ac32a08" Title="Add Method " Url="html/954fbf9a-8300-054a-b2fb-a7e79c6b3428.htm">
+      <HelpTOCNode Id="50f16108-383e-4b1b-af95-e483262c4b29" Title="Vector3I Methods" Url="html/d6fa074d-e3c7-5dd1-042c-f2a345446ed1.htm">
+        <HelpTOCNode Id="651fe343-b38c-456c-ad18-8225c71ef0f6" Title="Add Method " Url="html/954fbf9a-8300-054a-b2fb-a7e79c6b3428.htm">
           <HelpTOCNode Title="Add Method (Vector3I)" Url="html/1ec35ae9-6b21-3e6f-1346-c3b8fd22c176.htm" />
           <HelpTOCNode Title="Add Method (Vector3I, Vector3I)" Url="html/188d2d48-d3e2-9076-aca2-ee9e9665927f.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="db300adf-ae9a-483f-b391-7fafb9b90f48" Title="Cross Method " Url="html/974db67c-e81f-c4b6-ec0d-9535b1d83e29.htm">
+        <HelpTOCNode Id="03eb9f30-c9ee-4a60-bace-daf6db8bc217" Title="Cross Method " Url="html/974db67c-e81f-c4b6-ec0d-9535b1d83e29.htm">
           <HelpTOCNode Title="Cross Method (Vector3I)" Url="html/73ce3750-81af-99b3-ee6e-a3d4d51977d9.htm" />
           <HelpTOCNode Title="Cross Method (Vector3I, Vector3I)" Url="html/0e0bc6f1-455c-6746-033e-071f31df40d5.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="dae2c3ac-ea07-46b2-bfcb-1ef8cf59c944" Title="Distance Method " Url="html/774ac886-7f14-1f7a-b545-b220414ae66a.htm">
+        <HelpTOCNode Id="e0c0977d-64ac-4223-b45c-3277fc79cbe6" Title="Distance Method " Url="html/774ac886-7f14-1f7a-b545-b220414ae66a.htm">
           <HelpTOCNode Title="Distance Method (Vector3I)" Url="html/404ea61e-30cc-5b4f-53b5-dc7145f5df55.htm" />
           <HelpTOCNode Title="Distance Method (Vector3I, Vector3I)" Url="html/792d94d9-1f81-8463-1063-09191493de2d.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="6cab3ba1-468e-429e-bff4-9f8b4a7def5b" Title="DistanceSquared Method " Url="html/a362f53c-1d22-24ec-6064-3f1e87389c2b.htm">
+        <HelpTOCNode Id="e6e2f9fe-6bcf-4a0e-b925-91f995d746cf" Title="DistanceSquared Method " Url="html/a362f53c-1d22-24ec-6064-3f1e87389c2b.htm">
           <HelpTOCNode Title="DistanceSquared Method (Vector3I)" Url="html/5faf04ce-ce41-b862-cdc3-8375c3269650.htm" />
           <HelpTOCNode Title="DistanceSquared Method (Vector3I, Vector3I)" Url="html/203cd6bc-dc31-a677-113b-17adeb7814ca.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="4334c262-4699-4863-a554-f243fcbac0d5" Title="Divide Method " Url="html/a5e435f6-4cc2-07fc-9e70-bafdc7f097ca.htm">
+        <HelpTOCNode Id="d061f87f-dce0-43f0-a7ed-7eeb9639def1" Title="Divide Method " Url="html/a5e435f6-4cc2-07fc-9e70-bafdc7f097ca.htm">
           <HelpTOCNode Title="Divide Method (Int32)" Url="html/447fe829-a041-75a1-4150-b9478f292b79.htm" />
           <HelpTOCNode Title="Divide Method (Vector3I, Int32)" Url="html/e74a864e-5438-e8ec-3dcd-73019402f82f.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="747d923a-240a-46fd-9fa0-840321aecac1" Title="Dot Method " Url="html/41e65ca8-29be-d3fe-78ec-1ac2eed5845e.htm">
+        <HelpTOCNode Id="4dfc8ea4-8c0d-4f56-b924-4d3131a3293a" Title="Dot Method " Url="html/41e65ca8-29be-d3fe-78ec-1ac2eed5845e.htm">
           <HelpTOCNode Title="Dot Method (Vector3I)" Url="html/79953eff-c128-5611-7ae6-8cbacb417fab.htm" />
           <HelpTOCNode Title="Dot Method (Vector3I, Vector3I)" Url="html/58f10164-831b-c4aa-d083-c8d7db905c30.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="0656d436-dec3-49e0-b047-9545ef93aa0b" Title="Equals Method " Url="html/c179b12f-f029-f75e-8782-bd86ede55ef6.htm">
+        <HelpTOCNode Id="5fdb44a3-0769-4b9c-acd8-1aefefd387a1" Title="Equals Method " Url="html/c179b12f-f029-f75e-8782-bd86ede55ef6.htm">
           <HelpTOCNode Title="Equals Method (Object)" Url="html/af0e74cf-8499-b385-5332-f1087feb9f8e.htm" />
           <HelpTOCNode Title="Equals Method (Vector3I)" Url="html/25175457-edd1-71d8-8694-10ada9f4368c.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="GetHashCode Method " Url="html/435ca4e8-b6c9-2a00-cebb-a38b09202bb2.htm" />
-        <HelpTOCNode Id="137f5bea-838c-4c84-948f-57e04d766a2f" Title="ManhattanDistance Method " Url="html/8d9a8f01-b3f6-b61b-5cde-ccd2645e6ebb.htm">
+        <HelpTOCNode Id="0613bb24-b072-4d4b-aa7c-9b52269dfe3a" Title="ManhattanDistance Method " Url="html/8d9a8f01-b3f6-b61b-5cde-ccd2645e6ebb.htm">
           <HelpTOCNode Title="ManhattanDistance Method (Vector3I)" Url="html/956627ed-1b53-891c-abac-16aa675bb01b.htm" />
           <HelpTOCNode Title="ManhattanDistance Method (Vector3I, Vector3I)" Url="html/99011437-f3ca-22ef-e7e8-23dbc4bc8ca6.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="22755359-ac5a-4987-8373-e666ab77ea64" Title="Multiply Method " Url="html/882f0bcf-4f51-70de-4ec3-d41ab73dfd5b.htm">
+        <HelpTOCNode Id="d7051e74-3152-43ca-82b6-1f57acc2a807" Title="Multiply Method " Url="html/882f0bcf-4f51-70de-4ec3-d41ab73dfd5b.htm">
           <HelpTOCNode Title="Multiply Method (Int32)" Url="html/f7b11a95-3f8a-1945-d905-fbbe807b64a1.htm" />
           <HelpTOCNode Title="Multiply Method (Int32, Vector3I)" Url="html/84b96416-2c47-ff92-8784-9b529a0a6bbe.htm" />
           <HelpTOCNode Title="Multiply Method (Vector3I, Int32)" Url="html/db8e3df6-fb97-3274-5098-e6e669afed6d.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="7a8643b9-a985-4ada-a32a-67f6e6dab99c" Title="Subtract Method " Url="html/89f605f5-e1d1-2da5-51ad-98cf71ca2757.htm">
+        <HelpTOCNode Id="04bcfd90-2c7c-4f1a-8670-daf8ce888609" Title="Subtract Method " Url="html/89f605f5-e1d1-2da5-51ad-98cf71ca2757.htm">
           <HelpTOCNode Title="Subtract Method (Vector3I)" Url="html/2e49755e-5241-f494-d652-95a9c4d217e3.htm" />
           <HelpTOCNode Title="Subtract Method (Vector3I, Vector3I)" Url="html/4386bbd3-dbff-8633-4680-e269b3ca254a.htm" />
         </HelpTOCNode>
@@ -876,20 +876,20 @@
         <HelpTOCNode Title="WithY Method " Url="html/c168a891-54b7-2464-06f4-4fba00eb964f.htm" />
         <HelpTOCNode Title="WithZ Method " Url="html/9f2c73b8-3f44-6a64-37a6-98b1fa4f1688.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="14c23c9e-3b56-49d2-bb18-f498cf490c68" Title="Vector3I Operators and Type Conversions" Url="html/69c97714-8513-ea0b-998e-5e8fcd774b7d.htm">
+      <HelpTOCNode Id="b8f2ee07-4f21-451b-9570-7e276920354b" Title="Vector3I Operators and Type Conversions" Url="html/69c97714-8513-ea0b-998e-5e8fcd774b7d.htm">
         <HelpTOCNode Title="Addition Operator " Url="html/f008a889-da1e-cc9a-7c2b-7bb1cd9f843b.htm" />
         <HelpTOCNode Title="Division Operator " Url="html/5e35b319-2aca-0639-b391-631b1dac2c18.htm" />
         <HelpTOCNode Title="Equality Operator " Url="html/7825e9ce-2cce-b8d3-d61a-150c4cf8a713.htm" />
         <HelpTOCNode Title="Implicit Conversion (Vector2I to Vector3I)" Url="html/6f2635da-dee3-d998-f535-c365db424e53.htm" />
         <HelpTOCNode Title="Inequality Operator " Url="html/69271ec7-2dbe-14cf-23b3-4108998556a2.htm" />
-        <HelpTOCNode Id="6126824e-e5a5-42fd-a052-7f15ec75ee44" Title="Multiply Operator " Url="html/4dfa18b0-45a7-44b4-27b4-9183b48579e9.htm">
+        <HelpTOCNode Id="5c028171-e701-46a0-8c4a-9db9a29a4ebb" Title="Multiply Operator " Url="html/4dfa18b0-45a7-44b4-27b4-9183b48579e9.htm">
           <HelpTOCNode Title="Multiply Operator (Int32, Vector3I)" Url="html/9de7e5d4-7ba6-de69-90f0-873498647fb5.htm" />
           <HelpTOCNode Title="Multiply Operator (Vector3I, Vector3I)" Url="html/51920f22-f44b-274a-377c-10c335d8971b.htm" />
           <HelpTOCNode Title="Multiply Operator (Vector3I, Int32)" Url="html/d786793b-78c5-9e71-8ba6-a548244e6b1f.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="Subtraction Operator " Url="html/423b795f-483a-fd7a-f264-b6caae33b08b.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="482cd351-f6d0-4c0f-832f-92b00fe0082c" Title="Vector3I Fields" Url="html/586e1dc5-37bd-d848-a2c3-d0766573b6a4.htm">
+      <HelpTOCNode Id="438664b6-8b81-462e-9470-1c41b2fbb8e5" Title="Vector3I Fields" Url="html/586e1dc5-37bd-d848-a2c3-d0766573b6a4.htm">
         <HelpTOCNode Title="UnitX Field" Url="html/7aed54b4-3c6f-70d6-d1c0-45cbd7d1a5a4.htm" />
         <HelpTOCNode Title="UnitY Field" Url="html/2dfbba88-ff0b-ebe7-baf5-241b10848fb0.htm" />
         <HelpTOCNode Title="UnitZ Field" Url="html/c3f60131-508f-05ea-42c7-faabcd48c8df.htm" />
