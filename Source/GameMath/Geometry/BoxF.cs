@@ -380,22 +380,6 @@
         }
 
         /// <summary>
-        ///   Checks whether this box at least partially intersects the passed other one.
-        /// </summary>
-        /// <param name="other">
-        ///   Box to check.
-        /// </param>
-        /// <returns>
-        ///   <c>true</c>, if this box intersects <paramref name="other" />, and <c>false</c> otherwise.
-        /// </returns>
-        public bool Intersects(BoxF other)
-        {
-            return (this.Right > other.Left && this.Left < other.Right)
-                   && (this.Bottom > other.Top && this.Top < other.Bottom)
-                   && (this.Back > other.Front && this.Front < other.Back);
-        }
-
-        /// <summary>
         ///   Compares the passed boxes for equality.
         /// </summary>
         /// <param name="first">
