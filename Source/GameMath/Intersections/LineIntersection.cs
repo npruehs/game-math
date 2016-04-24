@@ -57,6 +57,42 @@
         }
 
         /// <summary>
+        ///   Checks whether the specified line segment intersects the passed one.
+        /// </summary>
+        /// <param name="first">Line segment to check.</param>
+        /// <param name="second">Line segment to check.</param>
+        /// <param name="intersectionPoint">Intersection point, if found.</param>
+        /// <returns>
+        ///   <c>true</c>, if both line segments intersect each other, and <c>false</c> otherwise.
+        /// </returns>
+        public static bool Intersects(this LineSegment2F first, LineSegment2F second, out Vector2F intersectionPoint)
+        {
+            // http://www.wyrmtale.com/blog/2013/115/2d-line-intersection-in-c
+            // Get A,B,C of first line - points ps1 to pe1.
+            var a1 = first.Q.Y - first.P.Y;
+            var b1 = first.P.X - first.Q.X;
+            var c1 = a1 * first.P.X + b1 * first.P.Y;
+
+            // Get A,B,C of second line - points ps2 to pe2.
+            var a2 = second.Q.Y - second.P.Y;
+            var b2 = second.P.X - second.Q.X;
+            var c2 = a2 * second.P.X + b2 * second.P.Y;
+
+            // Get delta and check if the lines are parallel.
+            var delta = a1 * b2 - a2 * b1;
+
+            if (Math.Abs(delta) < float.Epsilon)
+            {
+                intersectionPoint = Vector2F.Zero;
+                return false;
+            }
+
+            // Return intersection point.
+            intersectionPoint = new Vector2F((b2 * c1 - b1 * c2) / delta, (a1 * c2 - a2 * c1) / delta);
+            return first.Contains(intersectionPoint) && second.Contains(intersectionPoint);
+        }
+
+        /// <summary>
         ///   Checks whether the specified line intersects the passed circle.
         /// </summary>
         /// <param name="line">
