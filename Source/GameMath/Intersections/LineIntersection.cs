@@ -11,6 +11,35 @@
         #region Public Methods and Operators
 
         /// <summary>
+        ///   Checks whether the specified line segment intersects the passed one.
+        /// </summary>
+        /// <param name="first">Line segment to check.</param>
+        /// <param name="second">Line segment to check.</param>
+        /// <returns>
+        ///   <c>true</c>, if both line segments intersect each other, and <c>false</c> otherwise.
+        /// </returns>
+        public static bool Intersects(this LineSegment2F first, LineSegment2F second)
+        {
+            // http://jeffe.cs.illinois.edu/teaching/373/notes/x06-sweepline.pdf
+            var a = first.P;
+            var b = first.Q;
+            var c = second.P;
+            var d = second.Q;
+
+            if (Vector2F.CounterClockwise(a, c, d) == Vector2F.CounterClockwise(b, c, d))
+            {
+                return false;
+            }
+
+            if (Vector2F.CounterClockwise(a, b, c) == Vector2F.CounterClockwise(a, b, d))
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        /// <summary>
         ///   Checks whether the specified line intersects the passed circle.
         /// </summary>
         /// <param name="line">
