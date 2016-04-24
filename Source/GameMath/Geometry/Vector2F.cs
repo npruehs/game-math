@@ -143,6 +143,31 @@
         }
 
         /// <summary>
+        ///   Checks whether the given points are in counter-clockwise order.
+        /// </summary>
+        /// <param name="p">First point.</param>
+        /// <param name="q">Second point.</param>
+        /// <param name="r">Third point.</param>
+        /// <returns>
+        ///   <c>true</c>, if the three points are in counter-clockwise order, and
+        ///   <c>false</c> otherwise.
+        /// </returns>
+        public static bool CounterClockwise(Vector2F p, Vector2F q, Vector2F r)
+        {
+            // http://jeffe.cs.illinois.edu/teaching/373/notes/x05-convexhull.pdf
+            var a = p.X;
+            var b = p.Y;
+
+            var c = q.X;
+            var d = q.Y;
+
+            var e = r.X;
+            var f = r.Y;
+
+            return (f - b) * (c - a) > (d - b) * (e - a);
+        }
+
+        /// <summary>
         ///   Computes the Euclidean distance between the points at <paramref name="p" /> and <paramref name="q" />.
         /// </summary>
         /// <param name="p">
