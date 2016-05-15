@@ -5,6 +5,9 @@
     /// <summary>
     ///   Common math operations on single-precision floating point numbers.
     /// </summary>
+    /// <seealso cref="MathD"/>
+    /// <seealso cref="MathI"/>
+    /// <seealso cref="MathUtils"/>
     [CLSCompliant(true)]
     public static class MathF
     {

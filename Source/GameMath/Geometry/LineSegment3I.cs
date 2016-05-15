@@ -5,6 +5,9 @@
     /// <summary>
     ///   Part of a line that is bounded by two distinct end points. Note that line segments are immutable.
     /// </summary>
+    /// <seealso cref="LineSegment2F"/>
+    /// <seealso cref="LineSegment3I"/>
+    /// <seealso cref="LineSegment3F"/>
     [CLSCompliant(true)]
     public struct LineSegment3I : IEquatable<LineSegment3I>
     {

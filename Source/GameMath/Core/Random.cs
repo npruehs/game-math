@@ -66,6 +66,9 @@
         /// <param name="seed">
         ///   64-bit unsigned integer to use as seed.
         /// </param>
+        /// <exception cref="ArgumentOutOfRangeException">
+        ///   <paramref name="seed"/> is equal to <see cref="M"/>.
+        /// </exception>
         /// <seealso cref="Seed" />
         public Random2(long seed)
         {

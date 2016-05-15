@@ -45,7 +45,14 @@ All types must be [CLS-compliant](http://stackoverflow.com/questions/1828575/why
 
 ### Documentation Conventions
 
-All types and members must have full XML comment documentation.
+All types and members must have full XML comment documentation, including the following tags (where appropriate):
+
+* Summary
+* Remarks
+* Param
+* Returns
+* Exception
+* SeeAlso
 
 ### Naming Conventions
 

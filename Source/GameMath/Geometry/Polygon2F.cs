@@ -40,8 +40,19 @@
         ///   Constructs a new polygon with the specified points.
         /// </summary>
         /// <param name="points">Points making up the new polygon.</param>
+        /// <exception cref="ArgumentNullException">
+        ///   <paramref name="points"/> is <c>null</c>.
+        /// </exception>
+        /// <exception cref="ArgumentException">
+        ///   <paramref name="points"/> contains two or less elements.
+        /// </exception>
         public Polygon2F(IList<Vector2F> points)
         {
+            if (points == null)
+            {
+                throw new ArgumentNullException("points");
+            }
+
             if (points.Count < 3)
             {
                 throw new ArgumentException("Polygon must consist of at least three points.", "points");

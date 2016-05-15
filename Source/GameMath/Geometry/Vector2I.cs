@@ -5,6 +5,9 @@
     /// <summary>
     ///   Vector in two-dimensional space with integer components. Note that vectors are immutable.
     /// </summary>
+    /// <seealso cref="Vector2F"/>
+    /// <seealso cref="Vector3F"/>
+    /// <seealso cref="Vector3I"/>
     [CLSCompliant(true)]
     public struct Vector2I : IEquatable<Vector2I>
     {

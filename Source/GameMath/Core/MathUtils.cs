@@ -5,6 +5,9 @@
     /// <summary>
     ///   Math utility methods, independent of a specific type.
     /// </summary>
+    /// <seealso cref="MathD"/>
+    /// <seealso cref="MathF"/>
+    /// <seealso cref="MathI"/>
     [CLSCompliant(true)]
     public static class MathUtils
     {
