@@ -20,6 +20,12 @@
         /// </returns>
         public static bool Intersects(this LineSegment2F first, LineSegment2F second)
         {
+            // By definition, line segments that share a point can't intersect.
+            if (first.P == second.P || first.P == second.Q || first.Q == second.P || first.Q == second.Q)
+            {
+                return false;
+            }
+
             // http://jeffe.cs.illinois.edu/teaching/373/notes/x06-sweepline.pdf
             var a = first.P;
             var b = first.Q;
