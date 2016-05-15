@@ -132,7 +132,7 @@
         {
             get
             {
-                return (this.Position + this.Size) / 2;
+                return this.Position + (this.Size / 2);
             }
         }
 
