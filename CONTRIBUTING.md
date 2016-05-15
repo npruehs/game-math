@@ -18,7 +18,7 @@ GameMath is developed using the [GitFlow branching model](http://nvie.com/posts/
 
 We recommend using [StyleCop](http://stylecop.codeplex.com/) for verifying your code against our [coding guidelines](https://msdn.microsoft.com/en-us/library/ff926074.aspx).
 
-### Implementation Conventions
+### Algorithm Implementation Conventions
 
 If you are implementing a non-trivial algorithm (think: non-trivial for others, not for you), you should
 
@@ -26,6 +26,22 @@ If you are implementing a non-trivial algorithm (think: non-trivial for others, 
  * write unit tests verifying your implementation,
  
 or both.
+
+Algorithm classes should not be static. This allows for providing common interfaces in the future, and easier mocking and/or replacement in that case. 
+
+### Type Implementation Conventions
+
+Data types should be _immutable_ where it makes sense.
+
+Data types must always provide the following operations:
+
+* Equals
+* GetHashCode
+* ==
+* !=
+* ToString
+
+All types must be [CLS-compliant](http://stackoverflow.com/questions/1828575/why-should-i-write-cls-compliant-code).
 
 ### Documentation Conventions
 

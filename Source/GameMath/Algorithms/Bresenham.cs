@@ -8,7 +8,7 @@
     ///   approximation to a straight line between two given points.
     /// </summary>
     [CLSCompliant(true)]
-    public static class Bresenham
+    public class Bresenham
     {
         #region Public Methods and Operators
 
@@ -27,7 +27,7 @@
         /// <returns>
         ///   Approximation to a straight line between the given points.
         /// </returns>
-        public static List<Vector2I> Plot(Vector2I p, Vector2I q)
+        public List<Vector2I> Plot(Vector2I p, Vector2I q)
         {
             var line = new List<Vector2I>();
 

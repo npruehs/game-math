@@ -7,10 +7,9 @@
 
     /// <summary>
     ///   Polygon in two-dimensional space with floating point points.
-    ///   Note that polygons are immutable.
     /// </summary>
     [CLSCompliant(true)]
-    public struct Polygon2F : IEquatable<Polygon2F>
+    public class Polygon2F : IEquatable<Polygon2F>
     {
         #region Fields
 
@@ -279,7 +278,7 @@
         /// </returns>
         public static bool operator ==(Polygon2F first, Polygon2F second)
         {
-            return first.Equals(second);
+            return Equals(first, second);
         }
 
         /// <summary>
