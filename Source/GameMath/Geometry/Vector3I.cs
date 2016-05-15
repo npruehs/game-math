@@ -201,9 +201,11 @@
         }
 
         /// <summary>
-        ///   Computes the cross product of the passed vectors. See
-        ///   http://en.wikipedia.org/wiki/Cross_product for details.
+        ///   Computes the cross product of the passed vectors.
         /// </summary>
+        /// <remarks>
+        ///   See http://en.wikipedia.org/wiki/Cross_product for details.
+        /// </remarks>
         /// <param name="v">
         ///   First vector to compute the cross product of.
         /// </param>
@@ -222,9 +224,11 @@
         }
 
         /// <summary>
-        ///   Computes the cross product of the passed vector and this one. See
-        ///   http://en.wikipedia.org/wiki/Cross_product for details.
+        ///   Computes the cross product of the passed vector and this one.
         /// </summary>
+        /// <remarks>
+        ///   See http://en.wikipedia.org/wiki/Cross_product for details.
+        /// </remarks>
         /// <param name="v">
         ///   Vector to compute the cross product of.
         /// </param>
@@ -420,7 +424,7 @@
         ///   point to the specified one.
         /// </summary>
         /// <remarks>
-        ///   https://en.wikipedia.org/wiki/Taxicab_geometry
+        ///   See https://en.wikipedia.org/wiki/Taxicab_geometry for details.
         /// </remarks>
         /// <param name="p">Point to compute the Manhattan distance to.</param>
         /// <returns>
@@ -435,7 +439,7 @@
         ///   Sum of the absolute differences of the Cartesian coordinates of both points.
         /// </summary>
         /// <remarks>
-        ///   https://en.wikipedia.org/wiki/Taxicab_geometry
+        ///   See https://en.wikipedia.org/wiki/Taxicab_geometry for details.
         /// </remarks>
         /// <param name="p">First point to compute the Manhattan distance of.</param>
         /// <param name="q">Second point to compute the Manhattan distance of.</param>

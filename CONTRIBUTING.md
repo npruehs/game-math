@@ -18,6 +18,19 @@ GameMath is developed using the [GitFlow branching model](http://nvie.com/posts/
 
 We recommend using [StyleCop](http://stylecop.codeplex.com/) for verifying your code against our [coding guidelines](https://msdn.microsoft.com/en-us/library/ff926074.aspx).
 
+### Implementation Conventions
+
+If you are implementing a non-trivial algorithm (think: non-trivial for others, not for you), you should
+
+ * add a link to the source in the remarks,
+ * write unit tests verifying your implementation,
+ 
+or both.
+
+### Documentation Conventions
+
+All types and members must have full XML comment documentation.
+
 ### Naming Conventions
 
 In order to make the code more readable and consistent, contributions are required to adhere to the following guidelines:

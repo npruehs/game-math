@@ -201,9 +201,11 @@
         }
 
         /// <summary>
-        ///   Computes the cross product of the passed vectors. See
-        ///   http://en.wikipedia.org/wiki/Cross_product for details.
+        ///   Computes the cross product of the passed vectors.
         /// </summary>
+        /// <remarks>
+        ///   See http://en.wikipedia.org/wiki/Cross_product for details.
+        /// </remarks>
         /// <param name="v">
         ///   First vector to compute the cross product of.
         /// </param>
@@ -222,9 +224,11 @@
         }
 
         /// <summary>
-        ///   Computes the cross product of the passed vector and this one. See
-        ///   http://en.wikipedia.org/wiki/Cross_product for details.
+        ///   Computes the cross product of the passed vector and this one.
         /// </summary>
+        /// <remarks>
+        ///   See http://en.wikipedia.org/wiki/Cross_product for details.
+        /// </remarks>
         /// <param name="v">
         ///   Vector to compute the cross product of.
         /// </param>
@@ -702,12 +706,14 @@
         /// <summary>
         ///   Reflects the passed vector off the plane defined by the specified normal.
         /// </summary>
+        /// <remarks>
+        ///   See http://www.blitzbasic.com/Community/posts.php?topic=52511 for details.
+        /// </remarks>
         /// <param name="v">Vector to reflect.</param>
         /// <param name="n">Normal of the plane to reflect off.</param>
         /// <returns>Reflected vector.</returns>
         public static Vector3F Reflect(Vector3F v, Vector3F n)
         {
-            // http://www.blitzbasic.com/Community/posts.php?topic=52511
             return v - (2 * n * (n * v));
         }
 

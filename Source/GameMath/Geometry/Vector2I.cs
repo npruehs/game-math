@@ -324,7 +324,7 @@
         ///   point to the specified one.
         /// </summary>
         /// <remarks>
-        ///   https://en.wikipedia.org/wiki/Taxicab_geometry
+        ///   See https://en.wikipedia.org/wiki/Taxicab_geometry for details.
         /// </remarks>
         /// <param name="p">Point to compute the Manhattan distance to.</param>
         /// <returns>
@@ -339,7 +339,7 @@
         ///   Sum of the absolute differences of the Cartesian coordinates of both points.
         /// </summary>
         /// <remarks>
-        ///   https://en.wikipedia.org/wiki/Taxicab_geometry
+        ///   See https://en.wikipedia.org/wiki/Taxicab_geometry for details.
         /// </remarks>
         /// <param name="p">First point to compute the Manhattan distance of.</param>
         /// <param name="q">Second point to compute the Manhattan distance of.</param>

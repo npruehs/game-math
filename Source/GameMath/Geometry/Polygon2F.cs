@@ -67,7 +67,9 @@
         /// <summary>
         ///   Gets the area of this polygon.
         /// </summary>
-        /// <remarks>http://alienryderflex.com/polygon_area/</remarks>
+        /// <remarks>
+        ///   See http://alienryderflex.com/polygon_area/ for details.
+        /// </remarks>
         public float Area
         {
             get
@@ -152,6 +154,12 @@
         /// <summary>
         ///   Checks whether this polygon contains the passed point.
         /// </summary>
+        /// <remarks>
+        ///   See https://en.wikipedia.org/wiki/Point_in_polygon,
+        ///   https://stackoverflow.com/questions/217578/how-can-i-determine-whether-a-2d-point-is-within-a-polygon/2922778
+        ///   and http://web.archive.org/web/20120323102807/http:/local.wasp.uwa.edu.au/~pbourke/geometry/insidepoly/
+        ///   for details.
+        /// </remarks>
         /// <param name="point">Point to check.</param>
         /// <returns>
         ///   <c>true</c>, if this polygon <paramref name="point" />, and
@@ -160,9 +168,6 @@
         public bool Contains(Vector2F point)
         {
             // Check how often a ray from the point intersects with the polygon edges.
-            // https://en.wikipedia.org/wiki/Point_in_polygon
-            // https://stackoverflow.com/questions/217578/how-can-i-determine-whether-a-2d-point-is-within-a-polygon/2922778
-            // http://web.archive.org/web/20120323102807/http:/local.wasp.uwa.edu.au/~pbourke/geometry/insidepoly/
             var j = this.points.Count - 1;
             var inside = false;
 
@@ -240,13 +245,16 @@
         /// <summary>
         ///   Checks if the points of this polygon are in clockwise or counter-clockwise order.
         /// </summary>
+        /// <remarks>
+        ///   See http://stackoverflow.com/questions/1165647/how-to-determine-if-a-list-of-polygon-points-are-in-clockwise-order
+        ///   for details.
+        /// </remarks>
         /// <returns>
         ///   <c>true</c>, if the points of this polygon are in clockwise order, and
         ///   <c>false</c> otherwise.
         /// </returns>
         public bool IsClockwise()
         {
-            // http://stackoverflow.com/questions/1165647/how-to-determine-if-a-list-of-polygon-points-are-in-clockwise-order
             float sum = 0;
             for (var index = 0; index < this.points.Count; index++)
             {
@@ -319,7 +327,9 @@
         /// <summary>
         ///   Decomposes this polygon into triangles.
         /// </summary>
-        /// <remarks>http://www.geometrictools.com/Documentation/TriangulationByEarClipping.pdf</remarks>
+        /// <remarks>
+        ///   See http://www.geometrictools.com/Documentation/TriangulationByEarClipping.pdf for details.
+        /// </remarks>
         /// <returns>Triangles composing this polygon.</returns>
         public List<Polygon2F> Triangulate()
         {

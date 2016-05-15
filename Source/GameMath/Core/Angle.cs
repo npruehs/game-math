@@ -57,12 +57,14 @@
         /// <summary>
         ///   Returns the angle between the specified vectors in radians.
         /// </summary>
+        /// <remarks>
+        ///   See http://www.euclideanspace.com/maths/algebra/vectors/angleBetween/index.htm for details.
+        /// </remarks>
         /// <param name="v">First vector.</param>
         /// <param name="w">Second vector.</param>
         /// <returns>Angle between the specified vectors in radians.</returns>
         public static float Between(Vector2F v, Vector2F w)
         {
-            // http://www.euclideanspace.com/maths/algebra/vectors/angleBetween/index.htm
             return Atan2(w.Y, w.X) - Atan2(v.Y, v.X);
         }
 
@@ -105,13 +107,15 @@
         ///   Think of this as "how do get from angle y to x".
         ///   Example: Delta(3/2 Pi, 0) will return -1/2 Pi.
         /// </summary>
+        /// <remarks>
+        ///   See http://stackoverflow.com/questions/1878907/the-smallest-difference-between-2-angles
+        ///   and http://stackoverflow.com/users/503402/max for details.
+        /// </remarks>
         /// <param name="x">First angle.</param>
         /// <param name="y">Second angle.</param>
         /// <returns>Shortest difference between the specified angles.</returns>
         public static float Delta(float x, float y)
         {
-            // http://stackoverflow.com/questions/1878907/the-smallest-difference-between-2-angles
-            // http://stackoverflow.com/users/503402/max
             // x - y gives you the difference in angle, but it may be out of the desired bounds.
             // Think of this angle defining x point on the unit circle. The coordinates of that point are (cos(x - y), sin(x - y)).
             // Atan2 returns the angle for that point (which is equivalent to x - y) except its range is [-PI, PI].
@@ -122,11 +126,13 @@
         ///   Returns the angle between the specified vector and the x-axis.
         ///   Example: FromVector(0.5, 0.5) will return DegreesToRadians(45).
         /// </summary>
+        /// <remarks>
+        ///   See http://stackoverflow.com/questions/6247153/angle-from-2d-unit-vector for details.
+        /// </remarks>
         /// <param name="v">Vector to get the angle of.</param>
         /// <returns>Angle between the specified vector and the x-axis.</returns>
         public static float FromVector(Vector2F v)
         {
-            // http://stackoverflow.com/questions/6247153/angle-from-2d-unit-vector
             var normalized = v.Normalize();
             return Atan2(normalized.Y, normalized.X);
         }

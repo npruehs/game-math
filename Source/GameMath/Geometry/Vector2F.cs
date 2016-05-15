@@ -145,6 +145,9 @@
         /// <summary>
         ///   Checks whether the given points are in counter-clockwise order.
         /// </summary>
+        /// <remarks>
+        ///   See http://jeffe.cs.illinois.edu/teaching/373/notes/x05-convexhull.pdf for details.
+        /// </remarks>
         /// <param name="p">First point.</param>
         /// <param name="q">Second point.</param>
         /// <param name="r">Third point.</param>
@@ -154,7 +157,6 @@
         /// </returns>
         public static bool CounterClockwise(Vector2F p, Vector2F q, Vector2F r)
         {
-            // http://jeffe.cs.illinois.edu/teaching/373/notes/x05-convexhull.pdf
             var a = p.X;
             var b = p.Y;
 
@@ -609,12 +611,14 @@
         ///   Orthogonally projects <paramref name="v" /> onto a straight line
         ///   parallel to <paramref name="w" />.
         /// </summary>
+        /// <remarks>
+        ///   See https://en.wikipedia.org/wiki/Vector_projection for details.
+        /// </remarks>
         /// <param name="v">Vector to project.</param>
         /// <param name="w">Vector to project onto.</param>
         /// <returns>Projected vector.</returns>
         public static Vector2F Project(Vector2F v, Vector2F w)
         {
-            // https://en.wikipedia.org/wiki/Vector_projection
             return v.Length * Angle.Cos(Angle.Between(v, w)) * w.Normalize();
         }
 
@@ -632,12 +636,14 @@
         /// <summary>
         ///   Reflects the passed vector off the plane defined by the specified normal.
         /// </summary>
+        /// <remarks>
+        ///   See http://www.blitzbasic.com/Community/posts.php?topic=52511 for details.
+        /// </remarks>
         /// <param name="v">Vector to reflect.</param>
         /// <param name="n">Normal of the plane to reflect off.</param>
         /// <returns>Reflected vector.</returns>
         public static Vector2F Reflect(Vector2F v, Vector2F n)
         {
-            // http://www.blitzbasic.com/Community/posts.php?topic=52511
             return v - (2 * n * (n * v));
         }
 
@@ -666,12 +672,14 @@
         ///   Rotates the specified vector counter-clockwise around its origin
         ///   by the specified angle in radians.
         /// </summary>
+        /// <remarks>
+        ///   See http://stackoverflow.com/questions/4780119/2d-euclidean-vector-rotations for details.
+        /// </remarks>
         /// <param name="v">Vector to rotate.</param>
         /// <param name="theta">Angle to rotate by, in radians.</param>
         /// <returns>Rotated vector.</returns>
         public static Vector2F Rotate(Vector2F v, float theta)
         {
-            // http://stackoverflow.com/questions/4780119/2d-euclidean-vector-rotations
             var cos = Angle.Cos(theta);
             var sin = Angle.Sin(theta);
 
