@@ -65,9 +65,35 @@
         #region Properties
 
         /// <summary>
+        ///   Gets the area of this polygon.
+        /// </summary>
+        /// <remarks>http://alienryderflex.com/polygon_area/</remarks>
+        public float Area
+        {
+            get
+            {
+                var area = 0.0f;
+
+                var i = this.points.Count - 1;
+                var j = i;
+
+                for (i = 0; i < this.points.Count; i++)
+                {
+                    var pointI = this.Points[i];
+                    var pointJ = this.Points[j];
+
+                    area += (pointJ.X + pointI.X) * (pointJ.Y - pointI.Y);
+                    j = i;
+                }
+
+                return area / 2;
+            }
+        }
+
+        /// <summary>
         ///   Edges bounding this polygon.
         /// </summary>
-        public IEnumerable<LineSegment2F> Edges
+        public IList<LineSegment2F> Edges
         {
             get
             {
@@ -78,7 +104,7 @@
         /// <summary>
         ///   Points of this polygon.
         /// </summary>
-        public IEnumerable<Vector2F> Points
+        public IList<Vector2F> Points
         {
             get
             {
