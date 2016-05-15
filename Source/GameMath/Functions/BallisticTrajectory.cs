@@ -7,7 +7,7 @@
     ///   neglecting all other forces, such as friction from aerodynamic drag, without propulsion.
     /// </summary>
     /// <remarks>
-    ///   https://en.wikipedia.org/wiki/Trajectory_of_a_projectile
+    ///   See https://en.wikipedia.org/wiki/Trajectory_of_a_projectile for details.
     /// </remarks>
     [CLSCompliant(true)]
     public static class BallisticTrajectory

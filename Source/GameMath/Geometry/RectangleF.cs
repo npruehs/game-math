@@ -6,6 +6,7 @@
     ///   Axis-aligned rectangle with floating point position and extent.
     ///   Note that rectangles are immutable.
     /// </summary>
+    /// <seealso cref="RectangleF"/>
     [CLSCompliant(true)]
     public struct RectangleF : IEquatable<RectangleF>
     {
@@ -88,6 +89,9 @@
         /// <param name="size">
         ///   Rectangle size.
         /// </param>
+        /// <exception cref="ArgumentOutOfRangeException">
+        ///   Any component of <paramref name="size"/> is zero or negative.
+        /// </exception>
         public RectangleF(Vector2F position, Vector2F size)
         {
             if (size.X < 0)

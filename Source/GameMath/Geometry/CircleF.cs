@@ -39,11 +39,14 @@
         /// </summary>
         /// <param name="center">Center of the circle.</param>
         /// <param name="radius">Radius of the circle.</param>
+        /// <exception cref="ArgumentOutOfRangeException">
+        ///   <paramref name="radius"/> is zero or negative.
+        /// </exception>
         public CircleF(Vector2F center, float radius)
         {
             if (radius <= 0)
             {
-                throw new ArgumentException("Radius has to be positive", "radius");
+                throw new ArgumentOutOfRangeException("radius", "Radius has to be positive");
             }
 
             this.center = center;

@@ -6,6 +6,7 @@
     ///   Line starting at a specific point and proceeding indefinitely.
     ///   Note that rays are immutable.
     /// </summary>
+    /// <seealso cref="Ray2F"/>
     [CLSCompliant(true)]
     public struct Ray3F : IEquatable<Ray3F>
     {

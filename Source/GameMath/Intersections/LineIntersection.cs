@@ -13,6 +13,9 @@
         /// <summary>
         ///   Checks whether the specified line segment intersects the passed one.
         /// </summary>
+        /// <remarks>
+        ///   See http://jeffe.cs.illinois.edu/teaching/373/notes/x06-sweepline.pdf for details.
+        /// </remarks>
         /// <param name="first">Line segment to check.</param>
         /// <param name="second">Line segment to check.</param>
         /// <returns>
@@ -26,7 +29,6 @@
                 return false;
             }
 
-            // http://jeffe.cs.illinois.edu/teaching/373/notes/x06-sweepline.pdf
             var a = first.P;
             var b = first.Q;
             var c = second.P;
@@ -65,6 +67,9 @@
         /// <summary>
         ///   Checks whether the specified line segment intersects the passed one.
         /// </summary>
+        /// <remarks>
+        ///   See http://www.wyrmtale.com/blog/2013/115/2d-line-intersection-in-c for details.
+        /// </remarks>
         /// <param name="first">Line segment to check.</param>
         /// <param name="second">Line segment to check.</param>
         /// <param name="intersectionPoint">Intersection point, if found.</param>
@@ -73,7 +78,6 @@
         /// </returns>
         public static bool Intersects(this LineSegment2F first, LineSegment2F second, out Vector2F intersectionPoint)
         {
-            // http://www.wyrmtale.com/blog/2013/115/2d-line-intersection-in-c
             // Get A,B,C of first line - points ps1 to pe1.
             var a1 = first.Q.Y - first.P.Y;
             var b1 = first.P.X - first.Q.X;
@@ -101,6 +105,9 @@
         /// <summary>
         ///   Checks whether the specified line intersects the passed circle.
         /// </summary>
+        /// <remarks>
+        ///   See http://devmag.org.za/2009/04/17/basic-collision-detection-in-2d-part-2/ for details.
+        /// </remarks>
         /// <param name="line">
         ///   Line to check.
         /// </param>
@@ -122,8 +129,6 @@
             out Vector2F? first,
             out Vector2F? second)
         {
-            // http://devmag.org.za/2009/04/17/basic-collision-detection-in-2d-part-2/
-
             // Transform to local coordinates.
             var localPointA = line.P - circle.Center;
             var localPointB = line.Q - circle.Center;

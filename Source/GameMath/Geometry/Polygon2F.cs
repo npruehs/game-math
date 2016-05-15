@@ -7,10 +7,9 @@
 
     /// <summary>
     ///   Polygon in two-dimensional space with floating point points.
-    ///   Note that polygons are immutable.
     /// </summary>
     [CLSCompliant(true)]
-    public struct Polygon2F : IEquatable<Polygon2F>
+    public class Polygon2F : IEquatable<Polygon2F>
     {
         #region Fields
 
@@ -41,8 +40,19 @@
         ///   Constructs a new polygon with the specified points.
         /// </summary>
         /// <param name="points">Points making up the new polygon.</param>
+        /// <exception cref="ArgumentNullException">
+        ///   <paramref name="points"/> is <c>null</c>.
+        /// </exception>
+        /// <exception cref="ArgumentException">
+        ///   <paramref name="points"/> contains two or less elements.
+        /// </exception>
         public Polygon2F(IList<Vector2F> points)
         {
+            if (points == null)
+            {
+                throw new ArgumentNullException("points");
+            }
+
             if (points.Count < 3)
             {
                 throw new ArgumentException("Polygon must consist of at least three points.", "points");
@@ -67,7 +77,9 @@
         /// <summary>
         ///   Gets the area of this polygon.
         /// </summary>
-        /// <remarks>http://alienryderflex.com/polygon_area/</remarks>
+        /// <remarks>
+        ///   See http://alienryderflex.com/polygon_area/ for details.
+        /// </remarks>
         public float Area
         {
             get
@@ -152,6 +164,12 @@
         /// <summary>
         ///   Checks whether this polygon contains the passed point.
         /// </summary>
+        /// <remarks>
+        ///   See https://en.wikipedia.org/wiki/Point_in_polygon,
+        ///   https://stackoverflow.com/questions/217578/how-can-i-determine-whether-a-2d-point-is-within-a-polygon/2922778
+        ///   and http://web.archive.org/web/20120323102807/http:/local.wasp.uwa.edu.au/~pbourke/geometry/insidepoly/
+        ///   for details.
+        /// </remarks>
         /// <param name="point">Point to check.</param>
         /// <returns>
         ///   <c>true</c>, if this polygon <paramref name="point" />, and
@@ -160,9 +178,6 @@
         public bool Contains(Vector2F point)
         {
             // Check how often a ray from the point intersects with the polygon edges.
-            // https://en.wikipedia.org/wiki/Point_in_polygon
-            // https://stackoverflow.com/questions/217578/how-can-i-determine-whether-a-2d-point-is-within-a-polygon/2922778
-            // http://web.archive.org/web/20120323102807/http:/local.wasp.uwa.edu.au/~pbourke/geometry/insidepoly/
             var j = this.points.Count - 1;
             var inside = false;
 
@@ -240,13 +255,16 @@
         /// <summary>
         ///   Checks if the points of this polygon are in clockwise or counter-clockwise order.
         /// </summary>
+        /// <remarks>
+        ///   See http://stackoverflow.com/questions/1165647/how-to-determine-if-a-list-of-polygon-points-are-in-clockwise-order
+        ///   for details.
+        /// </remarks>
         /// <returns>
         ///   <c>true</c>, if the points of this polygon are in clockwise order, and
         ///   <c>false</c> otherwise.
         /// </returns>
         public bool IsClockwise()
         {
-            // http://stackoverflow.com/questions/1165647/how-to-determine-if-a-list-of-polygon-points-are-in-clockwise-order
             float sum = 0;
             for (var index = 0; index < this.points.Count; index++)
             {
@@ -271,7 +289,7 @@
         /// </returns>
         public static bool operator ==(Polygon2F first, Polygon2F second)
         {
-            return first.Equals(second);
+            return Equals(first, second);
         }
 
         /// <summary>
@@ -319,7 +337,9 @@
         /// <summary>
         ///   Decomposes this polygon into triangles.
         /// </summary>
-        /// <remarks>http://www.geometrictools.com/Documentation/TriangulationByEarClipping.pdf</remarks>
+        /// <remarks>
+        ///   See http://www.geometrictools.com/Documentation/TriangulationByEarClipping.pdf for details.
+        /// </remarks>
         /// <returns>Triangles composing this polygon.</returns>
         public List<Polygon2F> Triangulate()
         {
