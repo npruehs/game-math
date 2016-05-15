@@ -14,18 +14,18 @@
         ///   Checks whether the two passed numbers are equal, with respect
         ///   to possible loss of precision caused by rounding values.
         /// </summary>
-        /// <param name="f">
+        /// <param name="x">
         ///   First number to compare.
         /// </param>
-        /// <param name="g">
+        /// <param name="y">
         ///   Second number to compare.
         /// </param>
         /// <returns>
         ///   <c>true</c>, if both numbers are equal, and <c>false</c> otherwise.
         /// </returns>
-        public static bool Equals(float f, float g)
+        public static bool Equals(float x, float y)
         {
-            return Math.Abs(f - g) < float.Epsilon;
+            return Math.Abs(x - y) < float.Epsilon;
         }
 
         /// <summary>
@@ -41,31 +41,31 @@
         /// <summary>
         ///   Linearly interpolates between the two passed values.
         /// </summary>
-        /// <param name="f">
+        /// <param name="x">
         ///   First value to interpolate.
         /// </param>
-        /// <param name="g">
+        /// <param name="y">
         ///   Second value to interpolate.
         /// </param>
         /// <param name="l">
-        ///   Interpolation parameter. 0 returns <paramref name="f" />, 1 returns <paramref name="g" />.
+        ///   Interpolation parameter. 0 returns <paramref name="x" />, 1 returns <paramref name="y" />.
         /// </param>
         /// <returns>
         ///   Linear interpolation between the two passed values.
         /// </returns>
-        public static float Lerp(float f, float g, float l)
+        public static float Lerp(float x, float y, float l)
         {
             if (l <= 0.0f)
             {
-                return f;
+                return x;
             }
 
             if (l >= 1.0f)
             {
-                return g;
+                return y;
             }
 
-            return f + (l * (g - f));
+            return x + (l * (y - x));
         }
 
         /// <summary>
@@ -102,15 +102,15 @@
         /// <summary>
         ///   Returns the square root of the specified number.
         /// </summary>
-        /// <param name="f">
+        /// <param name="x">
         ///   Number to get the square root of.
         /// </param>
         /// <returns>
         ///   Square root of the specified number
         /// </returns>
-        public static float Sqrt(float f)
+        public static float Sqrt(float x)
         {
-            return (float)Math.Sqrt(f);
+            return (float)Math.Sqrt(x);
         }
 
         #endregion

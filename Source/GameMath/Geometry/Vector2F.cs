@@ -114,18 +114,18 @@
         /// <summary>
         ///   Adds the passed vectors.
         /// </summary>
-        /// <param name="v1">
+        /// <param name="v">
         ///   First summand.
         /// </param>
-        /// <param name="v2">
+        /// <param name="w">
         ///   Second summand.
         /// </param>
         /// <returns>
         ///   Sum of the passed vectors.
         /// </returns>
-        public static Vector2F Add(Vector2F v1, Vector2F v2)
+        public static Vector2F Add(Vector2F v, Vector2F w)
         {
-            return v1 + v2;
+            return v + w;
         }
 
         /// <summary>
@@ -239,46 +239,46 @@
         /// <param name="v">
         ///   Dividend.
         /// </param>
-        /// <param name="f">
+        /// <param name="divisor">
         ///   Divisor.
         /// </param>
         /// <returns>
         ///   Vector divided by the specified scalar.
         /// </returns>
-        public static Vector2F Divide(Vector2F v, float f)
+        public static Vector2F Divide(Vector2F v, float divisor)
         {
-            return v / f;
+            return v / divisor;
         }
 
         /// <summary>
         ///   Divides this vector by the specified scalar.
         /// </summary>
-        /// <param name="f">
+        /// <param name="divisor">
         ///   Divisor.
         /// </param>
         /// <returns>
         ///   Vector divided by the specified scalar.
         /// </returns>
-        public Vector2F Divide(float f)
+        public Vector2F Divide(float divisor)
         {
-            return Divide(this, f);
+            return Divide(this, divisor);
         }
 
         /// <summary>
         ///   Computes the dot product of the two passed vectors.
         /// </summary>
-        /// <param name="v1">
+        /// <param name="v">
         ///   First vector to compute the dot product of.
         /// </param>
-        /// <param name="v2">
+        /// <param name="w">
         ///   Second vector to compute the dot product of.
         /// </param>
         /// <returns>
         ///   Dot product of the two passed vectors.
         /// </returns>
-        public static float Dot(Vector2F v1, Vector2F v2)
+        public static float Dot(Vector2F v, Vector2F w)
         {
-            return (v1.x * v2.x) + (v1.y * v2.y);
+            return (v.x * w.x) + (v.y * w.y);
         }
 
         /// <summary>
@@ -347,22 +347,22 @@
         /// <summary>
         ///   Linearly interpolates between the two passed vectors.
         /// </summary>
-        /// <param name="v1">
+        /// <param name="v">
         ///   First vector to interpolate.
         /// </param>
-        /// <param name="v2">
+        /// <param name="w">
         ///   Second vector to interpolate.
         /// </param>
         /// <param name="l">
-        ///   Interpolation parameter. 0 returns <paramref name="v1" />, 1 returns <paramref name="v2" />.
+        ///   Interpolation parameter. 0 returns <paramref name="v" />, 1 returns <paramref name="w" />.
         /// </param>
         /// <returns>
         ///   Linear interpolation between the two passed vectors.
         /// </returns>
-        public static Vector2F Lerp(Vector2F v1, Vector2F v2, float l)
+        public static Vector2F Lerp(Vector2F v, Vector2F w, float l)
         {
-            var lerpX = MathF.Lerp(v1.x, v2.x, l);
-            var lerpY = MathF.Lerp(v1.y, v2.y, l);
+            var lerpX = MathF.Lerp(v.x, w.x, l);
+            var lerpY = MathF.Lerp(v.y, w.y, l);
             return new Vector2F(lerpX, lerpY);
         }
 
@@ -389,21 +389,21 @@
         /// <param name="v">
         ///   Vector to multiply.
         /// </param>
-        /// <param name="f">
+        /// <param name="factor">
         ///   Scalar to multiply the vector with.
         /// </param>
         /// <returns>
         ///   Product of the vector and the scalar.
         /// </returns>
-        public static Vector2F Multiply(Vector2F v, float f)
+        public static Vector2F Multiply(Vector2F v, float factor)
         {
-            return f * v;
+            return factor * v;
         }
 
         /// <summary>
         ///   Multiplies the passed vector with the specified scalar.
         /// </summary>
-        /// <param name="f">
+        /// <param name="factor">
         ///   Scalar to multiply the vector with.
         /// </param>
         /// <param name="v">
@@ -412,23 +412,23 @@
         /// <returns>
         ///   Product of the vector and the scalar.
         /// </returns>
-        public static Vector2F Multiply(float f, Vector2F v)
+        public static Vector2F Multiply(float factor, Vector2F v)
         {
-            return f * v;
+            return factor * v;
         }
 
         /// <summary>
         ///   Multiplies this vector with the specified scalar.
         /// </summary>
-        /// <param name="f">
+        /// <param name="factor">
         ///   Scalar to multiply this vector with.
         /// </param>
         /// <returns>
         ///   Product of this vector and the scalar.
         /// </returns>
-        public Vector2F Multiply(float f)
+        public Vector2F Multiply(float factor)
         {
-            return Multiply(f, this);
+            return Multiply(factor, this);
         }
 
         /// <summary>
@@ -461,18 +461,18 @@
         /// <summary>
         ///   Adds the passed vectors.
         /// </summary>
-        /// <param name="v1">
+        /// <param name="v">
         ///   First summand.
         /// </param>
-        /// <param name="v2">
+        /// <param name="w">
         ///   Second summand.
         /// </param>
         /// <returns>
         ///   Sum of the passed vectors.
         /// </returns>
-        public static Vector2F operator +(Vector2F v1, Vector2F v2)
+        public static Vector2F operator +(Vector2F v, Vector2F w)
         {
-            return new Vector2F(v1.x + v2.x, v1.y + v2.y);
+            return new Vector2F(v.x + w.x, v.y + w.y);
         }
 
         /// <summary>
@@ -481,32 +481,32 @@
         /// <param name="v">
         ///   Dividend.
         /// </param>
-        /// <param name="f">
+        /// <param name="divisor">
         ///   Divisor.
         /// </param>
         /// <returns>
         ///   Vector divided by the specified scalar.
         /// </returns>
-        public static Vector2F operator /(Vector2F v, float f)
+        public static Vector2F operator /(Vector2F v, float divisor)
         {
-            return new Vector2F(v.x / f, v.y / f);
+            return new Vector2F(v.x / divisor, v.y / divisor);
         }
 
         /// <summary>
         ///   Compares the passed vectors for equality.
         /// </summary>
-        /// <param name="v1">
+        /// <param name="v">
         ///   First vector to compare.
         /// </param>
-        /// <param name="v2">
+        /// <param name="w">
         ///   Second vector to compare.
         /// </param>
         /// <returns>
         ///   <c>true</c>, if both vectors are equal, and <c>false</c> otherwise.
         /// </returns>
-        public static bool operator ==(Vector2F v1, Vector2F v2)
+        public static bool operator ==(Vector2F v, Vector2F w)
         {
-            return v1.Equals(v2);
+            return v.Equals(w);
         }
 
         /// <summary>
@@ -523,18 +523,18 @@
         /// <summary>
         ///   Compares the passed vectors for inequality.
         /// </summary>
-        /// <param name="v1">
+        /// <param name="v">
         ///   First vector to compare.
         /// </param>
-        /// <param name="v2">
+        /// <param name="w">
         ///   Second vector to compare.
         /// </param>
         /// <returns>
         ///   <c>true</c>, if the vectors are not equal, and <c>false</c> otherwise.
         /// </returns>
-        public static bool operator !=(Vector2F v1, Vector2F v2)
+        public static bool operator !=(Vector2F v, Vector2F w)
         {
-            return !(v1 == v2);
+            return !(v == w);
         }
 
         /// <summary>
@@ -543,21 +543,21 @@
         /// <param name="v">
         ///   Vector to multiply.
         /// </param>
-        /// <param name="f">
+        /// <param name="factor">
         ///   Scalar to multiply the vector with.
         /// </param>
         /// <returns>
         ///   Product of the vector and the scalar.
         /// </returns>
-        public static Vector2F operator *(Vector2F v, float f)
+        public static Vector2F operator *(Vector2F v, float factor)
         {
-            return f * v;
+            return factor * v;
         }
 
         /// <summary>
         ///   Multiplies the passed vector with the specified scalar.
         /// </summary>
-        /// <param name="f">
+        /// <param name="factor">
         ///   Scalar to multiply the vector with.
         /// </param>
         /// <param name="v">
@@ -566,9 +566,9 @@
         /// <returns>
         ///   Product of the vector and the scalar.
         /// </returns>
-        public static Vector2F operator *(float f, Vector2F v)
+        public static Vector2F operator *(float factor, Vector2F v)
         {
-            return new Vector2F(v.x * f, v.y * f);
+            return new Vector2F(v.x * factor, v.y * factor);
         }
 
         /// <summary>
@@ -591,18 +591,18 @@
         /// <summary>
         ///   Subtracts the second vector from the first one.
         /// </summary>
-        /// <param name="v1">
+        /// <param name="v">
         ///   Vector to subtract from.
         /// </param>
-        /// <param name="v2">
+        /// <param name="w">
         ///   Vector to subtract.
         /// </param>
         /// <returns>
         ///   Difference of both vectors.
         /// </returns>
-        public static Vector2F operator -(Vector2F v1, Vector2F v2)
+        public static Vector2F operator -(Vector2F v, Vector2F w)
         {
-            return new Vector2F(v1.x - v2.x, v1.y - v2.y);
+            return new Vector2F(v.x - w.x, v.y - w.y);
         }
 
         /// <summary>
@@ -684,18 +684,18 @@
         /// <summary>
         ///   Subtracts the second vector from the first one.
         /// </summary>
-        /// <param name="v1">
+        /// <param name="v">
         ///   Vector to subtract from.
         /// </param>
-        /// <param name="v2">
+        /// <param name="w">
         ///   Vector to subtract.
         /// </param>
         /// <returns>
         ///   Difference of both vectors.
         /// </returns>
-        public static Vector2F Subtract(Vector2F v1, Vector2F v2)
+        public static Vector2F Subtract(Vector2F v, Vector2F w)
         {
-            return v1 - v2;
+            return v - w;
         }
 
         /// <summary>

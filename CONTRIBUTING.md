@@ -18,6 +18,23 @@ GameMath is developed using the [GitFlow branching model](http://nvie.com/posts/
 
 We recommend using [StyleCop](http://stylecop.codeplex.com/) for verifying your code against our [coding guidelines](https://msdn.microsoft.com/en-us/library/ff926074.aspx).
 
+### Naming Conventions
+
+In order to make the code more readable and consistent, contributions are required to adhere to the following guidelines:
+
+* Vectors are denoted by _v, w, u_.
+* Pairs of vectors are denoted by _v, w_ (as opposed to v0, v1).
+
+* Points are denoted by _p, q, r, s_.
+* Pairs of points are denoted by _p, q_ (as opposed to p0, p1).
+
+* Numbers without meaning are denoted by _x, y, z_.
+* Numbers with meaning are denoted by their meaning (e.g. _degrees_).
+
+* Pairs of any other type are deonoted by _first, second_.
+
+Exceptions to these rules are algorithms implemented based on public sources. If your implementation is based on a publication using different symbols, you should use these names in order to increase readability with respect to the original source.
+
 ## Step 4: Open a pull request
 
 Finally, [open a pull request](https://help.github.com/articles/using-pull-requests/) so we can review your changes together, and finally integrate it into the next release.

@@ -102,20 +102,20 @@
 
         /// <summary>
         ///   Shortest difference between the specified angles in radians.
-        ///   Think of this as "how do get from angle b to a".
+        ///   Think of this as "how do get from angle y to x".
         ///   Example: Delta(3/2 Pi, 0) will return -1/2 Pi.
         /// </summary>
-        /// <param name="a">First angle.</param>
-        /// <param name="b">Second angle.</param>
+        /// <param name="x">First angle.</param>
+        /// <param name="y">Second angle.</param>
         /// <returns>Shortest difference between the specified angles.</returns>
-        public static float Delta(float a, float b)
+        public static float Delta(float x, float y)
         {
             // http://stackoverflow.com/questions/1878907/the-smallest-difference-between-2-angles
             // http://stackoverflow.com/users/503402/max
             // x - y gives you the difference in angle, but it may be out of the desired bounds.
-            // Think of this angle defining a point on the unit circle. The coordinates of that point are (cos(x - y), sin(x - y)).
+            // Think of this angle defining x point on the unit circle. The coordinates of that point are (cos(x - y), sin(x - y)).
             // Atan2 returns the angle for that point (which is equivalent to x - y) except its range is [-PI, PI].
-            return Atan2(Sin(a - b), Cos(a - b));
+            return Atan2(Sin(x - y), Cos(x - y));
         }
 
         /// <summary>

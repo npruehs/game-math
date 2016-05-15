@@ -172,18 +172,18 @@
         /// <summary>
         ///   Adds the passed vectors.
         /// </summary>
-        /// <param name="v1">
+        /// <param name="v">
         ///   First summand.
         /// </param>
-        /// <param name="v2">
+        /// <param name="w">
         ///   Second summand.
         /// </param>
         /// <returns>
         ///   Sum of the passed vectors.
         /// </returns>
-        public static Vector3I Add(Vector3I v1, Vector3I v2)
+        public static Vector3I Add(Vector3I v, Vector3I w)
         {
-            return v1 + v2;
+            return v + w;
         }
 
         /// <summary>
@@ -204,21 +204,21 @@
         ///   Computes the cross product of the passed vectors. See
         ///   http://en.wikipedia.org/wiki/Cross_product for details.
         /// </summary>
-        /// <param name="v1">
+        /// <param name="v">
         ///   First vector to compute the cross product of.
         /// </param>
-        /// <param name="v2">
+        /// <param name="w">
         ///   Second vector to compute the cross product of.
         /// </param>
         /// <returns>
         ///   Cross product of the passed vectors.
         /// </returns>
-        public static Vector3I Cross(Vector3I v1, Vector3I v2)
+        public static Vector3I Cross(Vector3I v, Vector3I w)
         {
             return new Vector3I(
-                (v1.y * v2.z) - (v1.z * v2.y),
-                (v1.z * v2.x) - (v1.x * v2.z),
-                (v1.x * v2.y) - (v1.y * v2.x));
+                (v.y * w.z) - (v.z * w.y),
+                (v.z * w.x) - (v.x * w.z),
+                (v.x * w.y) - (v.y * w.x));
         }
 
         /// <summary>
@@ -309,46 +309,46 @@
         /// <param name="v">
         ///   Dividend.
         /// </param>
-        /// <param name="i">
+        /// <param name="divisor">
         ///   Divisor.
         /// </param>
         /// <returns>
         ///   Vector divided by the specified scalar.
         /// </returns>
-        public static Vector3I Divide(Vector3I v, int i)
+        public static Vector3I Divide(Vector3I v, int divisor)
         {
-            return v / i;
+            return v / divisor;
         }
 
         /// <summary>
         ///   Divides this vector by the specified scalar.
         /// </summary>
-        /// <param name="i">
+        /// <param name="divisor">
         ///   Divisor.
         /// </param>
         /// <returns>
         ///   Vector divided by the specified scalar.
         /// </returns>
-        public Vector3I Divide(int i)
+        public Vector3I Divide(int divisor)
         {
-            return Divide(this, i);
+            return Divide(this, divisor);
         }
 
         /// <summary>
         ///   Computes the dot product of the two passed vectors.
         /// </summary>
-        /// <param name="v1">
+        /// <param name="v">
         ///   First vector to compute the dot product of.
         /// </param>
-        /// <param name="v2">
+        /// <param name="w">
         ///   Second vector to compute the dot product of.
         /// </param>
         /// <returns>
         ///   Dot product of the two passed vectors.
         /// </returns>
-        public static int Dot(Vector3I v1, Vector3I v2)
+        public static int Dot(Vector3I v, Vector3I w)
         {
-            return (v1.x * v2.x) + (v1.y * v2.y) + (v1.z * v2.z);
+            return (v.x * w.x) + (v.y * w.y) + (v.z * w.z);
         }
 
         /// <summary>
@@ -453,21 +453,21 @@
         /// <param name="v">
         ///   Vector to multiply.
         /// </param>
-        /// <param name="i">
+        /// <param name="factor">
         ///   Scalar to multiply the vector with.
         /// </param>
         /// <returns>
         ///   Product of the vector and the scalar.
         /// </returns>
-        public static Vector3I Multiply(Vector3I v, int i)
+        public static Vector3I Multiply(Vector3I v, int factor)
         {
-            return i * v;
+            return factor * v;
         }
 
         /// <summary>
         ///   Multiplies the passed vector with the specified scalar.
         /// </summary>
-        /// <param name="i">
+        /// <param name="factor">
         ///   Scalar to multiply the vector with.
         /// </param>
         /// <param name="v">
@@ -476,40 +476,40 @@
         /// <returns>
         ///   Product of the vector and the scalar.
         /// </returns>
-        public static Vector3I Multiply(int i, Vector3I v)
+        public static Vector3I Multiply(int factor, Vector3I v)
         {
-            return i * v;
+            return factor * v;
         }
 
         /// <summary>
         ///   Multiplies this vector with the specified scalar.
         /// </summary>
-        /// <param name="i">
+        /// <param name="factor">
         ///   Scalar to multiply this vector with.
         /// </param>
         /// <returns>
         ///   Product of this vector and the scalar.
         /// </returns>
-        public Vector3I Multiply(int i)
+        public Vector3I Multiply(int factor)
         {
-            return Multiply(i, this);
+            return Multiply(factor, this);
         }
 
         /// <summary>
         ///   Adds the passed vectors.
         /// </summary>
-        /// <param name="v1">
+        /// <param name="v">
         ///   First summand.
         /// </param>
-        /// <param name="v2">
+        /// <param name="w">
         ///   Second summand.
         /// </param>
         /// <returns>
         ///   Sum of the passed vectors.
         /// </returns>
-        public static Vector3I operator +(Vector3I v1, Vector3I v2)
+        public static Vector3I operator +(Vector3I v, Vector3I w)
         {
-            return new Vector3I(v1.x + v2.x, v1.y + v2.y, v1.z + v2.z);
+            return new Vector3I(v.x + w.x, v.y + w.y, v.z + w.z);
         }
 
         /// <summary>
@@ -518,32 +518,32 @@
         /// <param name="v">
         ///   Dividend.
         /// </param>
-        /// <param name="i">
+        /// <param name="divisor">
         ///   Divisor.
         /// </param>
         /// <returns>
         ///   Vector divided by the specified scalar.
         /// </returns>
-        public static Vector3I operator /(Vector3I v, int i)
+        public static Vector3I operator /(Vector3I v, int divisor)
         {
-            return new Vector3I(v.x / i, v.y / i, v.z / i);
+            return new Vector3I(v.x / divisor, v.y / divisor, v.z / divisor);
         }
 
         /// <summary>
         ///   Compares the passed vectors for equality.
         /// </summary>
-        /// <param name="v1">
+        /// <param name="v">
         ///   First vector to compare.
         /// </param>
-        /// <param name="v2">
+        /// <param name="w">
         ///   Second vector to compare.
         /// </param>
         /// <returns>
         ///   <c>true</c>, if both vectors are equal, and <c>false</c> otherwise.
         /// </returns>
-        public static bool operator ==(Vector3I v1, Vector3I v2)
+        public static bool operator ==(Vector3I v, Vector3I w)
         {
-            return v1.Equals(v2);
+            return v.Equals(w);
         }
 
         /// <summary>
@@ -560,18 +560,18 @@
         /// <summary>
         ///   Compares the passed vectors for inequality.
         /// </summary>
-        /// <param name="v1">
+        /// <param name="v">
         ///   First vector to compare.
         /// </param>
-        /// <param name="v2">
+        /// <param name="w">
         ///   Second vector to compare.
         /// </param>
         /// <returns>
         ///   <c>true</c>, if the vectors are not equal, and <c>false</c> otherwise.
         /// </returns>
-        public static bool operator !=(Vector3I v1, Vector3I v2)
+        public static bool operator !=(Vector3I v, Vector3I w)
         {
-            return !(v1 == v2);
+            return !(v == w);
         }
 
         /// <summary>
@@ -597,21 +597,21 @@
         /// <param name="v">
         ///   Vector to multiply.
         /// </param>
-        /// <param name="i">
+        /// <param name="factor">
         ///   Scalar to multiply the vector with.
         /// </param>
         /// <returns>
         ///   Product of the vector and the scalar.
         /// </returns>
-        public static Vector3I operator *(Vector3I v, int i)
+        public static Vector3I operator *(Vector3I v, int factor)
         {
-            return i * v;
+            return factor * v;
         }
 
         /// <summary>
         ///   Multiplies the passed vector with the specified scalar.
         /// </summary>
-        /// <param name="i">
+        /// <param name="factor">
         ///   Scalar to multiply the vector with.
         /// </param>
         /// <param name="v">
@@ -620,43 +620,43 @@
         /// <returns>
         ///   Product of the vector and the scalar.
         /// </returns>
-        public static Vector3I operator *(int i, Vector3I v)
+        public static Vector3I operator *(int factor, Vector3I v)
         {
-            return new Vector3I(v.x * i, v.y * i, v.z * i);
+            return new Vector3I(v.x * factor, v.y * factor, v.z * factor);
         }
 
         /// <summary>
         ///   Subtracts the second vector from the first one.
         /// </summary>
-        /// <param name="v1">
+        /// <param name="v">
         ///   Vector to subtract from.
         /// </param>
-        /// <param name="v2">
+        /// <param name="w">
         ///   Vector to subtract.
         /// </param>
         /// <returns>
         ///   Difference of both vectors.
         /// </returns>
-        public static Vector3I operator -(Vector3I v1, Vector3I v2)
+        public static Vector3I operator -(Vector3I v, Vector3I w)
         {
-            return new Vector3I(v1.x - v2.x, v1.y - v2.y, v1.z - v2.z);
+            return new Vector3I(v.x - w.x, v.y - w.y, v.z - w.z);
         }
 
         /// <summary>
         ///   Subtracts the second vector from the first one.
         /// </summary>
-        /// <param name="v1">
+        /// <param name="v">
         ///   Vector to subtract from.
         /// </param>
-        /// <param name="v2">
+        /// <param name="w">
         ///   Vector to subtract.
         /// </param>
         /// <returns>
         ///   Difference of both vectors.
         /// </returns>
-        public static Vector3I Subtract(Vector3I v1, Vector3I v2)
+        public static Vector3I Subtract(Vector3I v, Vector3I w)
         {
-            return v1 - v2;
+            return v - w;
         }
 
         /// <summary>
