@@ -60,11 +60,13 @@ After being able to reproduce the issue, we'll look into fixing it immediately.
 
 ## Contributors
 
-(in no particular order)
+(in alphabetical order)
 
-* [Nick Prühs](https://github.com/npruehs) (Maintainer)
+* [Erickson, Jeff G](http://algorithms.wtf)
 * [Christian Oeing](https://github.com/coeing)
+* [Nick Prühs](https://github.com/npruehs) (Maintainer)
 * [Heiner Schmidt](https://github.com/heinerschmidt)
+* [Martijn Segers](https://nl.linkedin.com/in/martijn-segers-b3096956)
 
 ## License
 

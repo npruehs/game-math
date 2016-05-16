@@ -109,7 +109,7 @@
         /// </summary>
         /// <remarks>
         ///   See http://stackoverflow.com/questions/1878907/the-smallest-difference-between-2-angles
-        ///   and http://stackoverflow.com/users/503402/max for details.
+        ///   for details.
         /// </remarks>
         /// <param name="x">First angle.</param>
         /// <param name="y">Second angle.</param>

@@ -151,7 +151,7 @@
         /// </summary>
         /// <remarks>
         ///   See http://stackoverflow.com/questions/849211/shortest-distance-between-a-point-and-a-line-segment
-        ///   and http://stackoverflow.com/users/167531/grumdrig for details.
+        ///   for details.
         /// </remarks>
         /// <param name="point">Point to get the distance of.</param>
         /// <returns>Shortest distance of the specified point to this line segment.</returns>
