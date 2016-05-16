@@ -16,7 +16,7 @@ If you're missing anything, we'd love to see it - please refer to the [Contribut
 * Pseudo-random number generators
 * Utility methods (e.g. rounding and casting to int)
 * Unit tests and references for non-trivial operations
-* Public [API documentation](http://npruehs.de/game-math/api/0.1)
+* Public [API documentation](http://npruehs.de/game-math/api/1.0)
 
 ## Getting GameMath
 
@@ -31,7 +31,7 @@ Just import the `GameMath` namespace and you're good to go!
 
     using GameMath;
 
-To get an overview of the library, take a glimpse at the [API documentation](http://npruehs.de/game-math/api/0.1).
+To get an overview of the library, take a glimpse at the [API documentation](http://npruehs.de/game-math/api/1.0).
 	
 ## Remarks
 
