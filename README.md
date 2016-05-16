@@ -63,10 +63,13 @@ After being able to reproduce the issue, we'll look into fixing it immediately.
 (in alphabetical order)
 
 * [Jeff G. Erickson](http://algorithms.wtf)
+* [Darel Rex Finley](http://alienryderflex.com)
 * [Christian Oeing](https://github.com/coeing)
 * [Nick Prühs](https://github.com/npruehs) (Maintainer)
 * [Heiner Schmidt](https://github.com/heinerschmidt)
 * [Martijn Segers](https://nl.linkedin.com/in/martijn-segers-b3096956)
+
+A warm thank you to everyone participating in this project in any way! Sometimes, math is complicated. You show that it doesn't need to be.
 
 ## License
 
