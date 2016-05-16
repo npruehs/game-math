@@ -5,6 +5,9 @@
     /// <summary>
     ///   Vector in three-dimensional space with floating point components. Note that vectors are immutable.
     /// </summary>
+    /// <seealso cref="Vector2F"/>
+    /// <seealso cref="Vector2I"/>
+    /// <seealso cref="Vector3I"/>
     [CLSCompliant(true)]
     public struct Vector3F : IEquatable<Vector3F>
     {
@@ -172,18 +175,18 @@
         /// <summary>
         ///   Adds the passed vectors.
         /// </summary>
-        /// <param name="v1">
+        /// <param name="v">
         ///   First summand.
         /// </param>
-        /// <param name="v2">
+        /// <param name="w">
         ///   Second summand.
         /// </param>
         /// <returns>
         ///   Sum of the passed vectors.
         /// </returns>
-        public static Vector3F Add(Vector3F v1, Vector3F v2)
+        public static Vector3F Add(Vector3F v, Vector3F w)
         {
-            return v1 + v2;
+            return v + w;
         }
 
         /// <summary>
@@ -201,30 +204,34 @@
         }
 
         /// <summary>
-        ///   Computes the cross product of the passed vectors. See
-        ///   http://en.wikipedia.org/wiki/Cross_product for details.
+        ///   Computes the cross product of the passed vectors.
         /// </summary>
-        /// <param name="v1">
+        /// <remarks>
+        ///   See http://en.wikipedia.org/wiki/Cross_product for details.
+        /// </remarks>
+        /// <param name="v">
         ///   First vector to compute the cross product of.
         /// </param>
-        /// <param name="v2">
+        /// <param name="w">
         ///   Second vector to compute the cross product of.
         /// </param>
         /// <returns>
         ///   Cross product of the passed vectors.
         /// </returns>
-        public static Vector3F Cross(Vector3F v1, Vector3F v2)
+        public static Vector3F Cross(Vector3F v, Vector3F w)
         {
             return new Vector3F(
-                (v1.y * v2.z) - (v1.z * v2.y),
-                (v1.z * v2.x) - (v1.x * v2.z),
-                (v1.x * v2.y) - (v1.y * v2.x));
+                (v.y * w.z) - (v.z * w.y),
+                (v.z * w.x) - (v.x * w.z),
+                (v.x * w.y) - (v.y * w.x));
         }
 
         /// <summary>
-        ///   Computes the cross product of the passed vector and this one. See
-        ///   http://en.wikipedia.org/wiki/Cross_product for details.
+        ///   Computes the cross product of the passed vector and this one.
         /// </summary>
+        /// <remarks>
+        ///   See http://en.wikipedia.org/wiki/Cross_product for details.
+        /// </remarks>
         /// <param name="v">
         ///   Vector to compute the cross product of.
         /// </param>
@@ -309,46 +316,46 @@
         /// <param name="v">
         ///   Dividend.
         /// </param>
-        /// <param name="f">
+        /// <param name="divisor">
         ///   Divisor.
         /// </param>
         /// <returns>
         ///   Vector divided by the specified scalar.
         /// </returns>
-        public static Vector3F Divide(Vector3F v, float f)
+        public static Vector3F Divide(Vector3F v, float divisor)
         {
-            return v / f;
+            return v / divisor;
         }
 
         /// <summary>
         ///   Divides this vector by the specified scalar.
         /// </summary>
-        /// <param name="f">
+        /// <param name="divisor">
         ///   Divisor.
         /// </param>
         /// <returns>
         ///   Vector divided by the specified scalar.
         /// </returns>
-        public Vector3F Divide(float f)
+        public Vector3F Divide(float divisor)
         {
-            return Divide(this, f);
+            return Divide(this, divisor);
         }
 
         /// <summary>
         ///   Computes the dot product of the two passed vectors.
         /// </summary>
-        /// <param name="v1">
+        /// <param name="v">
         ///   First vector to compute the dot product of.
         /// </param>
-        /// <param name="v2">
+        /// <param name="w">
         ///   Second vector to compute the dot product of.
         /// </param>
         /// <returns>
         ///   Dot product of the two passed vectors.
         /// </returns>
-        public static float Dot(Vector3F v1, Vector3F v2)
+        public static float Dot(Vector3F v, Vector3F w)
         {
-            return (v1.x * v2.x) + (v1.y * v2.y) + (v1.z * v2.z);
+            return (v.x * w.x) + (v.y * w.y) + (v.z * w.z);
         }
 
         /// <summary>
@@ -418,23 +425,23 @@
         /// <summary>
         ///   Linearly interpolates between the two passed vectors.
         /// </summary>
-        /// <param name="v1">
+        /// <param name="v">
         ///   First vector to interpolate.
         /// </param>
-        /// <param name="v2">
+        /// <param name="w">
         ///   Second vector to interpolate.
         /// </param>
         /// <param name="l">
-        ///   Interpolation parameter. 0 returns <paramref name="v1" />, 1 returns <paramref name="v2" />.
+        ///   Interpolation parameter. 0 returns <paramref name="v" />, 1 returns <paramref name="w" />.
         /// </param>
         /// <returns>
         ///   Linear interpolation between the two passed vectors.
         /// </returns>
-        public static Vector3F Lerp(Vector3F v1, Vector3F v2, float l)
+        public static Vector3F Lerp(Vector3F v, Vector3F w, float l)
         {
-            var lerpX = MathF.Lerp(v1.x, v2.x, l);
-            var lerpY = MathF.Lerp(v1.y, v2.y, l);
-            var lerpZ = MathF.Lerp(v1.z, v2.z, l);
+            var lerpX = MathF.Lerp(v.x, w.x, l);
+            var lerpY = MathF.Lerp(v.y, w.y, l);
+            var lerpZ = MathF.Lerp(v.z, w.z, l);
             return new Vector3F(lerpX, lerpY, lerpZ);
         }
 
@@ -461,21 +468,21 @@
         /// <param name="v">
         ///   Vector to multiply.
         /// </param>
-        /// <param name="f">
+        /// <param name="factor">
         ///   Scalar to multiply the vector with.
         /// </param>
         /// <returns>
         ///   Product of the vector and the scalar.
         /// </returns>
-        public static Vector3F Multiply(Vector3F v, float f)
+        public static Vector3F Multiply(Vector3F v, float factor)
         {
-            return f * v;
+            return factor * v;
         }
 
         /// <summary>
         ///   Multiplies the passed vector with the specified scalar.
         /// </summary>
-        /// <param name="f">
+        /// <param name="factor">
         ///   Scalar to multiply the vector with.
         /// </param>
         /// <param name="v">
@@ -484,23 +491,23 @@
         /// <returns>
         ///   Product of the vector and the scalar.
         /// </returns>
-        public static Vector3F Multiply(float f, Vector3F v)
+        public static Vector3F Multiply(float factor, Vector3F v)
         {
-            return f * v;
+            return factor * v;
         }
 
         /// <summary>
         ///   Multiplies this vector with the specified scalar.
         /// </summary>
-        /// <param name="f">
+        /// <param name="factor">
         ///   Scalar to multiply this vector with.
         /// </param>
         /// <returns>
         ///   Product of this vector and the scalar.
         /// </returns>
-        public Vector3F Multiply(float f)
+        public Vector3F Multiply(float factor)
         {
-            return Multiply(f, this);
+            return Multiply(factor, this);
         }
 
         /// <summary>
@@ -533,18 +540,18 @@
         /// <summary>
         ///   Adds the passed vectors.
         /// </summary>
-        /// <param name="v1">
+        /// <param name="v">
         ///   First summand.
         /// </param>
-        /// <param name="v2">
+        /// <param name="w">
         ///   Second summand.
         /// </param>
         /// <returns>
         ///   Sum of the passed vectors.
         /// </returns>
-        public static Vector3F operator +(Vector3F v1, Vector3F v2)
+        public static Vector3F operator +(Vector3F v, Vector3F w)
         {
-            return new Vector3F(v1.x + v2.x, v1.y + v2.y, v1.z + v2.z);
+            return new Vector3F(v.x + w.x, v.y + w.y, v.z + w.z);
         }
 
         /// <summary>
@@ -553,32 +560,32 @@
         /// <param name="v">
         ///   Dividend.
         /// </param>
-        /// <param name="f">
+        /// <param name="divisor">
         ///   Divisor.
         /// </param>
         /// <returns>
         ///   Vector divided by the specified scalar.
         /// </returns>
-        public static Vector3F operator /(Vector3F v, float f)
+        public static Vector3F operator /(Vector3F v, float divisor)
         {
-            return new Vector3F(v.x / f, v.y / f, v.z / f);
+            return new Vector3F(v.x / divisor, v.y / divisor, v.z / divisor);
         }
 
         /// <summary>
         ///   Compares the passed vectors for equality.
         /// </summary>
-        /// <param name="v1">
+        /// <param name="v">
         ///   First vector to compare.
         /// </param>
-        /// <param name="v2">
+        /// <param name="w">
         ///   Second vector to compare.
         /// </param>
         /// <returns>
         ///   <c>true</c>, if both vectors are equal, and <c>false</c> otherwise.
         /// </returns>
-        public static bool operator ==(Vector3F v1, Vector3F v2)
+        public static bool operator ==(Vector3F v, Vector3F w)
         {
-            return v1.Equals(v2);
+            return v.Equals(w);
         }
 
         /// <summary>
@@ -617,18 +624,18 @@
         /// <summary>
         ///   Compares the passed vectors for inequality.
         /// </summary>
-        /// <param name="v1">
+        /// <param name="v">
         ///   First vector to compare.
         /// </param>
-        /// <param name="v2">
+        /// <param name="w">
         ///   Second vector to compare.
         /// </param>
         /// <returns>
         ///   <c>true</c>, if the vectors are not equal, and <c>false</c> otherwise.
         /// </returns>
-        public static bool operator !=(Vector3F v1, Vector3F v2)
+        public static bool operator !=(Vector3F v, Vector3F w)
         {
-            return !(v1 == v2);
+            return !(v == w);
         }
 
         /// <summary>
@@ -654,21 +661,21 @@
         /// <param name="v">
         ///   Vector to multiply.
         /// </param>
-        /// <param name="f">
+        /// <param name="factor">
         ///   Scalar to multiply the vector with.
         /// </param>
         /// <returns>
         ///   Product of the vector and the scalar.
         /// </returns>
-        public static Vector3F operator *(Vector3F v, float f)
+        public static Vector3F operator *(Vector3F v, float factor)
         {
-            return f * v;
+            return factor * v;
         }
 
         /// <summary>
         ///   Multiplies the passed vector with the specified scalar.
         /// </summary>
-        /// <param name="f">
+        /// <param name="factor">
         ///   Scalar to multiply the vector with.
         /// </param>
         /// <param name="v">
@@ -677,37 +684,39 @@
         /// <returns>
         ///   Product of the vector and the scalar.
         /// </returns>
-        public static Vector3F operator *(float f, Vector3F v)
+        public static Vector3F operator *(float factor, Vector3F v)
         {
-            return new Vector3F(v.x * f, v.y * f, v.z * f);
+            return new Vector3F(v.x * factor, v.y * factor, v.z * factor);
         }
 
         /// <summary>
         ///   Subtracts the second vector from the first one.
         /// </summary>
-        /// <param name="v1">
+        /// <param name="v">
         ///   Vector to subtract from.
         /// </param>
-        /// <param name="v2">
+        /// <param name="w">
         ///   Vector to subtract.
         /// </param>
         /// <returns>
         ///   Difference of both vectors.
         /// </returns>
-        public static Vector3F operator -(Vector3F v1, Vector3F v2)
+        public static Vector3F operator -(Vector3F v, Vector3F w)
         {
-            return new Vector3F(v1.x - v2.x, v1.y - v2.y, v1.z - v2.z);
+            return new Vector3F(v.x - w.x, v.y - w.y, v.z - w.z);
         }
 
         /// <summary>
         ///   Reflects the passed vector off the plane defined by the specified normal.
         /// </summary>
+        /// <remarks>
+        ///   See http://www.blitzbasic.com/Community/posts.php?topic=52511 for details.
+        /// </remarks>
         /// <param name="v">Vector to reflect.</param>
         /// <param name="n">Normal of the plane to reflect off.</param>
         /// <returns>Reflected vector.</returns>
         public static Vector3F Reflect(Vector3F v, Vector3F n)
         {
-            // http://www.blitzbasic.com/Community/posts.php?topic=52511
             return v - (2 * n * (n * v));
         }
 
@@ -724,18 +733,18 @@
         /// <summary>
         ///   Subtracts the second vector from the first one.
         /// </summary>
-        /// <param name="v1">
+        /// <param name="v">
         ///   Vector to subtract from.
         /// </param>
-        /// <param name="v2">
+        /// <param name="w">
         ///   Vector to subtract.
         /// </param>
         /// <returns>
         ///   Difference of both vectors.
         /// </returns>
-        public static Vector3F Subtract(Vector3F v1, Vector3F v2)
+        public static Vector3F Subtract(Vector3F v, Vector3F w)
         {
-            return v1 - v2;
+            return v - w;
         }
 
         /// <summary>

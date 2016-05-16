@@ -5,6 +5,9 @@
     /// <summary>
     ///   Part of a line that is bounded by two distinct end points. Note that line segments are immutable.
     /// </summary>
+    /// <seealso cref="LineSegment2I"/>
+    /// <seealso cref="LineSegment3F"/>
+    /// <seealso cref="LineSegment3I"/>
     [CLSCompliant(true)]
     public struct LineSegment2F : IEquatable<LineSegment2F>
     {
@@ -89,6 +92,29 @@
         #region Public Methods and Operators
 
         /// <summary>
+        ///   Checks whether the passed point lies on this line segment.
+        /// </summary>
+        /// <remarks>
+        ///   http://stackoverflow.com/questions/7050186/find-if-point-lays-on-line-segment
+        /// </remarks>
+        /// <param name="point">Point to check.</param>
+        /// <returns>
+        ///   <c>true</c>, if the passed point lies on this line segment, and
+        ///   <c>false</c>, otherwise.
+        /// </returns>
+        public bool Contains(Vector2F point)
+        {
+            var ab =
+                Math.Sqrt((this.Q.X - this.P.X) * (this.Q.X - this.P.X) + (this.Q.Y - this.P.Y) * (this.Q.Y - this.P.Y));
+            var ap = Math.Sqrt(
+                (point.X - this.P.X) * (point.X - this.P.X) + (point.Y - this.P.Y) * (point.Y - this.P.Y));
+            var pb = Math.Sqrt(
+                (this.Q.X - point.X) * (this.Q.X - point.X) + (this.Q.Y - point.Y) * (this.Q.Y - point.Y));
+
+            return Math.Abs(ab - (ap + pb)) < float.Epsilon;
+        }
+
+        /// <summary>
         ///   Compares the passed line segment to this one for equality.
         /// </summary>
         /// <param name="other">
@@ -123,12 +149,14 @@
         /// <summary>
         ///   Gets the shortest distance of the specified point to this line segment.
         /// </summary>
+        /// <remarks>
+        ///   See http://stackoverflow.com/questions/849211/shortest-distance-between-a-point-and-a-line-segment
+        ///   and http://stackoverflow.com/users/167531/grumdrig for details.
+        /// </remarks>
         /// <param name="point">Point to get the distance of.</param>
         /// <returns>Shortest distance of the specified point to this line segment.</returns>
         public float GetDistance(Vector2F point)
         {
-            // http://stackoverflow.com/questions/849211/shortest-distance-between-a-point-and-a-line-segment
-            // http://stackoverflow.com/users/167531/grumdrig
             var t = Vector2F.Dot(point - this.P, this.Q - this.P) / this.LengthSquared;
 
             // Check if point is beyond start (P) of this segment.

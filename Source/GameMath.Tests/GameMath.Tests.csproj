@@ -42,6 +42,9 @@
     <Compile Include="Core\AngleTests.cs" />
     <Compile Include="Core\DirectionTests.cs" />
     <Compile Include="Core\InRangeTests.cs" />
+    <Compile Include="Geometry\BoxTests.cs" />
+    <Compile Include="Geometry\PolygonTests.cs" />
+    <Compile Include="Geometry\RectangleTests.cs" />
     <Compile Include="Intersections\BoxIntersectionTests.cs" />
     <Compile Include="Intersections\LineIntersectionTests.cs" />
     <Compile Include="Intersections\RectangleIntersectionTests.cs" />

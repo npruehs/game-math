@@ -6,6 +6,7 @@
     ///   Axis-aligned box with floating point position and extents.
     ///   Note that boxes are immutable.
     /// </summary>
+    /// <seealso cref="BoxI"/>
     [CLSCompliant(true)]
     public struct BoxF : IEquatable<BoxF>
     {
@@ -100,6 +101,9 @@
         /// <param name="size">
         ///   Box size.
         /// </param>
+        /// <exception cref="ArgumentOutOfRangeException">
+        ///   Any component of <paramref name="size"/> is zero or negative.
+        /// </exception>
         public BoxF(Vector3F position, Vector3F size)
         {
             if (size.X < 0)
@@ -132,7 +136,7 @@
         {
             get
             {
-                return (this.Position + this.Size) / 2;
+                return this.Position + (this.Size / 2);
             }
         }
 

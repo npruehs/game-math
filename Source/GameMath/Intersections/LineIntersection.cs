@@ -11,6 +11,43 @@
         #region Public Methods and Operators
 
         /// <summary>
+        ///   Checks whether the specified line segment intersects the passed one.
+        /// </summary>
+        /// <remarks>
+        ///   See http://jeffe.cs.illinois.edu/teaching/373/notes/x06-sweepline.pdf for details.
+        /// </remarks>
+        /// <param name="first">Line segment to check.</param>
+        /// <param name="second">Line segment to check.</param>
+        /// <returns>
+        ///   <c>true</c>, if both line segments intersect each other, and <c>false</c> otherwise.
+        /// </returns>
+        public static bool Intersects(this LineSegment2F first, LineSegment2F second)
+        {
+            // By definition, line segments that share a point can't intersect.
+            if (first.P == second.P || first.P == second.Q || first.Q == second.P || first.Q == second.Q)
+            {
+                return false;
+            }
+
+            var a = first.P;
+            var b = first.Q;
+            var c = second.P;
+            var d = second.Q;
+
+            if (Vector2F.CounterClockwise(a, c, d) == Vector2F.CounterClockwise(b, c, d))
+            {
+                return false;
+            }
+
+            if (Vector2F.CounterClockwise(a, b, c) == Vector2F.CounterClockwise(a, b, d))
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        /// <summary>
         ///   Checks whether the specified line intersects the passed circle.
         /// </summary>
         /// <param name="line">
@@ -28,8 +65,49 @@
         }
 
         /// <summary>
+        ///   Checks whether the specified line segment intersects the passed one.
+        /// </summary>
+        /// <remarks>
+        ///   See http://www.wyrmtale.com/blog/2013/115/2d-line-intersection-in-c for details.
+        /// </remarks>
+        /// <param name="first">Line segment to check.</param>
+        /// <param name="second">Line segment to check.</param>
+        /// <param name="intersectionPoint">Intersection point, if found.</param>
+        /// <returns>
+        ///   <c>true</c>, if both line segments intersect each other, and <c>false</c> otherwise.
+        /// </returns>
+        public static bool Intersects(this LineSegment2F first, LineSegment2F second, out Vector2F intersectionPoint)
+        {
+            // Get A,B,C of first line - points ps1 to pe1.
+            var a1 = first.Q.Y - first.P.Y;
+            var b1 = first.P.X - first.Q.X;
+            var c1 = a1 * first.P.X + b1 * first.P.Y;
+
+            // Get A,B,C of second line - points ps2 to pe2.
+            var a2 = second.Q.Y - second.P.Y;
+            var b2 = second.P.X - second.Q.X;
+            var c2 = a2 * second.P.X + b2 * second.P.Y;
+
+            // Get delta and check if the lines are parallel.
+            var delta = a1 * b2 - a2 * b1;
+
+            if (Math.Abs(delta) < float.Epsilon)
+            {
+                intersectionPoint = Vector2F.Zero;
+                return false;
+            }
+
+            // Return intersection point.
+            intersectionPoint = new Vector2F((b2 * c1 - b1 * c2) / delta, (a1 * c2 - a2 * c1) / delta);
+            return first.Contains(intersectionPoint) && second.Contains(intersectionPoint);
+        }
+
+        /// <summary>
         ///   Checks whether the specified line intersects the passed circle.
         /// </summary>
+        /// <remarks>
+        ///   See http://devmag.org.za/2009/04/17/basic-collision-detection-in-2d-part-2/ for details.
+        /// </remarks>
         /// <param name="line">
         ///   Line to check.
         /// </param>
@@ -51,8 +129,6 @@
             out Vector2F? first,
             out Vector2F? second)
         {
-            // http://devmag.org.za/2009/04/17/basic-collision-detection-in-2d-part-2/
-
             // Transform to local coordinates.
             var localPointA = line.P - circle.Center;
             var localPointB = line.Q - circle.Center;

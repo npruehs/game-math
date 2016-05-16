@@ -51,6 +51,7 @@
     <Compile Include="Geometry\LineSegment3F.cs" />
     <Compile Include="Geometry\LineSegment3I.cs" />
     <Compile Include="Geometry\PlaneF.cs" />
+    <Compile Include="Geometry\Polygon2F.cs" />
     <Compile Include="Geometry\Ray2F.cs" />
     <Compile Include="Geometry\Ray3F.cs" />
     <Compile Include="Geometry\RectangleF.cs" />

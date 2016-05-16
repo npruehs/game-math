@@ -39,6 +39,9 @@
         /// </summary>
         /// <param name="center">Center of the sphere.</param>
         /// <param name="radius">Radius of the sphere.</param>
+        /// <exception cref="ArgumentOutOfRangeException">
+        ///   <paramref name="radius"/> is zero or negative.
+        /// </exception>
         public SphereF(Vector3F center, float radius)
         {
             if (radius <= 0)

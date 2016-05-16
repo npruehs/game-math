@@ -8,7 +8,7 @@
     ///   approximation to a straight line between two given points.
     /// </summary>
     [CLSCompliant(true)]
-    public static class Bresenham
+    public class Bresenham
     {
         #region Public Methods and Operators
 
@@ -16,18 +16,18 @@
         ///   Returns an approximation to a straight line between the given points.
         /// </summary>
         /// <remarks>
-        ///   http://rosettacode.org/wiki/Bitmap/Bresenham's_line_algorithm
+        ///   See http://rosettacode.org/wiki/Bitmap/Bresenham's_line_algorithm for details.
         /// </remarks>
-        /// <param name="v0">
+        /// <param name="p">
         ///   First line endpoint.
         /// </param>
-        /// <param name="v1">
+        /// <param name="q">
         ///   Second line endpoint.
         /// </param>
         /// <returns>
         ///   Approximation to a straight line between the given points.
         /// </returns>
-        public static List<Vector2I> Plot(Vector2I v0, Vector2I v1)
+        public List<Vector2I> Plot(Vector2I p, Vector2I q)
         {
             var line = new List<Vector2I>();
 
@@ -36,25 +36,25 @@
             int y0;
             int y1;
 
-            var steep = Math.Abs(v1.Y - v0.Y) > Math.Abs(v1.X - v0.X);
+            var steep = Math.Abs(q.Y - p.Y) > Math.Abs(q.X - p.X);
 
             if (steep)
             {
                 // swap(x0, y0)
-                x0 = v0.Y;
-                y0 = v0.X;
+                x0 = p.Y;
+                y0 = p.X;
 
                 // swap(x1, y1)
-                x1 = v1.Y;
-                y1 = v1.X;
+                x1 = q.Y;
+                y1 = q.X;
             }
             else
             {
-                x0 = v0.X;
-                y0 = v0.Y;
+                x0 = p.X;
+                y0 = p.Y;
 
-                x1 = v1.X;
-                y1 = v1.Y;
+                x1 = q.X;
+                y1 = q.Y;
             }
 
             if (x0 > x1)
