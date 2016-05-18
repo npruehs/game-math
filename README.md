@@ -62,6 +62,7 @@ After being able to reproduce the issue, we'll look into fixing it immediately.
 
 (in alphabetical order)
 
+* [Paul Bourke](http://paulbourke.net)
 * [Jeff G. Erickson](http://algorithms.wtf)
 * [Darel Rex Finley](http://alienryderflex.com)
 * [Christian Oeing](https://github.com/coeing)
