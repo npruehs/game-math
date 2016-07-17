@@ -439,9 +439,9 @@
         /// </returns>
         public static Vector3F Lerp(Vector3F v, Vector3F w, float l)
         {
-            var lerpX = MathF.Lerp(v.x, w.x, l);
-            var lerpY = MathF.Lerp(v.y, w.y, l);
-            var lerpZ = MathF.Lerp(v.z, w.z, l);
+            var lerpX = Interpolation.Lerp(v.x, w.x, l);
+            var lerpY = Interpolation.Lerp(v.y, w.y, l);
+            var lerpZ = Interpolation.Lerp(v.z, w.z, l);
             return new Vector3F(lerpX, lerpY, lerpZ);
         }
 

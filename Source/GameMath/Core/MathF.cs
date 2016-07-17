@@ -56,6 +56,7 @@
         /// <returns>
         ///   Linear interpolation between the two passed values.
         /// </returns>
+        [Obsolete("Use Interpolation.Lerp instead.")]
         public static float Lerp(float x, float y, float l)
         {
             if (l <= 0.0f)

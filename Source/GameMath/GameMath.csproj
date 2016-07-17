@@ -41,6 +41,7 @@
     <Compile Include="Core\Angle.cs" />
     <Compile Include="Core\Constant.cs" />
     <Compile Include="Core\Direction.cs" />
+    <Compile Include="Core\Interpolation.cs" />
     <Compile Include="Core\Random.cs" />
     <Compile Include="Functions\BallisticTrajectory.cs" />
     <Compile Include="Geometry\BoxF.cs" />

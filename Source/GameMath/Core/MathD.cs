@@ -46,6 +46,7 @@
         /// <returns>
         ///   Linear interpolation between the two passed values.
         /// </returns>
+        [Obsolete("Use Interpolation.Lerp instead.")]
         public static double Lerp(double x, double y, double l)
         {
             if (l <= 0.0f)

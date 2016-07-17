@@ -366,8 +366,8 @@
         /// </returns>
         public static Vector2F Lerp(Vector2F v, Vector2F w, float l)
         {
-            var lerpX = MathF.Lerp(v.x, w.x, l);
-            var lerpY = MathF.Lerp(v.y, w.y, l);
+            var lerpX = Interpolation.Lerp(v.x, w.x, l);
+            var lerpY = Interpolation.Lerp(v.y, w.y, l);
             return new Vector2F(lerpX, lerpY);
         }
 
