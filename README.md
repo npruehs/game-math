@@ -12,6 +12,7 @@ If you're missing anything, we'd love to see it - please refer to the [Contribut
 * Basic geometric shapes (e.g. RectangleF, LineF)
 * Intersection tests (e.g. line-line, line-circle)
 * Angle operations (e.g. angle difference, angle between vectors)
+* Interpolation (e.g. linear, sinusoidal, smoothstep)
 * Advanced operations (e.g. Bresenham, ballistic trajectory)
 * Pseudo-random number generators
 * Utility methods (e.g. rounding and casting to int)

@@ -67,7 +67,7 @@ In order to make the code more readable and consistent, contributions are requir
 * Numbers without meaning are denoted by _x, y, z_.
 * Numbers with meaning are denoted by their meaning (e.g. _degrees_).
 
-* Pairs of any other type are deonoted by _first, second_.
+* Pairs of any other type are denoted by _first, second_.
 
 Exceptions to these rules are algorithms implemented based on public sources. If your implementation is based on a publication using different symbols, you should use these names in order to increase readability with respect to the original source.
 
